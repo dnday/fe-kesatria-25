@@ -5,15 +5,16 @@
 // import SelamatDatang from "@/components/beranda/selamatdatang";
 // import SelamatDatangVideo from "@/components/beranda/selamatdatangvideo";
 // import Footer from "@/components/layout/footer";
+
 import { useEffect } from "react";
-import AOS from "aos";
+// import AOS from "aos";
 
 export default function Home() {
-  useEffect(() => {
-    AOS.init({
-      duration: 700, // Durasi animasi dalam milidetik
-    });
-  }, []);
+  //   useEffect(() => {
+  //     AOS.init({
+  //       duration: 700, // Durasi animasi dalam milidetik
+  //     });
+  //   }, []);
   return (
     <main className="min-h-screen">
       {/* <title>Pionir Kesatria 2024</title>
@@ -27,6 +28,7 @@ export default function Home() {
       <Chapter2 />
       <Chapter3 />
       <Footer /> */}
+      <Test />
     </main>
   );
 }
