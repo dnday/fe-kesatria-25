@@ -28,7 +28,7 @@ export default function Home() {
       <Chapter2 />
       <Chapter3 />
       <Footer /> */}
-      <Test />
+      {/* <Test /> */}
     </main>
   );
 }
