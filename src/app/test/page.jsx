@@ -1,7 +1,14 @@
-import React from "react";
+import "../globals.css";
 
 const test = () => {
-  return <div>test</div>;
+  return (
+    <div>
+      <h1 className="text-2xl font-primeform">Selamat datang di aplikasi!</h1>
+      <p className="font-primeform">
+        Ini adalah contoh penerapan font Primeform Pro.
+      </p>
+    </div>
+  );
 };
 
 export default test;
