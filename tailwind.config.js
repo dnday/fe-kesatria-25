@@ -9,7 +9,10 @@ module.exports = {
     extend: {
       fontFamily: {
         primeform: ["Primeform Pro Demo", "sans-serif"],
-        // "primeform-bold": ["Primeform Pro Demo Bold", "sans-serif"],
+      },
+      fontWeight: {
+        "primeform-regular": "400",
+        "primeform-bold": "700",
       },
     },
   },
