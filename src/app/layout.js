@@ -1,5 +1,6 @@
 import "./globals.css";
 import Navbar from "../components/layout/Navbar.jsx";
+import Footer from "../components/layout/Footer.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -18,7 +19,7 @@ export default function RootLayout({ children }) {
       <body>
         <Navbar />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
