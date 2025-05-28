@@ -14,7 +14,7 @@ const Infobox = () => {
         height={800}
       />
       <div className="flex flex-col">
-        <div className="flex flex-col ml-[10vw]">
+        <div className="flex flex-col ml-[12vw] text-black md:ml-[10vw]">
           <p className="font-primeform font-bold text-[8px] md:text-[1.5vw]">
             FAKULTAS TEKNIK
           </p>
@@ -22,7 +22,7 @@ const Infobox = () => {
             JALAN GRAFIKA, MLATI, YOGYAKARTA 55281
           </p>
         </div>
-        <div className="flex space-x-1 md:space-x-3 md:mt-2">
+        <div className="flex space-x-1 md:space-x-3 md:mt-2 text-black">
           <a
             href="https://www.instagram.com/pionirkesatria_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
             target="_blank"
