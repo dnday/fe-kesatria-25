@@ -1,26 +1,27 @@
 import Image from "next/image";
 import Infobox from "./Infobox";
 import Link from "next/link";
+
 const Footer = () => {
   return (
-    <footer className="relative max-w-screen-xl min-h-[45vh] mx-auto bg-[#ECC691]">
+    <footer className="relative w-full min-h-[45vh] mx-auto bg-[#ECC691]">
       {/* Layer 1 */}
       <Image
-        className="absolute w-[20vw] bottom-10 h-auto z-0 mx-[7vw] md:w-[20vw]"
+        className="absolute w-[20vw] bottom-10 h-auto z-0 left-[7vw] md:w-[20vw]"
         alt="tugu"
         src="/images/footer/tugu.png"
         width={800}
         height={400}
       />
       <Image
-        className="absolute bottom-0 w-[56vw] h-auto z-10 mx-[15vw] md:w-[53vw]"
+        className="absolute bottom-0 w-[56vw] h-auto z-10 left-[15vw] md:w-[53vw]"
         alt="kaintengah"
         src="/images/footer/kainBiru.png"
         width={500}
         height={500}
       />
       <Image
-        className="absolute bottom-1 w-[15vw] h-[14vw] z-0 mx-[76vw]"
+        className="absolute bottom-1 w-[15vw] h-[14vw] z-10 left-[76vw]"
         alt="gir"
         src="/images/footer/gir.png"
         width={500}
