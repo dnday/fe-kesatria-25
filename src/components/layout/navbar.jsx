@@ -38,7 +38,7 @@ const Navbar = () => {
             href={"/"}
             className="text-sm md:text-base lg:text-lg text-[#FFE5C7]"
           >
-            PIONIR KESATRIA 2024
+            PIONIR KESATRIA 2025
           </Link>
         </div>
         <div className="flex items-center gap-x-6 md:gap-x-8 font-primeform font-bold text-[#FFE5C7]">

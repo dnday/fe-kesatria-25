@@ -5,7 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 export const metadata = {
-  title: "PPSMB Kesatria 2024",
+  title: "PIONIR KESATRIA 2025",
   description:
     "PPSMB Kesatria merupakan masa orientasi kepada Mahasiswa Baru Teknik UGM 2023 yang bertujuan untuk memperkenalkan lingkungan Teknik UGM kepada para Mahasiswa Baru",
 };
@@ -16,7 +16,9 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/logo_cream.png" />
       </head>
-      <body>
+      <body
+        className={`z-[-10] bg-pattern-parang-krem bg-[size:50%] bg-repeat sm:bg-[size:37%] lg:bg-[size:25%]`}
+      >
         <Navbar />
         {children}
         <Footer />

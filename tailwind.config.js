@@ -14,6 +14,10 @@ module.exports = {
         "primeform-regular": "400",
         "primeform-bold": "700",
       },
+      backgroundImage: {
+        "pattern-parang-krem":
+          "url('../public/images/background/pattern-parang-krem.svg')",
+      },
     },
   },
   plugins: [],
