@@ -1,8 +1,8 @@
 import "./globals.css";
 import Navbar from "../components/layout/Navbar.jsx";
 import Footer from "../components/layout/Footer.jsx";
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 
 export const metadata = {
   title: "PIONIR KESATRIA 2025",
@@ -17,7 +17,13 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/logo_cream.png" />
       </head>
       <body
-        className={`z-[-10] bg-pattern-parang-krem bg-[size:50%] bg-repeat sm:bg-[size:37%] lg:bg-[size:25%]`}
+        className={
+          "z-[-10] bg-pattern-parang-kreme bg-[size:80%] bg-repeat sm:bg-[size:75%] lg:bg-[size:70%]"
+        }
+        style={{
+          backgroundImage: `url('/images/background/pattern-parang-krem.svg')`,
+          // backgroundSize: "cover, cover, cover",
+        }}
       >
         <Navbar />
         {children}

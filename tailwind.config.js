@@ -16,7 +16,7 @@ module.exports = {
       },
       backgroundImage: {
         "pattern-parang-krem":
-          "url('../public/images/background/pattern-parang-krem.svg')",
+          "url('/images/background/pattern-parang-krem.svg')",
       },
     },
   },
