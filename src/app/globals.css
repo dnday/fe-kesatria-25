@@ -1,23 +1,28 @@
 @import "tailwindcss";
 
-/* Definisi font Primeform Pro Demo Regular */
+/* Font Primeform Pro Demo */
 @font-face {
   font-family: "Primeform Pro Demo";
   src: url("/fonts/PrimeformProDemo/PrimeformProDemo-Regular.otf")
     format("opentype");
-  font-weight: 400; /* Regular weight */
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
-/* Definisi font Primeform Pro Demo Bold (jika tersedia) */
 @font-face {
   font-family: "Primeform Pro Demo";
   src: url("/fonts/PrimeformProDemo/PrimeformProDemo-Bold.otf")
     format("opentype");
-  font-weight: 700; /* Bold weight */
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
+}
+
+/* Font Storybook */
+@font-face {
+  font-family: "Storybook";
+  src: url("/fonts/storybook/Storybook.TTF") format("truetype");
 }
 
 :root {
@@ -28,7 +33,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-primeform: "Primeform Pro Demo", var(--font-geist-sans), sans-serif;
   --font-mono: var(--font-geist-mono);
 }
 
@@ -42,10 +47,10 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Primeform Pro Demo", Arial, Helvetica, sans-serif;
+  font-family: "Primeform Pro Demo", sans-serif;
 }
 
-/* Custom CSS classes untuk font weights */
+/* Custom CSS classes for font weights */
 .font-primeform-regular {
   font-family: "Primeform Pro Demo", sans-serif;
   font-weight: 400;
@@ -54,4 +59,8 @@ body {
 .font-primeform-bold {
   font-family: "Primeform Pro Demo", sans-serif;
   font-weight: 700;
+}
+
+.font-storybook {
+  font-family: "Storybook", sans-serif;
 }
