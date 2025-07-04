@@ -28,6 +28,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --teksbiru: #013047;
 }
 
 @theme inline {
@@ -54,6 +55,11 @@ body {
 .font-primeform-regular {
   font-family: "Primeform Pro Demo", sans-serif;
   font-weight: 400;
+}
+
+.font-primeform-medium {
+  font-family: "Primeform Pro Demo", sans-serif;
+  font-weight: 500;
 }
 
 .font-primeform-bold {
