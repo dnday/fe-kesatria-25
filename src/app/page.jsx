@@ -1,7 +1,7 @@
 "use client";
-import Chapter1 from "@/components/layout/beranda/Chapter1";
+import Chapter1 from "@/components/beranda/Chapter1";
 // import Chapter2 from "@/components/beranda/chapter2";
-import Chapter3 from "@/components/beranda/chapter3";
+// import Chapter3 from "@/components/layout/beranda/chapter3";
 import SelamatDatang from "@/components/beranda/selamatdatang";
 import SelamatDatangVideo from "@/components/beranda/selamatdatangvideo";
 // import Footer from "@/components/layout/footer";
@@ -29,7 +29,7 @@ export default function Home() {
       {/* <Chapter3 /> */}
       {/* <Footer /> */}
       {/* <Test /> */}
-      <Chapter3 />
+      {/* <Chapter3 /> */}
       {/* <Footer /> */}
     </main>
   );

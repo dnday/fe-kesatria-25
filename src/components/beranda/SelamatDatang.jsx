@@ -57,13 +57,13 @@ const SelamatDatang = () => {
         <Image
           className="w-[45vw] h-[55vw] mt-[20vw] z-30 md:w-[30vw] md:h-[40vw] md:mt-[10vw] lg:mt-[5vw]"
           alt="nala"
-          src="/images/selamatdatang/nalaMenyapa.webp"
+          src="/images/selamatdatang/nala-menyapa2.webp"
           width={800}
           height={1200}
         />
-        <div className="text-center text-[4vw] font-bold mt-[32vw] left-[10vw] z-30 md:mt-[20vw] lg:mt-[16vw] md:text-[3vw]">
+        <div className="text-center text-[4vw] mt-[32vw] left-[10vw] z-30 md:mt-[20vw] lg:mt-[16vw] md:text-[3vw]">
           <p>SELAMAT DATANG</p>
-          <p className=" text-[7vw] md:text-[5vw]">Kesatria Muda</p>
+          <p className="text-[7vw] md:text-[5vw]">Kesatria Muda</p>
           <p>2025!</p>
         </div>
       </div>

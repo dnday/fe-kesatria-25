@@ -8,7 +8,8 @@ const content = {
   title2: "Sejarah Teknik",
   content2:
     "Fakultas teknik berdiri pada tahun 1949 ini menjadi salah satu fakultas tertua di Universitas Gadjah Mada. Sampai saat ini Fakultas Teknik terus mengalami berbagai penyesuaian dan perkembangan. Mari simak video berikut ini!",
-  title3:
+  title3: "Sejarah Kesatria",
+  content3:
     "Indonesia sebagai negara berkembang terus menghadapi berbagai tantangan dalam sektor manufaktur, infrastruktur, dan energi. Di era globalisasi dan revolusi industri 4.0, kebutuhan akan tenaga ahli di bidang teknik semakin meningkat. Kesatria muda sebagai calon-calon insinyur muda berperan penting dalam pembangunan berkelanjutan dan peningkatan kualitas hidup masyarakat. Oleh karena itu, pendidikan teknik harus dapat membekali pengetahuan dan keterampilan yang relevan serta pemahaman mendalam tentang kontribusi mereka bagi bangsa.",
 };
 export default content;
