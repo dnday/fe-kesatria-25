@@ -43,7 +43,7 @@ const JudulChapterHP = () => {
       data-aos="fade-up"
       className="flex w-full flex-col place-content-center items-center gap-[2.5vw] text-center sm:hidden"
     >
-      <h1 className="font-legendaire text-[6vw] drop-shadow-[0_0.5vw_0.2vw_#000000]">
+      <h1 className="font-storybook text-[6vw] drop-shadow-[0_0.5vw_0.2vw_#000000]">
         <span className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent">
           {CONTENT[0].titleHP[0]}
         </span>
@@ -52,7 +52,7 @@ const JudulChapterHP = () => {
           {CONTENT[0].titleHP[1]}
         </span>
       </h1>
-      <p className="max-w-[72vw] text-justify font-publica-sans text-[3.5vw]/[4.5vw] font-light text-[#FFE5C7] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
+      <p className="max-w-[72vw] text-justify font-primeform-medium text-[3.5vw]/[4.5vw] font-light text-[#FFE5C7] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
         {CONTENT[0].titleDesc}
       </p>
     </div>
@@ -142,10 +142,10 @@ const KesatriaMudaBerkaryaTab = () => {
         data-aos="fade-up"
         className="flex w-full flex-col items-center gap-[1vw]"
       >
-        <h2 className="custom-shadow-text bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[5vw] text-transparent">
+        <h2 className="custom-shadow-text bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-storybook text-[5vw] text-transparent">
           {CONTENT[0].subtitle1}
         </h2>
-        <p className="max-w-[65vw] text-justify font-publica-sans text-[2.5vw]/[3.2vw] font-light text-[#FFE5C7] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
+        <p className="max-w-[65vw] text-justify font-primeform-medium text-[2.5vw]/[3.2vw] font-light text-[#FFE5C7] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
           {CONTENT[0].subtitle1desc}
         </p>
         <div className="mt-[2vw] flex w-full flex-col items-center justify-center gap-[2vw] lg:hidden">
@@ -177,7 +177,7 @@ const KesatriaMudaBerkaryaTab = () => {
             href={"/materi/1g3khW7dKm8xqAjmtJpuWJk13jIyt-4fr"}
             className="z-[1] w-[26.9vw] rounded-[3.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]"
           >
-            <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text text-center font-legendaire text-[3vw] text-transparent">
+            <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text text-center font-storybook text-[3vw] text-transparent">
               Lihat Modul
             </p>
           </Link>
@@ -194,10 +194,10 @@ const KaryaAplikatifTab = () => {
         data-aos="fade-up"
         className="flex w-full flex-col items-center gap-[1vw]"
       >
-        <h2 className="custom-shadow-text bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-legendaire text-[5vw] text-transparent">
+        <h2 className="custom-shadow-text bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text font-storybook text-[5vw] text-transparent">
           {CONTENT[0].subtitle2}
         </h2>
-        <p className="max-w-[65vw] text-justify font-publica-sans text-[2.5vw]/[3.2vw] font-light text-[#FFE5C7] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
+        <p className="max-w-[65vw] text-justify font-primeform-medium text-[2.5vw]/[3.2vw] font-light text-[#FFE5C7] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
           {CONTENT[0].subtitle2desc}
         </p>
         <div className="mt-[2vw] flex w-full flex-col items-center justify-center gap-[2vw] lg:hidden">
@@ -229,7 +229,7 @@ const KaryaAplikatifTab = () => {
             href={"/materi/1I1Gy5ds5m49J61qDT2hxvqygN1rWniWo"}
             className="z-[1] w-[26.9vw] rounded-[3.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]"
           >
-            <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text text-center font-legendaire text-[3vw] text-transparent">
+            <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text text-center font-storybook text-[3vw] text-transparent">
               Lihat Modul
             </p>
           </Link>
@@ -246,12 +246,12 @@ const KesatriaMudaBerkaryaHP = () => {
         data-aos="fade-up"
         className="flex w-full flex-col place-content-center items-center gap-[1vw] text-center sm:hidden"
       >
-        <h1 className="font-legendaire text-[5vw] drop-shadow-[0_0.5vw_0.2vw_#000000]">
+        <h1 className="font-storybook text-[5vw] drop-shadow-[0_0.5vw_0.2vw_#000000]">
           <span className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent">
             {CONTENT[0].subtitle1}
           </span>
         </h1>
-        <p className="max-w-[72vw] text-justify font-publica-sans text-[3.5vw]/[4.5vw] font-light text-[#FFE5C7] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
+        <p className="max-w-[72vw] text-justify font-primeform-medium text-[3.5vw]/[4.5vw] font-light text-[#FFE5C7] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
           {CONTENT[0].subtitle1desc}
         </p>
       </div>
@@ -289,7 +289,7 @@ const KesatriaMudaBerkaryaHP = () => {
         href={"/materi/1g3khW7dKm8xqAjmtJpuWJk13jIyt-4fr"}
         className="z-[1] rounded-[3.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]"
       >
-        <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text px-[7vw] py-[0.5] text-center font-legendaire text-[4vw] text-transparent">
+        <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text px-[7vw] py-[0.5] text-center font-storybook text-[4vw] text-transparent">
           Lihat Modul
         </p>
       </Link>
@@ -304,12 +304,12 @@ const KaryaAplikasiHP = () => {
         data-aos="fade-up"
         className="flex w-full flex-col place-content-center items-center gap-[1vw] text-center sm:hidden"
       >
-        <h1 className="font-legendaire text-[5vw] drop-shadow-[0_0.5vw_0.2vw_#000000]">
+        <h1 className="font-storybook text-[5vw] drop-shadow-[0_0.5vw_0.2vw_#000000]">
           <span className="bg-gradient-to-b from-[#FFD23F] to-[#FFA514] bg-clip-text text-transparent">
             {CONTENT[0].subtitle2}
           </span>
         </h1>
-        <p className="max-w-[72vw] text-justify font-publica-sans text-[3.5vw]/[4.5vw] font-light text-[#FFE5C7] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
+        <p className="max-w-[72vw] text-justify font-primeform-medium text-[3.5vw]/[4.5vw] font-light text-[#FFE5C7] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
           {CONTENT[0].subtitle2desc}
         </p>
       </div>
@@ -347,7 +347,7 @@ const KaryaAplikasiHP = () => {
         href={"/materi/1I1Gy5ds5m49J61qDT2hxvqygN1rWniWo"}
         className="z-[1] rounded-[3.5vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] hover:from-[#FFA514] hover:to-[#FFD23F]"
       >
-        <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text px-[7vw] py-[0.5] text-center font-legendaire text-[4vw] text-transparent">
+        <p className="bg-gradient-to-b from-[#5E1675] to-[#5E1675] bg-clip-text px-[7vw] py-[0.5] text-center font-storybook text-[4vw] text-transparent">
           Lihat Modul
         </p>
       </Link>

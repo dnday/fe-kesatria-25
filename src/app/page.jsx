@@ -1,4 +1,5 @@
 "use client";
+import Chapter2 from "@/components/beranda/chapter2";
 // import Chapter1 from "@/components/beranda/chapter1";
 // import Chapter2 from "@/components/beranda/chapter2";
 import Chapter3 from "@/components/beranda/chapter3";
@@ -29,6 +30,7 @@ export default function Home() {
       <Chapter3 />
       <Footer /> */}
       {/* <Test /> */}
+      <Chapter2 />
       <Chapter3 />
       {/* <Footer /> */}
     </main>
