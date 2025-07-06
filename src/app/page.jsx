@@ -3,8 +3,8 @@ import Chapter2 from "@/components/beranda/chapter2";
 // import Chapter1 from "@/components/beranda/chapter1";
 // import Chapter2 from "@/components/beranda/chapter2";
 import Chapter3 from "@/components/beranda/chapter3";
-// import SelamatDatang from "@/components/beranda/selamatdatang";
-// import SelamatDatangVideo from "@/components/beranda/selamatdatangvideo";
+import SelamatDatang from "@/components/beranda/selamatdatang";
+import SelamatDatangVideo from "@/components/beranda/selamatdatangvideo";
 // import Footer from "@/components/layout/footer";
 
 import { useEffect } from "react";
@@ -22,13 +22,13 @@ export default function Home() {
       <meta name="description" content="Kegiatan Penerimaan Mahasiswa Baru Fakultas Teknik UGM Tahun 2024" />
       <meta name="keywords" content="Pionir, Kesatria, FT, UGM, Teknik, PPSMB, Maba" />
       <link rel="icon" href="/images/logo/logo_yellow.svg"/> */}
-      {/* 
+
       <SelamatDatang />
       <SelamatDatangVideo />
       <Chapter1 />
       <Chapter2 />
-      <Chapter3 />
-      <Footer /> */}
+      {/* <Chapter3 /> */}
+      {/* <Footer /> */}
       {/* <Test /> */}
       <Chapter2 />
       <Chapter3 />
