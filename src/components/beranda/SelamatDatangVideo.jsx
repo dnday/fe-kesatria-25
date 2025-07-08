@@ -2,23 +2,23 @@ import Image from "next/image";
 
 const Background = () => {
   return (
-    <div className="bg-[#013047] h-[30svh] mt-[-5vw] z-0 md:h-[50svh] xl:h-[135svh]">
+    <div className="bg-[#013047] h-[30svh] mt-[5vw] z-0 md:mt-[-5vw] md:h-[40svh] lg:mt-[-9vw] xl:h-[135svh] xl:mt-[-13.6vw]">
       <Image
         className="w-[100vw] h-auto"
-        alt="parang"
+        alt="pattern"
         src="/images/selamatdatangvideo/pattern.webp"
         width={800}
         height={800}
       />
       <Image
         className="w-[100vw] h-auto mt-[3vw]"
-        alt="parang"
+        alt="pattern"
         src="/images/selamatdatangvideo/pattern.webp"
         width={800}
         height={800}
       />
       <Image
-        className="w-[100vw] h-auto mt-[3vw]"
+        className="w-[100vw] h-auto mt-[3vw] hidden xl:block"
         alt="parang"
         src="/images/selamatdatangvideo/parang.webp"
         width={800}

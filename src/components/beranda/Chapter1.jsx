@@ -6,7 +6,7 @@ import Sejarah from "./Sejarah.jsx";
 
 const Chapter1 = () => {
   return (
-    <section className="relative flex flex-col items-center h-[75svh] text-[#013047] md:h-[120svh] lg:h-[100svh] xl:h-[350svh]">
+    <section className="relative flex flex-col items-center h-[125svh] text-[#013047] md:h-[160svh] lg:h-[135svh] xl:h-[360svh]">
       <Image
         className="absolute w-[39vw] h-auto z-20 mt-[8vw]"
         alt="sayap"
@@ -20,14 +20,14 @@ const Chapter1 = () => {
         {content.content1}
       </p>
 
-      <div className="w-[90vw] h-[50vw] bg-[#013047] mt-[1vw] rounded-4xl flex flex-col items-center border-6 shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] lg:flex-row lg:w-[80vw] lg:min-h-[30vw]">
+      <div className="w-[90vw] h-[60vw] bg-[#013047] mt-[1vw] rounded-4xl flex flex-col items-center border-6 shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] lg:flex-row lg:w-[80vw] lg:min-h-[30vw]">
         <Box
           bgColor="#A01326"
           imageSrc="/images/chapter1/sample.jpg"
           w="25vw"
           h="25vw"
         />
-        <p className=" w-[80vw] text-[7px] text-[#ECC691] text-center ml-[2vw] lg:text-[1.4vw] lg:text-left lg:w-[90vw] lg:mx-[2vw]">
+        <p className=" w-[80vw] text-[7px] text-[#ECC691] text-center ml-[2vw] mt-[3vw] md:text-[1.5vw] lg:mt-[0] lg:text-left lg:w-[50vw] lg:mx-[2vw]">
           {content.personalbranding}
         </p>
       </div>
