@@ -56,7 +56,7 @@ const Navbar = () => {
       </nav>
 
       {/* Mobile Navbar */}
-      <nav className="fixed z-[1000] w-full bg-gradient-to-r from-[#065B5B] from-50% to-[#035A7A] text-[#FFE5C7] shadow-md md:hidden">
+      <nav className="fixed z-[2000] w-full bg-gradient-to-r from-[#065B5B] from-50% to-[#035A7A] text-[#FFE5C7] shadow-md md:hidden">
         <div className="flex justify-between items-center px-4 py-2">
           <div className="flex items-center gap-x-2 font-primeform font-bold text-sm">
             <Image
