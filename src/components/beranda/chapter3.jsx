@@ -158,7 +158,7 @@ const KesatriaMudaBerkarya = () => {
           </p>
         </div>
         <div data-aos="fade-up" className="relative h-[41.2vw] w-[70vw]">
-          <div className="absolute left-0 top-0 z-10 h-full w-full rounded-[5vw] bg-[#013047] drop-shadow-[0_0.1vw_1vw_#000000] p-[2vw] drop-shadow-[0_0.4vw_2vw_rgba(0,0,0,0.6)] flex items-center justify-center">
+          <div className="absolute left-0 top-0 z-10 h-full w-full rounded-[5vw] bg-[#013047] drop-shadow-[0_0.4vw_2vw_rgba(0,0,0,0.6)] p-[2vw] flex items-center justify-center">
             <Image
               className="w-[40%] aspect-auto object-cover"
               alt="Image"
@@ -443,9 +443,26 @@ const TransitiAtas = () => {
     <div className="w-full h-[15vw] relative overflow-visible">
       {/* Container utama dengan overflow visible */}
 
-      {/* Latar belakang yang besar */}
+      {/* Tugu Teknik - positioned behind kain kuning with low z-index */}
       <Image
-        className="w-full h-auto object-cover translate-y-[-10vw]"
+        className="z-[10] translate-y-[-30vw] absolute bottom-[-17vw] left-0 w-[30vw] h-auto md:absolute md:bottom-[-17vw] md:left-0 md:w-[30vw] md:h-auto lg:absolute lg:bottom-[-17vw] lg:left-0 lg:w-[30vw] lg:h-auto"
+        alt="Tugu Teknik"
+        src="/images/assets_beranda_chapter2_tugtek.svg"
+        width={960}
+        height={250}
+      />
+      {/* Tugu Teknik - positioned behind kain kuning with low z-index */}
+      <Image
+        className="z-[10] translate-y-[-45vw] translate-x-[-3vw] absolute bottom-[-17vw] right-0 w-[12vw] h-auto md:absolute md:bottom-[-17vw] md:right-0 md:w-[12vw] md:h-auto lg:absolute lg:bottom-[-17vw] lg:right-0 lg:w-[12vw] lg:h-auto"
+        alt="Bulu Kuning"
+        src="/images/assets_beranda_chapter2_bulu3.svg"
+        width={960}
+        height={250}
+      />
+
+      {/* Kain Kuning - always on top with highest z-index */}
+      <Image
+        className="relative z-[1000] w-full h-auto object-cover translate-y-[-13vw]"
         alt="Background"
         src={"/images/assets_beranda_chapter3_kainkuningatas.svg"}
         width={1920}
@@ -475,7 +492,7 @@ const TransitiAtas = () => {
 
 const Content = () => {
   return (
-    <div className="z-[10] flex min-h-screen w-full flex-col place-content-center items-center gap-[5vw] px-[9.9vw] py-[0vw] pb-[10vw]">
+    <div className="relative z-[999] flex min-h-screen w-full flex-col place-content-center items-center gap-[5vw] px-[9.9vw] py-[0vw] pb-[10vw]">
       <JudulChapter />
       <JudulChapterHP />
       <KesatriaMudaBerkarya />
