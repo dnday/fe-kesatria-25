@@ -4,7 +4,7 @@ const SelamatDatang = () => {
   return (
     <div className="relative w-full flex justify-center min-h-[60vw] md:h-[42svh] xl:h-[105svh]">
       <Image
-        className="absolute w-[20vw] h-auto z-0 right-[0] top-[10vw] md:top-[4.5vw] lg:top-[0]"
+        className="absolute w-[20vw] h-auto z-0 right-[0] top-[10vw] md:top-[2vw] lg:top-[0]"
         alt="pojok atas"
         src="/images/selamatdatang/pojokatas.webp"
         width={800}
