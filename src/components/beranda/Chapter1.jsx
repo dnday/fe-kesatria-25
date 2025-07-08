@@ -14,9 +14,9 @@ const Chapter1 = () => {
         width={800}
         height={800}
       />
-      <h1 className="text-[3vw] font-bold mt-[8vw]">{content.title1}</h1>
-      <p className="text-[2vw] font-bold">{content.subTitle1}</p>
-      <p className="text-[1.5vw] text-center mx-[10vw] mt-[1vw]">
+      <h1 className="text-[3vw] font-storybook mt-[8vw]">{content.title1}</h1>
+      <p className="text-[2vw] font-storybook">{content.subTitle1}</p>
+      <p className="text-[1.5vw] text-center mx-[10vw] mt-[1vw] font-primeform-medium">
         {content.content1}
       </p>
 

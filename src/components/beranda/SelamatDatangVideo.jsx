@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Background = () => {
   return (
-    <div className="bg-[#013047] h-[30svh] mt-[5vw] z-0 md:mt-[-5vw] md:h-[40svh] lg:mt-[-9vw] xl:h-[135svh]">
+    <div className="bg-[#013047] h-[30svh] mt-[5vw] z-0 md:mt-[-5vw] md:h-[40svh] lg:mt-[-9vw] xl:h-[135svh] xl:mt-[-13.6vw]">
       <Image
         className="w-[100vw] h-auto"
         alt="pattern"
@@ -61,7 +61,7 @@ const SelamatDatangVideo = () => {
       <Background />
       <div className="flex flex-col absolute justify-center items-center inset-0 text-[#F9C157] font-bold mt-[10vw] md:mt[5vw]">
         <p className="text-[2vw]">SELAMAT DATANG</p>
-        <p className="text-[4vw]">KESATRIA MUDA 2025!</p>
+        <p className="text-[4vw] font-storybook">KESATRIA MUDA 2025!</p>
         <Video />
         <Image
           className="absolute w-[90vw] h-auto bottom-0"

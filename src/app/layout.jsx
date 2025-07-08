@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
         }
         style={{
           backgroundImage: `url('/images/background/pattern-parang-krem.svg')`,
-          backgroundSize: "cover, cover, cover",
+          backgroundSize: "100%, 100%, 100%",
         }}
       >
         <Navbar />
