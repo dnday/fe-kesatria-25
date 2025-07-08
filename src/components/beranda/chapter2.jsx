@@ -592,7 +592,7 @@ const TransitiAtas = () => {
     <div className="w-full h-[15vw] relative overflow-visible">
       {/* Container utama dengan overflow visible */}
 
-      {/* Kain Kuning - always on top with highest z-index */}
+      {/* Kain Merah Kuning - always on top with highest z-index */}
       <Image
         className="relative z-[1000] w-full h-auto object-cover translate-y-[-6vw]"
         alt="Background"

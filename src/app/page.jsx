@@ -22,9 +22,9 @@ export default function Home() {
       <meta name="keywords" content="Pionir, Kesatria, FT, UGM, Teknik, PPSMB, Maba" />
       <link rel="icon" href="/images/logo/logo_yellow.svg"/> */}
 
-      {/* <SelamatDatang />
+      <SelamatDatang />
       <SelamatDatangVideo />
-      <Chapter1 /> */}
+      <Chapter1 />
       <Chapter2 />
       <Chapter3 />
       {/* <Footer /> */}
