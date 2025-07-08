@@ -101,7 +101,7 @@ const Chapter2_Desktop = () => {
   return (
     <div
       data-aos="fade-up"
-      className="flex min-h-[90vh] flex-col place-content-center items-center bg-[url('/images/background/pattern-parang-dark.svg')] bg-[size:80%] bg-repeat sm:bg-[size:75%] lg:bg-[size:70%] z-[-2] py-[20vw] max-lg:hidden"
+      className="flex min-h-[90vh] flex-col place-content-center items-center bg-[url('/images/background/pattern-parang-dark.svg')] bg-[size:80%] bg-repeat sm:bg-[size:75%] lg:bg-[size:70%] z-[-2] pb-[20vw] pt-[10vw] max-lg:hidden"
       style={{ backgroundSize: "100%, 100%, 100%" }}
     >
       <h1 className="font-storybook text-[4vw] text-[#ECC691] text-shadow-[inset_-1px_-1px_0px_0px_#FFFFFF40, inset_1px_1px_0px_0px_#00000059]">
@@ -121,7 +121,7 @@ const Chapter2_Desktop = () => {
         yang baru. Yuk kita sama-sama lihat apa saja kesibukan di luar akademik
         pada modul ini.
       </p>
-      <div className="z-[1] flex h-[25vw] w-[75vw] items-center justify-center gap-[0vw] rounded-[2vw] bg-[#FFE5C7]">
+      <div className="z-[1] flex h-[25vw] w-[75vw] items-center justify-center gap-[0vw] rounded-[2vw] bg-[#ECC691]">
         <div
           className="flex h-full min-w-[3vw] items-center justify-center"
           onClick={() => {
@@ -225,10 +225,10 @@ const Chapter2_Tablet = () => {
   const Title = () => {
     return (
       <>
-        <h1 className="text-[#ECC691] font-storybook text-[6vw]/[6vw]">
+        <h1 className="text-[#ECC691] font-storybook text-[4.8vw]">
           Bagian 2:
         </h1>
-        <h1 className="text-[#ECC691] font-storybook text-[6vw]/[6vw]">
+        <h1 className="text-[#ECC691] font-storybook text-[4.8vw]">
           Lika-Liku Kesatria
         </h1>
       </>
@@ -253,7 +253,7 @@ const Chapter2_Tablet = () => {
   const SwiperCard = ({ title, desc, imgpath, link }) => {
     const Gambar = () => {
       return (
-        <div className="relative flex h-[12vw] w-[18vw] items-center justify-center rounded-[2vw] bg-[#ECC691] overflow-hidden">
+        <div className="relative flex h-[12vw] w-[18vw] items-center justify-center rounded-[2vw] bg-[#A01326] overflow-hidden">
           <Image
             className="absolute h-full w-full rounded-[2vw]"
             alt=""
@@ -276,7 +276,7 @@ const Chapter2_Tablet = () => {
     };
     return (
       <div className="flex w-full flex-col place-content-center items-center px-[3vw] py-[3vw]">
-        <h1 className="font-storybook text-[4vw] text-[#A01326]">{title}</h1>
+        <h1 className="font-storybook text-[4vw] text-[#013047]">{title}</h1>
         <Gambar />
         <p className="px-[2vw] font-primeform-medium text-[2vw]/[2.5vw] text-center text-[#013047]">
           {desc}
@@ -288,7 +288,7 @@ const Chapter2_Tablet = () => {
 
   return (
     <div
-      className="flex min-h-screen w-full flex-col place-content-center items-center py-[20vw] max-md:hidden lg:hidden bg-[url('/images/background/pattern-parang-dark.svg')] bg-[size:80%] bg-repeat sm:bg-[size:75%] lg:bg-[size:70%]"
+      className="flex min-h-screen w-full flex-col place-content-center items-center pb-[20vw] pt-[10vw] max-md:hidden lg:hidden bg-[url('/images/background/pattern-parang-dark.svg')] bg-[size:80%] bg-repeat sm:bg-[size:75%] lg:bg-[size:70%]"
       style={{ backgroundSize: "100% 100% 100%" }}
     >
       <div
@@ -300,7 +300,7 @@ const Chapter2_Tablet = () => {
       </div>
       <div
         data-aos="fade-up"
-        className="z-[1] flex h-[50vw] w-[70vw] items-center justify-center gap-[0vw] rounded-[2vw] bg-[#FFE5C7]"
+        className="z-[1] flex h-[50vw] w-[70vw] items-center justify-center gap-[0vw] rounded-[2vw] bg-[#ECC691]"
       >
         <div
           className="flex h-full min-w-[3vw] items-center justify-center"
@@ -393,10 +393,8 @@ const Chapter2_HP = () => {
   const Title = () => {
     return (
       <>
-        <h1 className="text-[#ECC691] font-storybook text-[6vw]/[6vw]">
-          Bagian 2:
-        </h1>
-        <h1 className="text-[#ECC691] font-storybook text-[6vw]/[6vw]">
+        <h1 className="text-[#ECC691] font-storybook text-[5vw]">Bagian 2:</h1>
+        <h1 className="text-[#ECC691] font-storybook text-[5vw]">
           Lika-Liku Kesatria
         </h1>
       </>
@@ -405,7 +403,7 @@ const Chapter2_HP = () => {
 
   const Descrtiption = () => {
     return (
-      <p className="w-[85vw] text-center font-primeform-medium text-[3.5vw]/[4.5vw] font-light text-[#ECC691] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
+      <p className="w-[72vw] text-center font-primeform-medium  text-[3.25vw]/[4.5vw] font-light text-[#ECC691] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
         Masa perkuliahan tentunya berbeda jika dibandingkan dengan masa saat
         sekolah. Di mana saat sekolah, segala sesuatunya teratur dan memiliki
         jadwal yang pasti. Selain itu, lingkup pergaulan yang akan ditemui di
@@ -421,7 +419,7 @@ const Chapter2_HP = () => {
   const SwiperCard = ({ title, desc, imgpath, link }) => {
     const Gambar = () => {
       return (
-        <div className="relative flex h-[25vw] w-[35vw] items-center justify-center rounded-[4vw] bg-[#ECC691] overflow-hidden">
+        <div className="relative flex h-[25vw] w-[35vw] items-center justify-center rounded-[4vw] bg-[#A01326] overflow-hidden">
           <Image
             className="absolute h-full w-full rounded-[4vw]"
             alt=""
@@ -448,7 +446,7 @@ const Chapter2_HP = () => {
 
     return (
       <div className="flex w-full flex-col place-content-center items-center px-[5vw] py-[4vw]">
-        <h1 className="font-storybook text-[5.5vw] text-[#A01326] pb-[3vw] text-center leading-tight">
+        <h1 className="font-storybook text-[5.5vw] text-[#013047] pb-[3vw] text-center leading-tight">
           {title}
         </h1>
         <Gambar />
@@ -462,7 +460,7 @@ const Chapter2_HP = () => {
 
   return (
     <div
-      className="flex min-h-screen w-full flex-col place-content-center items-center py-[20vw] bg-[url('/images/background/pattern-parang-dark.svg')] bg-[size:80%] bg-repeat sm:bg-[size:75%] lg:bg-[size:70%] md:hidden"
+      className="flex min-h-screen w-full flex-col place-content-center items-center pb-[20vw] pt-[10vw] bg-[url('/images/background/pattern-parang-dark.svg')] bg-[size:80%] bg-repeat sm:bg-[size:75%] lg:bg-[size:70%] md:hidden"
       style={{ backgroundSize: "100% 100% 100%" }}
     >
       <div
@@ -474,7 +472,7 @@ const Chapter2_HP = () => {
       </div>
       <div
         data-aos="fade-up"
-        className="z-[1] flex h-[120vw] w-[80vw] items-center justify-center gap-[0vw] rounded-[4vw] bg-[#FFE5C7]"
+        className="z-[1] flex h-[120vw] w-[72vw] items-center justify-center gap-[0vw] rounded-[4vw] bg-[#ECC691]"
       >
         <div
           className={`flex h-full min-w-[8vw] items-center justify-center cursor-pointer ${
@@ -589,9 +587,45 @@ const Chapter2_HP = () => {
   );
 };
 
+const TransitiAtas = () => {
+  return (
+    <div className="w-full h-[15vw] relative overflow-visible">
+      {/* Container utama dengan overflow visible */}
+
+      {/* Kain Kuning - always on top with highest z-index */}
+      <Image
+        className="relative z-[1000] w-full h-auto object-cover translate-y-[-6vw]"
+        alt="Background"
+        src={"/images/assets_beranda_chapter2_kainmerahkuning.svg"}
+        width={1920}
+        height={500}
+        priority
+      />
+
+      {/* Gambar yang diletakkan di atas latar belakang */}
+      <Image
+        className="absolute left-0 top-0 w-[13.5vw] translate-x-[24vw] translate-y-[18vw] z-[200]"
+        alt="Bulu Kuning"
+        src={"/images/assets_beranda_chapter2_bulu1.svg"}
+        width={100}
+        height={100}
+      />
+
+      <Image
+        className="absolute right-0 top-0 w-[13vw] translate-x-[-24vw] translate-y-[20vw] z-[200]"
+        alt="Bulu Kuning"
+        src={"/images/assets_beranda_chapter2_bulu2.svg"}
+        width={25}
+        height={25}
+      />
+    </div>
+  );
+};
+
 export default function Chapter2() {
   return (
     <>
+      <TransitiAtas />
       <Chapter2_Desktop />
       <Chapter2_Tablet />
       <Chapter2_HP />

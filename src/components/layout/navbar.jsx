@@ -25,8 +25,8 @@ const Navbar = () => {
   return (
     <>
       {/* Desktop Navbar */}
-      <nav className="fixed z-[1000] hidden w-full justify-between bg-gradient-to-r from-[#065B5B] from-50% to-[#035A7A] px-6 py-3 font-primeform text-white shadow-lg md:flex">
-        <div className="flex items-center gap-x-2 font-primeform font-bold text-lg md:text-xl lg:text-2xl">
+      <nav className="fixed z-[2000] hidden w-full justify-between bg-gradient-to-r from-[#065B5B] from-50% to-[#035A7A] px-6 py-3 font-primeform text-white shadow-lg md:flex">
+        <div className="flex items-center gap-x-2 font-primeform font-bold text-sm md:text-base lg:text-lg">
           <Image
             className="h-auto w-10 md:w-12 lg:w-14"
             alt="Logo Kesatria 2025"
@@ -36,12 +36,12 @@ const Navbar = () => {
           />
           <Link
             href={"/"}
-            className="font-primeform-bold text-lg md:text-xl lg:text-2xl text-[#FFE5C7]"
+            className="font-primeform-bold text-sm md:text-base lg:text-lg text-[#FFE5C7]"
           >
             PIONIR KESATRIA 2025
           </Link>
         </div>
-        <div className="flex items-center gap-x-6 md:gap-x-8 font-primeform font-bold text-[#FFE5C7] text-lg md:text-xl lg:text-2xl">
+        <div className="flex items-center gap-x-6 md:gap-x-8 font-primeform font-bold text-[#FFE5C7] text-sm md:text-base lg:text-lg">
           {MENU.map((item, index) => (
             <Link
               href={item.link}
@@ -58,7 +58,7 @@ const Navbar = () => {
       {/* Mobile Navbar */}
       <nav className="fixed z-[1000] w-full bg-gradient-to-r from-[#065B5B] from-50% to-[#035A7A] text-[#FFE5C7] shadow-md md:hidden">
         <div className="flex justify-between items-center px-4 py-2">
-          <div className="flex items-center gap-x-2 font-primeform font-bold text-lg">
+          <div className="flex items-center gap-x-2 font-primeform font-bold text-sm">
             <Image
               className="h-auto w-8"
               alt="Logo Kesatria 2025"
@@ -66,7 +66,7 @@ const Navbar = () => {
               width={71}
               height={72}
             />
-            <Link href={"/"} className="text-lg">
+            <Link href={"/"} className="text-sm">
               PIONIR KESATRIA 2025
             </Link>
           </div>
@@ -82,7 +82,7 @@ const Navbar = () => {
           </button>
         </div>
         {toggle && (
-          <div className="px-4 font-primeform font-bold bg-gradient-to-r from-[#065B5B] from-50% to-[#035A7A] text-lg">
+          <div className="px-4 font-primeform font-bold bg-gradient-to-r from-[#065B5B] from-50% to-[#035A7A] text-sm">
             {MENU.map((item, index) => (
               <Link
                 href={item.link}
