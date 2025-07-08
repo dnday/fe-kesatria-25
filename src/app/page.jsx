@@ -1,6 +1,6 @@
 "use client";
-import Chapter2 from "@/components/beranda/chapter2";
-// import Chapter1 from "@/components/beranda/chapter1";
+// import Chapter2 from "@/components/beranda/chapter2";
+import Chapter1 from "@/components/beranda/chapter1";
 // import Chapter2 from "@/components/beranda/chapter2";
 import Chapter3 from "@/components/beranda/chapter3";
 import SelamatDatang from "@/components/beranda/selamatdatang";
@@ -26,7 +26,7 @@ export default function Home() {
       <SelamatDatang />
       <SelamatDatangVideo />
       <Chapter1 />
-      <Chapter2 />
+      {/* <Chapter2 /> */}
       {/* <Chapter3 /> */}
       {/* <Footer /> */}
       {/* <Test /> */}
