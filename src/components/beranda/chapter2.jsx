@@ -87,7 +87,7 @@ const Chapter2_Desktop = () => {
           </p>
           <Link
             href={"/materi/" + link}
-            className="w-fit rounded-[1.5vw]  bg-[#A01326] hover:bg-[#8a1020] px-[2.5vw] duration-100"
+            className="w-fit rounded-[1.5vw] bg-[#A01326] hover:bg-[#8a1020] transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,209,63,0.7)] hover:border-[2px] hover:border-[#FFA514] px-[2.5vw]"
           >
             <p className="font-storybook text-[1.5vw] text-[#F9C157]">
               Baca Modul
@@ -101,7 +101,7 @@ const Chapter2_Desktop = () => {
   return (
     <div
       data-aos="fade-up"
-      className="flex min-h-[90vh] flex-col place-content-center items-center bg-[url('/images/background/pattern-parang-dark.png')] bg-size-[60%_60%_60%] bg-[#013047] z-[-2] py-[5vw] max-lg:hidden"
+      className="flex min-h-[90vh] flex-col place-content-center items-center bg-[url('/images/background/pattern-parang-dark.png')] bg-size-[60%_60%_60%] bg-[#013047] z-[-2] py-[20vw] max-lg:hidden"
     >
       <h1 className="font-storybook text-[4vw] text-[#ECC691] max-lg:text-[4.8vw] text-shadow-[inset_-1px_-1px_0px_0px_#FFFFFF40, inset_1px_1px_0px_0px_#00000059]">
         Bagian 2:

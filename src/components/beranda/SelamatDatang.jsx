@@ -61,10 +61,12 @@ const SelamatDatang = () => {
           width={800}
           height={1200}
         />
-        <div className="text-center text-[4vw] mt-[32vw] left-[10vw] z-30 md:mt-[20vw] lg:mt-[16vw] md:text-[3vw]">
-          <p>SELAMAT DATANG</p>
-          <p className="text-[7vw] md:text-[5vw]">Kesatria Muda</p>
-          <p>2025!</p>
+        <div className="text-center text-[4vw] text-[#0C1A35] mt-[32vw] left-[10vw] z-30 md:mt-[20vw] lg:mt-[16vw] md:text-[3vw] ">
+          <p className="font-primeform-bold">SELAMAT DATANG</p>
+          <p className="text-[7vw] font-storybook md:text-[5vw]">
+            Kesatria Muda
+          </p>
+          <p className="font-primeform-bold">2025!</p>
         </div>
       </div>
     </div>
