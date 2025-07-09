@@ -53,28 +53,44 @@ export default function Faq() {
   };
 
   return (
-    <div className="flex flex-col">
-      <div className="relative py-36 min-h-screen bg-[url('/images/background/pattern-parang-dark.svg')] bg-[size:80%] bg-repeat sm:bg-[size:75%] lg:bg-[size:70%] z-[-2] pb-[20vw] pt-[10vw] flex flex-col items-center justify-center"
+    <div className="relative flex flex-col min-h-screen">
+      {/* Background decorative images - placed first with lowest z-index */}
+      <div className="absolute h-full w-28 md:w-48 top-24 sm:top-12 md:top-0 lg:top-12 z-[1] self-start pointer-events-none">
+        <Image src="/buwong_merah.svg" fill alt="Decorative bird" />
+      </div>
+      <div className="absolute h-full w-20 top-28 md:top-4 md:w-28 z-[1] self-end pointer-events-none">
+        <Image src="/Bunga_kanan.svg" fill alt="Decorative flower right" />
+      </div>
+      <div className="absolute h-full w-20 bottom-0 md:w-28 z-[1] self-start pointer-events-none">
+        <Image src="/bunga_kiri.svg" fill alt="Decorative flower left" />
+      </div>
+
+      {/* Main content area */}
+      <div className="relative py-36 min-h-screen bg-[url('/images/background/pattern-parang-dark.svg')] bg-[size:80%] bg-repeat sm:bg-[size:75%] lg:bg-[size:70%] pb-[20vw] pt-[10vw] flex flex-col items-center justify-center z-[10]"
         style={{ backgroundSize: "100%, 100%, 100%" }}>
+        
         <h1
           data-aos="fade-up"
-          className="relative z-[30] font-storybook text-4xl text-[#ECC691] text-center text-shadow-[inset_-1px_-1px_0px_0px_#FFFFFF40, inset_1px_1px_0px_0px_#00000059] mb-4"
+          className="relative font-storybook text-4xl text-[#ECC691] text-center text-shadow-[inset_-1px_-1px_0px_0px_#FFFFFF40, inset_1px_1px_0px_0px_#00000059] mb-4 z-[20]"
         >
           Frequently Asked Questions
         </h1>
+        
         <p 
           data-aos="fade-up" 
           data-aos-delay="100"
-          className="w-[80vw] px-[6vw] text-center font-primeform-medium text-[1.2vw]/[1.8vw] md:text-[2vw]/[2.5vw] lg:text-[1.5vw]/[2vw] font-light text-[#ECC691] drop-shadow-[-20_0.4vw_0.2vw_rgba(0,0,0,0.6)] mb-8"
+          className="w-[80vw] px-[6vw] text-center font-primeform-medium text-[1.2vw]/[1.8vw] md:text-[2vw]/[2.5vw] lg:text-[1.5vw]/[2vw] font-light text-[#ECC691] drop-shadow-[-20_0.4vw_0.2vw_rgba(0,0,0,0.6)] mb-8 z-[20]"
         >
           Temukan jawaban atas pertanyaan yang sering ditanyakan seputar kegiatan dan materi. Jika ada pertanyaan lain, jangan ragu untuk menghubungi kami.
         </p>
-        <main className="w-[90%] md:w-2/3 mt-10 space-y-16">
+        
+        <main className="w-[90%] md:w-2/3 mt-10 space-y-16 relative z-[30]">
           {/*Search input*/}
           <form
             data-aos="fade-up"
             data-aos-delay="200"
             onSubmit={(e) => handleSubmit(e)}
+            className="relative z-[40]"
           >
             <label
               htmlFor="default-search"
@@ -83,7 +99,7 @@ export default function Faq() {
               Search
             </label>
             <div className="relative">
-              <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+              <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none z-[41]">
                 <svg
                   className="w-4 h-4 text-[#013047]"
                   aria-hidden="true"
@@ -105,12 +121,12 @@ export default function Faq() {
                 value={userInput}
                 type="search"
                 id="default-search"
-                className="relative z-[80] block w-full p-4 pl-10 text-base text-[#013047] font-primeform-medium border border-[#A01326] rounded-lg bg-[#ECC691] focus:outline-none focus:ring-[#A01326] focus:border-[#A01326] placeholder-[#013047] placeholder-opacity-60"
+                className="relative block w-full p-4 pl-10 text-base text-[#013047] font-primeform-medium border border-[#A01326] rounded-lg bg-[#ECC691] focus:outline-none focus:ring-[#A01326] focus:border-[#A01326] placeholder-[#013047] placeholder-opacity-60 z-[42]"
                 placeholder="Cari di sini..."
               />
               <button
                 type="submit"
-                className="text-[#ECC691] hidden md:block absolute z-[81] right-2.5 bottom-2.5 bg-[#A01326] hover:bg-[#8a1020] hover:shadow-[0_0_15px_rgba(255,209,63,0.7)] hover:border-[2px] hover:border-[#F9C157] focus:outline-none active:scale-95 font-primeform-medium font-medium rounded-lg text-base px-4 py-2 transition-all duration-300"
+                className="text-[#ECC691] hidden md:block absolute right-2.5 bottom-2.5 bg-[#A01326] hover:bg-[#8a1020] hover:shadow-[0_0_15px_rgba(255,209,63,0.7)] hover:border-[2px] hover:border-[#F9C157] focus:outline-none active:scale-95 font-primeform-medium font-medium rounded-lg text-base px-4 py-2 transition-all duration-300 z-[43]"
               >
                 Search
               </button>
@@ -122,7 +138,7 @@ export default function Faq() {
             data-aos="fade-up"
             data-aos-delay="400"
             about="Pertanyaan umum"
-            className="bg-[#ECC691] w-full rounded-lg flex relative z-[100] flex-col items-center pt-5 pb-16 px-10 shadow-lg border-2 border-[#A01326]"
+            className="bg-[#ECC691] w-full rounded-lg flex relative flex-col items-center pt-5 pb-16 px-10 shadow-lg border-2 border-[#A01326] z-[40]"
           >
             <h1 className="font-storybook font-extrabold text-xl text-[#013047] mb-2">
               Pertanyaan umum
@@ -141,7 +157,7 @@ export default function Faq() {
           </div>
           {/* <div
             about="Pertanyaan Materi"
-            className="bg-[#ECC691] w-full rounded-lg flex flex-col items-center pt-5 pb-16 px-10 shadow-lg border-2 border-[#A01326]"
+            className="bg-[#ECC691] w-full rounded-lg flex flex-col items-center pt-5 pb-16 px-10 shadow-lg border-2 border-[#A01326] z-[40]"
           >
             <h1 className="font-storybook font-extrabold text-xl text-[#013047] mb-2">
               Seputar Materi
@@ -160,15 +176,6 @@ export default function Faq() {
           </div> */}
         </main>
       </div>
-      <div className="absolute h-full z-[3] w-28 md:w-48 -mt-[12rem] sm:-mt-[15rem] md:-mt-96 lg:-mt-48 self-start">
-        <Image src="/buwong_merah.svg" fill />
-      </div>
-      <div className="absolute h-full w-20 mt-4 md:mt-0 md:w-28 z-[5] self-end">
-        <Image src="/Bunga_kanan.svg" fill />
-      </div>
-      <div className="absolute h-full w-20 flex flex-row items-end mt-[50rem] md:mt-96 md:w-28 z-[0] self-start">
-        <Image src="/bunga_kiri.svg" fill />
-      </div>
     </div>
   );
 }
@@ -181,11 +188,11 @@ const QAPlaceholder = ({ question, answer }) => {
       onClick={() => {
         setIsActive(!isActive);
       }}
-      className="flex flex-col cursor-pointer transition-all duration-300"
+      className="flex flex-col cursor-pointer transition-all duration-300 relative z-[50]"
     >
       <div
         className={
-          "flex flex-row gap-4 items-center px-5 py-3 text-[#013047] font-primeform-medium bg-[#F9C157] relative z-[10] rounded-lg transition-all duration-300 hover:shadow-md border border-[#A01326]"
+          "flex flex-row gap-4 items-center px-5 py-3 text-[#013047] font-primeform-medium bg-[#F9C157] relative rounded-lg transition-all duration-300 hover:shadow-md border border-[#A01326] z-[51]"
         }
       >
         <div className="font-bold text-[#A01326]">Q:</div>
@@ -207,7 +214,7 @@ const QAPlaceholder = ({ question, answer }) => {
       >
         <div
           className={
-            "select-none flex flex-row gap-4 bg-[#013047] bg-opacity-90 rounded-lg pt-5 mt-[-15px] text-[#ECC691] font-primeform-medium text-base px-5 py-4 transition-opacity duration-300 border-x border-b border-[#A01326] " +
+            "select-none flex flex-row gap-4 bg-[#013047] bg-opacity-90 rounded-lg pt-5 mt-[-15px] text-[#ECC691] font-primeform-medium text-base px-5 py-4 transition-opacity duration-300 border-x border-b border-[#A01326] z-[52] " +
             (isActive ? "opacity-100" : "opacity-0")
           }
         >
