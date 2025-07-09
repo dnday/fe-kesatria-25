@@ -2,16 +2,16 @@ import Image from "next/image";
 
 const SelamatDatang = () => {
   return (
-    <div className="relative w-full flex justify-center min-h-[60vw] md:h-[42svh] xl:h-[105svh]">
+    <div className="relative w-full flex justify-center">
       <Image
-        className="absolute w-[20vw] h-auto z-0 right-[0] top-[10vw] md:top-[2vw] lg:top-[0]"
+        className="absolute w-[20vw] h-auto z-0 right-[0] top-[7vw] sm:top-[0] md:top-[2vw] lg:top-[0]"
         alt="pojok atas"
         src="/images/selamatdatang/pojokatas.webp"
         width={800}
         height={800}
       />
       <Image
-        className="absolute w-[30vw] h-auto z-0 left-0 top-[8vw] md:top-[2vw] lg:top-[0]"
+        className="absolute w-[30vw] h-auto z-0 left-0 top-[6vw] sm:top-[1vw] md:top-[2vw] lg:top-[0]"
         alt="kain merah kiri"
         src="/images/selamatdatang/KainMerahKiri.webp"
         width={800}
