@@ -18,7 +18,7 @@ const SelamatDatang = () => {
         height={800}
       />
       <Image
-        className="absolute w-[30vw] top-[45vw] h-auto z-10 right-[0] md:top-[20vw] lg:top-[16vw]"
+        className="absolute w-[30vw] top-[45vw] h-auto right-[0] md:top-[20vw] lg:top-[16vw]"
         alt="tutek"
         src="/images/selamatdatang/tutek.webp"
         width={800}
@@ -39,7 +39,7 @@ const SelamatDatang = () => {
         height={800}
       />
       <Image
-        className="absolute w-[100vw] top-[63vw] h-auto z-10 md:top-[34vw] lg:top-[30vw]"
+        className="absolute w-[100vw] top-[63vw] h-auto md:top-[34vw] lg:top-[30vw] z-10"
         alt="kain kuning"
         src="/images/selamatdatang/kainnkuning.webp"
         width={800}
@@ -53,9 +53,12 @@ const SelamatDatang = () => {
         height={800}
       />
 
-      <div className="relative flex flex-row justify-center gap-0 md:gap-[8vw]">
+      <div
+        data-aos="zoom-in"
+        className="relative z-50 flex flex-row justify-center gap-0 md:gap-[8vw]"
+      >
         <Image
-          className="w-[45vw] h-[55vw] mt-[20vw] z-30 md:w-[30vw] md:h-[40vw] md:mt-[10vw] lg:mt-[5vw]"
+          className="w-[45vw] h-[55vw] mt-[20vw] z-50 md:w-[30vw] md:h-[40vw] md:mt-[10vw] lg:mt-[5vw]"
           alt="nala"
           src="/images/selamatdatang/nala-menyapa2.webp"
           width={800}
