@@ -1,6 +1,7 @@
 import "./globals.css";
 import Navbar from "../components/layout/Navbar.jsx";
 import Footer from "../components/layout/Footer.jsx";
+import AOSInit from "@/components/layout/AOSInit";
 // import AOS from "aos";
 // import "aos/dist/aos.css";
 
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
           backgroundSize: "100%, 100%, 100%",
         }}
       >
+        <AOSInit /> {/* Inisialisasi AOS di sini */}
         <Navbar />
         {children}
         <Footer />
