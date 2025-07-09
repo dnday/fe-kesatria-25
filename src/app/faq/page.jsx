@@ -54,13 +54,21 @@ export default function Faq() {
 
   return (
     <div className="flex flex-col">
-      <div className="relative py-36 min-h-screen bg-pattern-cream-2 bg-repeat bg-contain flex flex-col items-center justify-center">
+      <div className="relative py-36 min-h-screen bg-[url('/images/background/pattern-parang-dark.svg')] bg-[size:80%] bg-repeat sm:bg-[size:75%] lg:bg-[size:70%] z-[-2] pb-[20vw] pt-[10vw] flex flex-col items-center justify-center"
+        style={{ backgroundSize: "100%, 100%, 100%" }}>
         <h1
           data-aos="fade-up"
-          className="relative z-[30] font-alstoria text-4xl text-green-400 text-center"
+          className="relative z-[30] font-storybook text-4xl text-[#ECC691] text-center text-shadow-[inset_-1px_-1px_0px_0px_#FFFFFF40, inset_1px_1px_0px_0px_#00000059] mb-4"
         >
           Frequently Asked Questions
         </h1>
+        <p 
+          data-aos="fade-up" 
+          data-aos-delay="100"
+          className="w-[80vw] px-[6vw] text-center font-primeform-medium text-[1.2vw]/[1.8vw] md:text-[2vw]/[2.5vw] lg:text-[1.5vw]/[2vw] font-light text-[#ECC691] drop-shadow-[-20_0.4vw_0.2vw_rgba(0,0,0,0.6)] mb-8"
+        >
+          Temukan jawaban atas pertanyaan yang sering ditanyakan seputar kegiatan dan materi. Jika ada pertanyaan lain, jangan ragu untuk menghubungi kami.
+        </p>
         <main className="w-[90%] md:w-2/3 mt-10 space-y-16">
           {/*Search input*/}
           <form
@@ -77,7 +85,7 @@ export default function Faq() {
             <div className="relative">
               <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                 <svg
-                  className="w-4 h-4 text-gray-500"
+                  className="w-4 h-4 text-[#013047]"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -97,12 +105,12 @@ export default function Faq() {
                 value={userInput}
                 type="search"
                 id="default-search"
-                className="relative z-[80] block w-full p-4 pl-10 text-base text-neutral-100 font-creato border border-green-400 rounded-lg bg-green-400 focus:outline-none focus:ring-green-200 focus:border-green-200"
+                className="relative z-[80] block w-full p-4 pl-10 text-base text-[#013047] font-primeform-medium border border-[#A01326] rounded-lg bg-[#ECC691] focus:outline-none focus:ring-[#A01326] focus:border-[#A01326] placeholder-[#013047] placeholder-opacity-60"
                 placeholder="Cari di sini..."
               />
               <button
                 type="submit"
-                className="text-green-400 hidden md:block absolute z-[81] right-2.5 bottom-2.5 bg-neutral-100 hover:bg-red-100 hover:text-neutral-100 focus:outline-none active:scale-95 font-creato font-medium rounded-lg text-base px-4 py-2"
+                className="text-[#ECC691] hidden md:block absolute z-[81] right-2.5 bottom-2.5 bg-[#A01326] hover:bg-[#8a1020] hover:shadow-[0_0_15px_rgba(255,209,63,0.7)] hover:border-[2px] hover:border-[#F9C157] focus:outline-none active:scale-95 font-primeform-medium font-medium rounded-lg text-base px-4 py-2 transition-all duration-300"
               >
                 Search
               </button>
@@ -114,9 +122,9 @@ export default function Faq() {
             data-aos="fade-up"
             data-aos-delay="400"
             about="Pertanyaan umum"
-            className="bg-green-400 w-full rounded-lg flex relative z-[100] flex-col items-center pt-5 pb-16 px-10"
+            className="bg-[#ECC691] w-full rounded-lg flex relative z-[100] flex-col items-center pt-5 pb-16 px-10 shadow-lg border-2 border-[#A01326]"
           >
-            <h1 className="font-creato font-extrabold text-xl text-neutral-100">
+            <h1 className="font-storybook font-extrabold text-xl text-[#013047] mb-2">
               Pertanyaan umum
             </h1>
             <div className="w-full space-y-5 mt-5">
@@ -133,9 +141,9 @@ export default function Faq() {
           </div>
           {/* <div
             about="Pertanyaan Materi"
-            className="bg-green-400 w-full rounded-lg flex flex-col items-center pt-5 pb-16 px-10"
+            className="bg-[#ECC691] w-full rounded-lg flex flex-col items-center pt-5 pb-16 px-10 shadow-lg border-2 border-[#A01326]"
           >
-            <h1 className="font-creato font-extrabold text-xl text-neutral-100">
+            <h1 className="font-storybook font-extrabold text-xl text-[#013047] mb-2">
               Seputar Materi
             </h1>
             <div className="w-full space-y-5 mt-5">
@@ -177,16 +185,16 @@ const QAPlaceholder = ({ question, answer }) => {
     >
       <div
         className={
-          "flex flex-row gap-4 items-center px-5 py-2 text-green-400 font-creato bg-neutral-100 relative z-[10] rounded-lg transition-transform duration-300"
+          "flex flex-row gap-4 items-center px-5 py-3 text-[#013047] font-primeform-medium bg-[#F9C157] relative z-[10] rounded-lg transition-all duration-300 hover:shadow-md border border-[#A01326]"
         }
       >
-        <div className="font-bold">Q:</div>
+        <div className="font-bold text-[#A01326]">Q:</div>
         <div className="flex flex-row justify-between w-full">
-          <div className="w-[90%] text-justify select-none">{question}</div>
+          <div className="w-[90%] text-justify select-none font-medium">{question}</div>
           <RiArrowDownSLine
             size={24}
             className={
-              "duration-300 transform " + (isActive ? "rotate-180" : "rotate-0")
+              "duration-300 transform text-[#A01326] " + (isActive ? "rotate-180" : "rotate-0")
             }
           />
         </div>
@@ -199,12 +207,12 @@ const QAPlaceholder = ({ question, answer }) => {
       >
         <div
           className={
-            "select-none flex flex-row gap-4 bg-green-100 rounded-lg pt-5 mt-[-15px] text-green-400 font-creato text-base px-5 py-2 transition-opacity duration-300 " +
+            "select-none flex flex-row gap-4 bg-[#013047] bg-opacity-90 rounded-lg pt-5 mt-[-15px] text-[#ECC691] font-primeform-medium text-base px-5 py-4 transition-opacity duration-300 border-x border-b border-[#A01326] " +
             (isActive ? "opacity-100" : "opacity-0")
           }
         >
-          <div className="font-bold">A:</div>
-          <div>{answer}</div>
+          <div className="font-bold text-[#F9C157]">A:</div>
+          <div className="font-light">{answer}</div>
         </div>
       </div>
     </div>
