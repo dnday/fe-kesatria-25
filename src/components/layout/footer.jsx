@@ -5,6 +5,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="relative w-full mx-auto ">
+      <div className="relative w-full h-[15vw] md:h-[15vw]"></div>
       {/* Layer 1 */}
       <Image
         className="absolute w-[20vw] bottom-10 h-auto z-0 left-[7vw] md:w-[20vw]"
