@@ -53,10 +53,11 @@ export default function Faq() {
   };
 
   return (
-    <div className="min-h-screen bg-[url('/images/background/pattern-parang-dark.svg')] bg-[size:80%] bg-repeat sm:bg-[size:75%] lg:bg-[size:70%] py-36 pb-[20vw] pt-[10vw]"
-      style={{ backgroundSize: "100%, 100%, 100%" }}>
-      
-      {/* Decorative Images */}
+    <div
+      className="min-h-screen bg-[url('/images/background/pattern-parang-dark.svg')] bg-[size:80%] bg-repeat sm:bg-[size:75%] lg:bg-[size:70%] py-36 pb-[40vw] pt-[10vw]"
+      style={{ backgroundSize: "100%, 100%, 100%" }}
+    >
+      {/* Decorative Images
       <div className="fixed h-28 w-28 md:h-48 md:w-48 top-24 sm:top-12 md:top-0 lg:top-12 left-0 pointer-events-none opacity-70">
         <Image src="/buwong_merah.svg" fill alt="Decorative bird" />
       </div>
@@ -65,31 +66,33 @@ export default function Faq() {
       </div>
       <div className="fixed h-20 w-20 md:h-28 md:w-28 bottom-10 left-0 pointer-events-none opacity-70">
         <Image src="/bunga_kiri.svg" fill alt="Decorative flower left" />
-      </div>
-
+      </div> */}
       {/* Main Content */}
-      <div className="container mx-auto px-4 flex flex-col items-center">
+      <div className="container mx-auto py-6 px-4 flex flex-col items-center">
         <h1
           data-aos="fade-up"
           className="font-storybook text-4xl md:text-5xl lg:text-6xl text-[#ECC691] text-center mb-4"
           style={{
-            textShadow: "inset -1px -1px 0px 0px rgba(255,255,255,0.4), inset 1px 1px 0px 0px rgba(0,0,0,0.35)"
+            textShadow:
+              "inset -1px -1px 0px 0px rgba(255,255,255,0.4), inset 1px 1px 0px 0px rgba(0,0,0,0.35)",
           }}
         >
           Frequently Asked Questions
         </h1>
-        
-        <p 
-          data-aos="fade-up" 
+
+        <p
+          data-aos="fade-up"
           data-aos-delay="100"
           className="w-full max-w-4xl px-6 text-center font-primeform-medium text-lg md:text-xl lg:text-2xl font-light text-[#ECC691] mb-8"
           style={{
-            dropShadow: "-20px 4px 2px rgba(0,0,0,0.6)"
+            dropShadow: "-20px 4px 2px rgba(0,0,0,0.6)",
           }}
         >
-          Temukan jawaban atas pertanyaan yang sering ditanyakan seputar kegiatan dan materi. Jika ada pertanyaan lain, jangan ragu untuk menghubungi kami.
+          Temukan jawaban atas pertanyaan yang sering ditanyakan seputar
+          kegiatan dan materi. Jika ada pertanyaan lain, jangan ragu untuk
+          menghubungi kami.
         </p>
-        
+
         {/* Main Content Area */}
         <div className="w-full max-w-4xl space-y-16">
           {/* Search Form */}
@@ -158,7 +161,8 @@ export default function Faq() {
               ) : (
                 <div className="text-center py-8">
                   <p className="text-[#013047] font-primeform-medium">
-                    Tidak ada pertanyaan yang ditemukan untuk pencarian "{userInput}"
+                    Tidak ada pertanyaan yang ditemukan untuk pencarian "
+                    {userInput}"
                   </p>
                 </div>
               )}
@@ -185,7 +189,9 @@ const QAPlaceholder = ({ question, answer }) => {
       >
         <div className="font-bold text-[#A01326] text-lg">Q:</div>
         <div className="flex flex-row justify-between w-full items-center">
-          <div className="w-[90%] text-justify font-medium pr-4">{question}</div>
+          <div className="w-[90%] text-justify font-medium pr-4">
+            {question}
+          </div>
           <RiArrowDownSLine
             size={24}
             className={`duration-300 transform text-[#A01326] flex-shrink-0 ${
@@ -194,7 +200,7 @@ const QAPlaceholder = ({ question, answer }) => {
           />
         </div>
       </div>
-      
+
       <div
         className={`overflow-hidden transition-all duration-300 ${
           isActive ? "max-h-96 opacity-100" : "max-h-0 opacity-0"

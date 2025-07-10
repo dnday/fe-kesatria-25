@@ -5,6 +5,7 @@ import "swiper/css";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const CARDCONTENT = [
   {
@@ -603,6 +604,20 @@ const TransitiAtas = () => {
       />
 
       {/* Gambar yang diletakkan di atas latar belakang */}
+      {/* <motion.div
+        whileHover={{
+          scale: 1.05,
+          rotate: [0, 2, 0, -2, 0],
+          transition: {
+            duration: 0.5,
+            rotate: {
+              repeat: Infinity,
+              repeatType: "mirror",
+              duration: 2,
+            },
+          },
+        }}
+      > */}
       <Image
         className="absolute left-0 top-0 w-[13.5vw] translate-x-[24vw] translate-y-[18vw] z-[200]"
         alt="Bulu Kuning"
@@ -610,6 +625,7 @@ const TransitiAtas = () => {
         width={100}
         height={100}
       />
+      {/* </motion.div> */}
 
       <Image
         className="absolute right-0 top-0 w-[13vw] translate-x-[-24vw] translate-y-[20vw] z-[200]"

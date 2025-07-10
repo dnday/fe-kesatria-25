@@ -492,7 +492,7 @@ const TransitiAtas = () => {
 
 const Content = () => {
   return (
-    <div className="relative z-[999] flex min-h-screen w-full flex-col place-content-center items-center gap-[5vw] px-[9.9vw] py-[0vw] pb-[10vw]">
+    <div className="relative z-[999] flex min-h-screen w-full flex-col place-content-center items-center gap-[5vw] px-[9.9vw] py-[0vw] pb-[30vw]">
       <JudulChapter />
       <JudulChapterHP />
       <KesatriaMudaBerkarya />
