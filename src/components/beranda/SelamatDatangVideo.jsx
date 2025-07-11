@@ -35,41 +35,60 @@ const Background = () => {
   );
 };
 
-const Video = () => {
-  return (
-    <div className="relative w-full flex items-center justify-center">
-      <Image
-        className="absolute left-[12vw] w-[25vw] h-auto"
-        alt="sayap"
-        src="/images/selamatdatangvideo/sayapkiri.webp"
-        width={800}
-        height={800}
-      />
-      <Image
-        className="absolute right-[12vw] w-[25vw] h-auto"
-        alt="sayap"
-        src="/images/selamatdatangvideo/sayapkanan.webp"
-        width={800}
-        height={800}
-      />
-      <div className="relative h-auto w-[45vw] bg-[#A01326] rounded-2xl border-6 border-[#A01326] z-10 md:rounded-4xl md:p-2">
-        <iframe
-          className="w-full mx-auto aspect-video rounded-2xl"
-          src="https://www.youtube.com/embed/zvbdEJgUSb0?si=Nc5-cCmNifvP8s0U"
-        />
-      </div>
-    </div>
-  );
-};
-
 const SelamatDatangVideo = () => {
   return (
     <div className="relative">
       <Background />
       <div className="flex flex-col absolute justify-center items-center inset-0 text-[#F9C157] font-bold">
-        <p className="text-[2vw]">SELAMAT DATANG</p>
-        <p className="text-[4vw] font-storybook">KESATRIA MUDA 2025!</p>
-        <Video />
+        <div data-aos="fade-up" className="text-center">
+          <p className="text-[2vw]">SELAMAT DATANG</p>
+          <p className="text-[4vw] font-storybook">KESATRIA MUDA 2025!</p>
+        </div>
+
+        {/* Video dan Sayap */}
+        <div className="relative w-full flex items-center justify-center mt-[3vw]">
+          {/* Sayap kiri */}
+          <div
+            data-aos="fade-left"
+            className="absolute left-[12vw] w-[25vw] h-auto"
+          >
+            <Image
+              className="w-full h-auto"
+              alt="sayap kiri"
+              src="/images/selamatdatangvideo/sayapkiri.webp"
+              width={800}
+              height={800}
+            />
+          </div>
+
+          {/* Sayap kanan */}
+          <div
+            data-aos="fade-right"
+            className="absolute right-[12vw] w-[25vw] h-auto"
+          >
+            <Image
+              className="w-full h-auto"
+              alt="sayap kanan"
+              src="/images/selamatdatangvideo/sayapkanan.webp"
+              width={800}
+              height={800}
+            />
+          </div>
+
+          {/* Frame Video */}
+          <div
+            data-aos="zoom-in"
+            className="relative h-auto w-[45vw] bg-[#A01326] rounded-2xl border-6 border-[#A01326] z-10 md:rounded-4xl md:p-2"
+          >
+            <iframe
+              className="w-full mx-auto aspect-video rounded-2xl"
+              src="https://www.youtube.com/embed/jbaLBFLdMMA"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </div>
+
         <Image
           className="absolute w-[100vw] h-[20vw] bottom-[-11vw] z-10"
           alt="wayang"
