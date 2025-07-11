@@ -15,7 +15,7 @@ const Sejarah = () => {
             width={800}
             height={800}
           />
-          <div className="flex flex-col  mt-[5v] z-10">
+          <div data-aos="fade-right" className="flex flex-col  mt-[5v] z-10">
             <div className="flex flex-row">
               <p className="text-[2vw] font-storybook">{content.title2}</p>
               <Image
@@ -32,7 +32,10 @@ const Sejarah = () => {
             <Button className="mt-[1vw]" />
           </div>
         </div>
-        <div className="flex flex-col mt-[-55vw] ml-[50vw] z-10 lg:mt-0 lg:ml-[10vw]">
+        <div
+          data-aos="fade-left"
+          className="flex flex-col mt-[-55vw] ml-[50vw] z-10 lg:mt-0 lg:ml-[10vw]"
+        >
           <Box
             bgColor="#A01326"
             imageSrc="/images/chapter1/sample.jpg"
@@ -48,7 +51,7 @@ const Sejarah = () => {
           />
         </div>
       </div>
-      <div className="flex flex-col items-center">
+      <div data-aos="fade-up" className="flex flex-col items-center">
         <p className="text-[2vw] font-storybook">{content.title3}</p>
         <p className="text-[1.5vw] w-[80vw] font-primeform-medium text-center">
           {content.content3}
