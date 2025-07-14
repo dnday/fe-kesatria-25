@@ -3,20 +3,30 @@ import Image from "next/image";
 const SelamatDatang = () => {
   return (
     <div className="relative w-full flex justify-center">
-      <Image
+      <div
+        data-aos="fade-down"
         className="absolute w-[20vw] h-auto z-0 right-[0] top-[7vw] sm:top-[0] md:top-[2vw] lg:top-[0]"
-        alt="pojok atas"
-        src="/images/selamatdatang/pojokatas.webp"
-        width={800}
-        height={800}
-      />
-      <Image
+      >
+        <Image
+          className="w-full h-auto"
+          alt="pojok atas"
+          src="/images/selamatdatang/pojokatas.webp"
+          width={800}
+          height={800}
+        />
+      </div>
+      <div
+        data-aos="fade-down"
         className="absolute w-[30vw] h-auto z-0 left-0 top-[6vw] sm:top-[1vw] md:top-[2vw] lg:top-[0]"
-        alt="kain merah kiri"
-        src="/images/selamatdatang/KainMerahKiri.webp"
-        width={800}
-        height={800}
-      />
+      >
+        <Image
+          className="w-full h-auto"
+          alt="kain merah kiri"
+          src="/images/selamatdatang/KainMerahKiri.webp"
+          width={800}
+          height={800}
+        />
+      </div>
       <Image
         className="absolute w-[30vw] top-[45vw] h-auto right-[0] md:top-[20vw] lg:top-[16vw]"
         alt="tutek"

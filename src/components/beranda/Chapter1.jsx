@@ -7,20 +7,22 @@ import Sejarah from "./Sejarah.jsx";
 const Chapter1 = () => {
   return (
     <section className="relative flex flex-col items-center w-full text-[#013047]">
-      <Image
-        className="absolute w-[39vw] h-auto z-20 mt-[8vw]"
-        alt="sayap"
-        src="/images/chapter1/sayap-pair.webp"
-        width={800}
-        height={800}
-      />
-      <h1 className="text-[3vw] font-storybook mt-[8vw]">{content.title1}</h1>
-      <p className="text-[2vw] font-storybook">{content.subTitle1}</p>
-      <p className="text-[1.5vw] text-center mx-[10vw] mt-[1vw] font-primeform-medium">
-        {content.content1}
-      </p>
+      <div data-aos="fade-up">
+        <h1 className="text-[3vw] text-center font-storybook mt-[8vw]">
+          {content.title1}
+        </h1>
+        <p className="text-[2vw] text-center font-storybook">
+          {content.subTitle1}
+        </p>
+        <p className="text-[1.5vw] text-center mx-[10vw] mt-[1vw] font-primeform-medium">
+          {content.content1}
+        </p>
+      </div>
 
-      <div className="w-[90vw] h-[50vw] bg-[#013047] mt-[1vw] rounded-4xl flex flex-col items-center border-6 shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] lg:flex-row lg:w-[80vw] lg:h-[40vw]">
+      <div
+        data-aos="fade-up"
+        className="w-[90vw] h-[50vw] bg-[#013047] mt-[1vw] rounded-4xl flex flex-col items-center border-6 shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] lg:flex-row lg:w-[80vw] lg:h-[40vw]"
+      >
         <Box
           bgColor="#A01326"
           imageSrc="/images/chapter1/sample.jpg"
@@ -31,7 +33,9 @@ const Chapter1 = () => {
           {content.personalbranding}
         </p>
       </div>
-      <Button className="mt-[-1vw]" />
+      <div data-aos="fade-up">
+        <Button className="mt-[-1vw] z-30" />
+      </div>
       <Image
         className="w-[20vw] h-auto mt-[3vw]"
         alt="awan"
