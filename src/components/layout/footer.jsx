@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="relative w-full mx-auto">
       {/* Layer 1 */}
       <Image
-        className="absolute w-[20vw] bottom-10 h-auto z-0 left-[7vw] md:w-[20vw]"
+        className="relative w-[20vw] bottom-10 h-auto z-0 left-[7vw] md:w-[20vw]"
         alt="tugu"
         src="/images/footer/tugu.png"
         width={800}

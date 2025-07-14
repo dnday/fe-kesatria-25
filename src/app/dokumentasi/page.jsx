@@ -2,28 +2,22 @@ import Link from "next/link";
 
 const dokumentasi = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-[5vw] min-h-screen text-white text-[3vw] xl:flex-row">
-      <Link href="/dokumentasi/day1">
-        <div
-          className="bg-cover w-[50vw] h-[40vw] rounded-3xl flex items-center justify-center transition duration-300 cursor-pointer border-8 border-[#A01326] hover:border-[#720e1b] xl:w-[25vw] xl:h-[15vw]"
-          style={{
-            backgroundImage: "url('/images/dokumentasi/thumbnail.webp')",
-          }}
-        >
-          Day 1
-        </div>
-      </Link>
+    <div className="flex flex-col items-center justify-center w-full h-screen xl:flex-row text-white font-bold text-[5vw] gap-[5vw]">
+      <div data-aos="fade-right" className="flex flex-col items-center">
+        <Link href="/dokumentasi/day1">
+          <div className="bg-[#013047] w-[40vw] h-[30vw] md:w-[30vw] md:h-[20vw] xl:w-[20vw] xl:h-[15vw] rounded-2xl text-center justify-center items-center flex hover:cursor-pointer hover:bg-[#014a6b] transition-all duration-300">
+            Day 1
+          </div>
+        </Link>
+      </div>
 
-      <Link href="/dokumentasi/day2">
-        <div
-          className="bg-cover w-[50vw] h-[40vw] rounded-3xl flex items-center justify-center transition duration-300 cursor-pointer border-8 border-[#A01326] hover:border-[#720e1b] xl:w-[25vw] xl:h-[15vw]"
-          style={{
-            backgroundImage: "url('/images/dokumentasi/thumbnail.webp')",
-          }}
-        >
-          Day 2
-        </div>
-      </Link>
+      <div data-aos="fade-left">
+        <Link href="/dokumentasi/day2">
+          <div className="bg-[#013047] w-[40vw] h-[30vw] md:w-[30vw] md:h-[20vw] xl:w-[20vw] xl:h-[15vw] rounded-2xl text-center justify-center items-center flex hover:cursor-pointer hover:bg-[#014a6b] transition-all duration-300">
+            Day 2
+          </div>
+        </Link>
+      </div>
     </div>
   );
 };
