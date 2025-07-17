@@ -21,30 +21,23 @@ export default function Home() {
       <meta name="description" content="Kegiatan Penerimaan Mahasiswa Baru Fakultas Teknik UGM Tahun 2024" />
       <meta name="keywords" content="Pionir, Kesatria, FT, UGM, Teknik, PPSMB, Maba" />
       <link rel="icon" href="/images/logo/logo_yellow.svg"/> */}
-      <SelamatDatang />
+      {/* <SelamatDatang />
       <SelamatDatangVideo />
       <Chapter1 />
       <Chapter2 />
-      <Chapter3 />
+      <Chapter3 /> */}
       {/* <Footer /> */}
-      {/* <iframe
+      <iframe
+        className="fixed top-[80px] left-[50px] bottom-[50px] w-[900vw] h-[900vh] border-none"
         src="https://ft-digitaltwin3d.id/"
-        width="1000vw"
-        height="1000vh"
         frameBorder="0"
         allowFullScreen
-        style={{
-          border: "none",
-          position: "fixed",
-          top: 0,
-          left: 0,
-          zIndex: 9999,
-        }}
+        style={{ zIndex: 9999 }}
       >
         <a href="https://ft-digitaltwin3d.id/">
           FT Digital Twin 3D - Fakultas Teknik UGM
         </a>
-      </iframe> */}
+      </iframe>
       {/* <iframe
         frameborder="0"
         src="https://itch.io/embed/2382211"
