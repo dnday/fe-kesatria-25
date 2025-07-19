@@ -28,25 +28,18 @@ export default function Home() {
       <Chapter2 />
       <Chapter3 />
       <AgendaAtribut />
-      {/* <Footer /> */}
-      {/* <iframe
+      {/* <Footer />
+      <iframe
+        className="fixed top-[80px] left-[50px] bottom-[50px] w-[900vw] h-[900vh] border-none"
         src="https://ft-digitaltwin3d.id/"
-        width="1000vw"
-        height="1000vh"
         frameBorder="0"
         allowFullScreen
-        style={{
-          border: "none",
-          position: "fixed",
-          top: 0,
-          left: 0,
-          zIndex: 9999,
-        }}
+        style={{ zIndex: 9999 }}
       >
         <a href="https://ft-digitaltwin3d.id/">
           FT Digital Twin 3D - Fakultas Teknik UGM
         </a>
-      </iframe> */}
+      </iframe>
       {/* <iframe
         frameborder="0"
         src="https://itch.io/embed/2382211"

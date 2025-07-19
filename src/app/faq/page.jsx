@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { listPertanyaanUmum, listPertanyaanMateri } from "./listPertanyaan";
 import AOS from "aos";
 import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Faq() {
   const [userInput, setUserInput] = useState("");
@@ -15,7 +16,8 @@ export default function Faq() {
 
   useEffect(() => {
     AOS.init({
-      duration: 500,
+      duration: 700,
+      easing: "ease-in-out",
     });
   });
 
@@ -57,21 +59,11 @@ export default function Faq() {
       className="min-h-screen bg-[url('/images/background/pattern-parang-dark.svg')] bg-[size:80%] bg-repeat sm:bg-[size:75%] lg:bg-[size:70%] py-36 pb-[40vw] pt-[10vw]"
       style={{ backgroundSize: "100%, 100%, 100%" }}
     >
-      {/* Decorative Images
-      <div className="fixed h-28 w-28 md:h-48 md:w-48 top-24 sm:top-12 md:top-0 lg:top-12 left-0 pointer-events-none opacity-70">
-        <Image src="/buwong_merah.svg" fill alt="Decorative bird" />
-      </div>
-      <div className="fixed h-20 w-20 md:h-28 md:w-28 top-28 md:top-4 right-0 pointer-events-none opacity-70">
-        <Image src="/Bunga_kanan.svg" fill alt="Decorative flower right" />
-      </div>
-      <div className="fixed h-20 w-20 md:h-28 md:w-28 bottom-10 left-0 pointer-events-none opacity-70">
-        <Image src="/bunga_kiri.svg" fill alt="Decorative flower left" />
-      </div> */}
       {/* Main Content */}
-      <div className="container mx-auto py-6 px-4 flex flex-col items-center">
+      <div className="container mx-auto py-6 px-6 md:px-12 flex flex-col items-center">
         <h1
           data-aos="fade-up"
-          className="font-storybook text-4xl md:text-5xl lg:text-6xl text-[#ECC691] text-center mb-4"
+          className="font-storybook text-4xl md:text-6xl lg:text-7xl text-[#ECC691] text-center mb-6 md:mb-8"
           style={{
             textShadow:
               "inset -1px -1px 0px 0px rgba(255,255,255,0.4), inset 1px 1px 0px 0px rgba(0,0,0,0.35)",
@@ -83,7 +75,7 @@ export default function Faq() {
         <p
           data-aos="fade-up"
           data-aos-delay="100"
-          className="w-full max-w-4xl px-6 text-center font-primeform-medium text-lg md:text-xl lg:text-2xl font-light text-[#ECC691] mb-8"
+          className="w-full max-w-5xl px-8 md:px-12 text-center font-primeform-medium text-lg md:text-2xl font-light text-[#ECC691] mb-10"
           style={{
             dropShadow: "-20px 4px 2px rgba(0,0,0,0.6)",
           }}
@@ -94,7 +86,7 @@ export default function Faq() {
         </p>
 
         {/* Main Content Area */}
-        <div className="w-full max-w-4xl space-y-16">
+        <div className="w-full max-w-5xl space-y-20">
           {/* Search Form */}
           <form
             data-aos="fade-up"
@@ -144,12 +136,12 @@ export default function Faq() {
           <div
             data-aos="fade-up"
             data-aos-delay="400"
-            className="bg-[#ECC691] w-full rounded-lg flex flex-col items-center pt-8 pb-16 px-6 md:px-10 shadow-lg border-2 border-[#A01326]"
+            className="bg-[#ECC691] w-full rounded-lg flex flex-col items-center pt-10 pb-20 px-8 md:px-16 shadow-lg border-2 border-[#A01326]"
           >
-            <h2 className="font-storybook font-extrabold text-2xl md:text-3xl text-[#013047] mb-8">
+            <h2 className="font-storybook font-extrabold text-3xl md:text-4xl text-[#013047] mb-10">
               Pertanyaan Umum
             </h2>
-            <div className="w-full space-y-4">
+            <div className="w-full space-y-6 md:space-y-8">
               {foundPertanyaanUmum.length > 0 ? (
                 foundPertanyaanUmum.map((item, i) => (
                   <QAPlaceholder
@@ -185,7 +177,7 @@ const QAPlaceholder = ({ question, answer }) => {
     <div className="w-full">
       <div
         onClick={handleClick}
-        className="flex flex-row gap-4 items-center px-5 py-4 text-[#013047] font-primeform-medium bg-[#F9C157] rounded-lg transition-all duration-300 hover:shadow-md border-2 border-[#A01326] cursor-pointer"
+        className="flex flex-row gap-4 items-center px-5 py-4 text-[#013047] font-primeform-medium bg-[#F9C157] rounded-lg transition-all duration-500 ease-linear hover:shadow-md border-2 border-[#A01326] cursor-pointer"
       >
         <div className="font-bold text-[#A01326] text-lg">Q:</div>
         <div className="flex flex-row justify-between w-full items-center">
@@ -194,23 +186,35 @@ const QAPlaceholder = ({ question, answer }) => {
           </div>
           <RiArrowDownSLine
             size={24}
-            className={`duration-300 transform text-[#A01326] flex-shrink-0 ${
+            className={`duration-700 transform text-[#A01326] flex-shrink-0 ${
               isActive ? "rotate-180" : "rotate-0"
             }`}
           />
         </div>
       </div>
 
-      <div
-        className={`overflow-hidden transition-all duration-300 ${
-          isActive ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-        }`}
-      >
-        <div className="flex flex-row gap-4 bg-[#013047] bg-opacity-90 rounded-b-lg px-5 py-4 text-[#ECC691] font-primeform-medium text-base border-x-2 border-b-2 border-[#A01326] mt-1">
-          <div className="font-bold text-[#F9C157] text-lg">A:</div>
-          <div className="font-light leading-relaxed">{answer}</div>
-        </div>
-      </div>
+      <AnimatePresence initial={false}>
+        {isActive && (
+          <motion.div
+            key="content"
+            initial="collapsed"
+            animate="open"
+            exit="hidden"
+            variants={{
+              open: { opacity: 1, scaleY: 1 },
+              collapsed: { opacity: 0, scaleY: 0 },
+            }}
+            transition={{ duration: 0.7, ease: [0.4, 0, 0.2, 1] }}
+            className="overflow-hidden origin-top"
+            style={{ transformOrigin: "top" }}
+          >
+            <div className="flex flex-row gap-4 bg-[#013047] bg-opacity-90 rounded-b-lg px-5 py-4 text-[#ECC691] font-primeform-medium text-base border-x-2 border-b-2 border-[#A01326] mt-1">
+              <div className="font-bold text-[#F9C157] text-lg">A:</div>
+              <div className="font-light leading-relaxed">{answer}</div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
