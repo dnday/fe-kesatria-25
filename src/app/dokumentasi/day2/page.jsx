@@ -1,9 +1,16 @@
+import Desktop from "./desktop.jsx";
+import Mobile from "./mobile.jsx";
+
 const day2 = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full h-screen">
-      <h1 className="text-2xl font-bold">Day 2</h1>
-      <p className="mt-4 text-lg">Halaman ini sedang dalam pengembangan.</p>
-    </div>
+    <>
+      <div className="hidden md:block">
+        <Desktop />
+      </div>
+      <div className="md:hidden">
+        <Mobile />
+      </div>
+    </>
   );
 };
 export default day2;

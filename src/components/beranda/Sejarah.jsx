@@ -29,19 +29,24 @@ const Sejarah = () => {
             <p className="text-[10px] md:text-[1.5vw] w-[35vw] font-primeform-medium">
               {content.content2}
             </p>
-            <Button className="mt-[1vw]" />
+            <Button className="mt-[1vw] text-center" />
           </div>
         </div>
         <div
           data-aos="fade-left"
           className="flex flex-col mt-[-30vw] md:mt-[-50vw] ml-[50vw] z-10 lg:mt-0 lg:ml-[10vw]"
         >
-          <Box
-            bgColor="#A01326"
-            imageSrc="/images/chapter1/sample.jpg"
-            w="35vw"
-            h="25vw"
-          />
+          <div
+            data-aos="zoom-in"
+            className="relative mt-[5vw] h-auto w-[45vw] bg-[#A01326] rounded-2xl border-6 border-[#A01326] z-10 md:w-[35vw] md:rounded-4xl md:p-2"
+          >
+            <iframe
+              className="w-full mx-auto aspect-video rounded-2xl"
+              src="https://www.youtube.com/embed/RFMczbX3Lsc"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
           <Image
             className="w-[40vw] h-auto ml-[10vw] mt-[-8vw] lg:w-[37vw] lg:ml-[5vw] z-20"
             alt="awan"
@@ -64,12 +69,17 @@ const Sejarah = () => {
           width={800}
           height={200}
         />
-        <Box
-          bgColor="#013047"
-          imageSrc="/images/chapter1/sample.jpg"
-          w="35vw"
-          h="25vw"
-        />
+        <div
+          data-aos="zoom-in"
+          className="relative h-auto w-[45vw] bg-[#A01326] rounded-2xl border-6 border-[#A01326] z-10 md:w-[35vw] md:rounded-4xl md:p-2"
+        >
+          <iframe
+            className="w-full mx-auto aspect-video rounded-2xl"
+            src="https://www.youtube.com/embed/jbaLBFLdMMA"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
         <Image
           className="w-[50vw] h-auto z-20 mt-[-10vw] mr-[50vw]"
           alt="awan"

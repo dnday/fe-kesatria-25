@@ -4,6 +4,7 @@ import Chapter2 from "@/components/beranda/chapter2";
 import Chapter3 from "@/components/beranda/chapter3";
 import SelamatDatang from "@/components/beranda/selamatdatang";
 import SelamatDatangVideo from "@/components/beranda/selamatdatangvideo";
+import AgendaAtribut from "@/components/beranda/agendaAtribut";
 // import Footer from "@/components/layout/footer";
 
 import { useEffect } from "react";
@@ -26,6 +27,7 @@ export default function Home() {
       <Chapter1 />
       <Chapter2 />
       <Chapter3 />
+      <AgendaAtribut />
       {/* <Footer /> */}
       {/* <iframe
         src="https://ft-digitaltwin3d.id/"
