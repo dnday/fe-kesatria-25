@@ -445,7 +445,7 @@ const TransitiAtas = () => {
 
       {/* Tugu Teknik - positioned behind kain kuning with low z-index */}
       <Image
-        className="z-[10] translate-y-[-30vw] absolute bottom-[-17vw] left-0 w-[30vw] h-auto md:absolute md:bottom-[-17vw] md:left-0 md:w-[30vw] md:h-auto lg:absolute lg:bottom-[-17vw] lg:left-0 lg:w-[30vw] lg:h-auto"
+        className="z-[1] translate-y-[-30vw] absolute bottom-[-17vw] left-0 w-[30vw] h-auto md:absolute md:bottom-[-17vw] md:left-0 md:w-[30vw] md:h-auto lg:absolute lg:bottom-[-17vw] lg:left-0 lg:w-[30vw] lg:h-auto"
         alt="Tugu Teknik"
         src="/images/assets_beranda_chapter2_tugtek.svg"
         width={960}

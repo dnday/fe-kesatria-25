@@ -9,6 +9,7 @@ import {
   FaQuestionCircle,
   FaBars,
   FaTimes,
+  FaMapMarkedAlt,
 } from "react-icons/fa";
 
 const Navbar = () => {
@@ -117,5 +118,10 @@ const MENU = [
     name: "FAQ",
     link: "/faq",
     icon: <FaQuestionCircle />,
+  },
+  {
+    name: "Peta",
+    link: "/peta",
+    icon: <FaMapMarkedAlt />,
   },
 ];

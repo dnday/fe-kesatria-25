@@ -122,7 +122,7 @@ const Chapter2_Desktop = () => {
         yang baru. Yuk kita sama-sama lihat apa saja kesibukan di luar akademik
         pada modul ini.
       </p>
-      <div className="z-[1] flex h-[25vw] w-[75vw] items-center justify-center gap-[0vw] rounded-[2vw] bg-[#ECC691]">
+      <div className="z-[1000] flex h-[25vw] w-[75vw] items-center justify-center gap-[0vw] rounded-[2vw] bg-[#ECC691]">
         <div
           className="flex h-full min-w-[3vw] items-center justify-center"
           onClick={() => {
@@ -176,11 +176,11 @@ const Chapter2_Desktop = () => {
           /> */}
         </div>
       </div>
-      <div className="flex px-[2vw] gap-[1vw]">
+      <div className="flex px-[2vw] gap-[1vw] z-[9999]">
         {CARDCONTENT.map((item, index) => (
           <div
             className={
-              "z-[1] flex w-full cursor-pointer flex-col items-center rounded-b-[1.2vw] drop-shadow-[0_0.3vw_0.6vw_#000000] transition duration-100 " +
+              "z-[9999] flex w-full cursor-pointer flex-col items-center rounded-b-[1.2vw] drop-shadow-[0_0.3vw_0.6vw_#000000] transition duration-100 " +
               (activeSwiper == index ? "bg-[#A01326]" : "bg-[#035A7A]")
             }
             key={index}
@@ -344,11 +344,11 @@ const Chapter2_Tablet = () => {
           {/* Arrow right placeholder */}
         </div>
       </div>
-      <div className="flex px-[0.5vw] gap-[0.5vw]">
+      <div className="flex px-[0.5vw] gap-[0.5vw] z-[9999]">
         {CARDCONTENT.map((item, index) => (
           <div
             className={
-              "z-[1] flex w-full cursor-pointer flex-col items-center rounded-b-[0.6vw] drop-shadow-[0_0.15vw_0.3vw_#000000] transition duration-100 " +
+              "z-[9999] flex w-full cursor-pointer flex-col items-center rounded-b-[0.6vw] drop-shadow-[0_0.15vw_0.3vw_#000000] transition duration-100 " +
               (activeSwiper == index ? "bg-[#A01326]" : "bg-[#035A7A]")
             }
             key={index}
@@ -523,7 +523,7 @@ const Chapter2_HP = () => {
         </div>
       </div>
       {/* Indicators for the active swiper */}
-      <div className="flex justify-center px-[0.5vw] gap-[1vw]">
+      <div className="flex justify-center px-[0.5vw] gap-[1vw] z-[9999]">
         {(() => {
           // Calculate which 3 indicators to show
           let startIndex, endIndex;
@@ -543,7 +543,7 @@ const Chapter2_HP = () => {
             return (
               <div
                 className={
-                  "z-[1] flex w-[20vw] cursor-pointer flex-col items-center rounded-b-[1.2vw] drop-shadow-[0_0.3vw_0.6vw_#000000] transition duration-100 " +
+                  "z-[9999] flex w-[20vw] cursor-pointer flex-col items-center rounded-b-[1.2vw] drop-shadow-[0_0.3vw_0.6vw_#000000] transition duration-100 " +
                   (activeSwiper === actualIndex
                     ? "bg-[#A01326]"
                     : "bg-[#035A7A]")
