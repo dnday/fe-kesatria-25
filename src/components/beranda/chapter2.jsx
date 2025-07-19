@@ -9,33 +9,27 @@ import { motion } from "framer-motion";
 
 const CARDCONTENT = [
   {
-    title: "Lika-Liku Kesatria",
-    desc: "Perkuliahan adalah jenjang lebih tinggi yang diambil oleh seseorang setelah menyelesaikan pendidikan menengah atas (SMA/SMK) atau sederajat. Sebelum memasuki dunia perkuliahan, sebaiknya kesatria muda harus mengenal terlebih dahulu seputar perkuliahan sehingga nantinya dapat mempersiapkan diri untuk menyesuaikan diri dengan lingkungan yang baru.",
-    link: "/1w6AQyjaFXOSQpm_ZQe3RHZkU_80uNUHb",
-    imgpath: "/images/chapter 2/lika-liku.jpg",
-  },
-  {
     title: "Pengenalan Jurusan",
-    desc: "Fakultas Teknik terdiri dari 8 Departemen yang di dalamnya terdapat 15 Program Studi atau yang biasa dikenal dengan jurusan. Sebelum masuk ke jurusan masing-masing, yuk kita sama-sama kenali jurusan Kesatria Muda melalui modul berikut!",
-    link: "/prodi",
+    desc: "Fakultas Teknik terdiri dari 8 departemen yang di dalamnya terdapat 15 program studi atau yang biasa dikenal sebagai jurusan. Yuk, kita kenali jurusan dari masing-masing Kesatria Muda melalui modul berikut!",
+    link: "https://drive.google.com/drive/folders/114MDFkrS6-VxJ4EKQ0nh2YhR9gQdytBg?usp=sharing",
     imgpath: "/images/chapter 2/pengenalan.jpg",
   },
   {
-    title: "Jelajah Lembaga",
-    desc: "Fakultas Teknik tidak hanya bergerak dan berprestasi di bidang akademik saja, namun terdapat berbagai macam lembaga yang dapat menunjang skill mahasiswanya. Wah, lembaga mana nih yang diminati Kesatria Muda? Mari pahami modul berikut sebagai bekal bagi Kesatria Muda!",
-    link: "/1pJurt6XIllXkBgFsEF9nl2AI0S_IS0Pq",
-    imgpath: "/images/chapter 2/jelajah.jpg",
+    title: "Jalan-Jalan Teknik",
+    desc: "Melalui modul ini, Kesatria Muda dapat mengenal lebih jauh mengenai BSO yang ada di Fakultas Teknik UGM sebagai wadah untuk mengembangkan minat bakat dan kreativitas. Modul ini juga akan menjadi bekal bagi para Kesatria Muda untuk “Jalan-Jalan Teknik” saat Pionir Kesatria 2025 nanti!",
+    link: "https://drive.google.com/file/d/1gs6_zwLcce-RXB8fsylD2JCuNkjCzZoH/view?usp=sharing",
+    imgpath: "/images/chapter 2/jalanjalanteknik.jpg",
   },
   {
     title: "Pameran Karya",
-    desc: "Fakultas Teknik tidak terlepas dari segudang prestasinya. Penasaran siapa saja tim-tim yang bergerak di belakang untuk mengharumkan nama Fakultas Teknik? Yuk, simak modul berikut ini!",
-    link: "/1CZpujWAl0SC1GWpOGn-k_acMeL2W0X1U",
+    desc: "Pameran Karya adalah bagian dari serangkaian kegiatan PIONIR Kesatria 2025. Melalui modul ini, Kesatria Muda dapat mengenal 9 tim terbaik Fakultas Teknik UGM dan 2 lembaga yang nantinya akan menunjukkan karya-karya mereka dalam kegiatan Pameran Karya!",
+    link: "https://drive.google.com/file/d/1m9L-TR0BJW8BN83_HsnYp0N1AT2BHaAx/view?usp=sharing",
     imgpath: "/images/chapter 2/pameran.jpg",
   },
   {
-    title: "Fasilitas Teknik",
-    desc: "Fakultas Teknik sebagai fakultas terbesar di Universitas Gadjah Mada memiliki beragam fasilitas yang menunjang kegiatan mahasiswanya. Mau tahu apa saja fasilitas yang ada di Fakultas Teknik? Mari simak modul berikut!",
-    link: "/1eFLENcwhriBPk6uqChqVCeZtCfWK-wOW",
+    title: "Fasilitas Fakultas",
+    desc: "Fakultas Teknik merupakan fakultas terbesar di Universitas Gadjah Mada dan tentunya memiliki beragam fasilitas penunjang guna mendukung kegiatan mahasiswanya. Simak modul berikut untuk mengetahui apa saja fasilitas di Fakultas Teknik UGM!",
+    link: "https://drive.google.com/file/d/158yF8Rij22YHMTXLGpGhc3ADjgfFAB2J/view?usp=sharing",
     imgpath: "/images/chapter 2/teknik.jpg",
   },
 ];
@@ -87,7 +81,9 @@ const Chapter2_Desktop = () => {
             {desc}
           </p>
           <Link
-            href={"/materi/" + link}
+            target="_blank"
+            rel="noopener noreferrer"
+            href={link}
             className="w-fit rounded-[1.5vw] bg-[#A01326] hover:bg-[#8a1020] transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,209,63,0.7)] hover:border-[2px] hover:border-[#FFA514] px-[2.5vw]"
           >
             <p className="font-storybook text-[1.5vw] text-[#F9C157]">
@@ -112,18 +108,16 @@ const Chapter2_Desktop = () => {
           Bagian 2:
         </h1>
         <h1 className="font-storybook text-[4vw] text-[#ECC691] text-shadow-[inset_-1px_-1px_0px_0px_#FFFFFF40, inset_1px_1px_0px_0px_#00000059]">
-          Lika-Liku Kesatria
+          Ananta Satya Sang Kesatria
         </h1>
         <p className="w-[80vw] pb-[2vw] px-[6vw] text-center font-primeform-medium text-[1.5vw]/[2vw] font-light text-[#ECC691] drop-shadow-[-20_0.4vw_0.2vw_rgba(0,0,0,0.6)]">
-          Masa perkuliahan tentunya berbeda jika dibandingkan dengan masa saat
-          sekolah. Di mana saat sekolah, segala sesuatunya teratur dan memiliki
-          jadwal yang pasti. Selain itu, lingkup pergaulan yang akan ditemui di
-          masa kuliah juga semakin luas dan beragam. Ditambah lagi dengan
-          kesibukan akademik dan di luar akademik yang cukup kompleks semasa
-          kuliah. Hal-hal tersebut harus dapat dikenali terlebih dahulu untuk
-          menjadi bekal agar nantinya bisa menyesuaikan diri dengan lingkungan
-          yang baru. Yuk kita sama-sama lihat apa saja kesibukan di luar
-          akademik pada modul ini.
+          Integritas akademik merupakan salah satu hal penting dan pondasi utama
+          dalam melaksanakan kegiatan di perguruan tinggi. Kegiatan di perguruan
+          tinggi nantinya tidak terbatas mengenai perkuliahan dan nilai akademik
+          saja, tetapi juga mengenai pengembangan karakter sebagai insan
+          akademik yang beretika. Kesatria Muda akan dibekali pengetahuan
+          mengenai integritas akademik yang meliputi kecurangan akademik serta
+          aturan mengenai sitasi.
         </p>
       </div>
       <div
@@ -183,11 +177,11 @@ const Chapter2_Desktop = () => {
           /> */}
         </div>
       </div>
-      <div className="flex px-[2vw] gap-[1vw] z-[9999]">
+      <div className="flex px-[2vw] gap-[1vw] z-[100]">
         {CARDCONTENT.map((item, index) => (
           <div
             className={
-              "z-[9999] flex w-full cursor-pointer flex-col items-center rounded-b-[1.2vw] drop-shadow-[0_0.3vw_0.6vw_#000000] transition duration-100 " +
+              "z-[100] flex w-full cursor-pointer flex-col items-center rounded-b-[1.2vw] drop-shadow-[0_0.3vw_0.6vw_#000000] transition duration-100 " +
               (activeSwiper == index ? "bg-[#A01326]" : "bg-[#035A7A]")
             }
             key={index}
@@ -237,7 +231,7 @@ const Chapter2_Tablet = () => {
           Bagian 2:
         </h1>
         <h1 className="text-[#ECC691] font-storybook text-[4.8vw]">
-          Lika-Liku Kesatria
+          Ananta Satya Sang Kesatria
         </h1>
       </>
     );
@@ -246,15 +240,13 @@ const Chapter2_Tablet = () => {
   const Descrtiption = () => {
     return (
       <p className=" w-[70vw] text-justify font-primeform-medium text-[2.5vw]/[3.2vw] font-light text-[#ECC691]  drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
-        Masa perkuliahan tentunya berbeda jika dibandingkan dengan masa saat
-        sekolah. Di mana saat sekolah, segala sesuatunya teratur dan memiliki
-        jadwal yang pasti. Selain itu, lingkup pergaulan yang akan ditemui di
-        masa kuliah juga semakin luas dan beragam. Ditambah lagi dengan
-        kesibukan akademik dan di luar akademik yang cukup kompleks semasa
-        kuliah. Hal-hal tersebut harus dapat dikenali terlebih dahulu untuk
-        menjadi bekal agar nantinya bisa menyesuaikan diri dengan lingkungan
-        yang baru. Yuk kita sama-sama lihat apa saja kesibukan di luar akademik
-        pada modul ini.
+        Integritas akademik merupakan salah satu hal penting dan pondasi utama
+        dalam melaksanakan kegiatan di perguruan tinggi. Kegiatan di perguruan
+        tinggi nantinya tidak terbatas mengenai perkuliahan dan nilai akademik
+        saja, tetapi juga mengenai pengembangan karakter sebagai insan akademik
+        yang beretika. Kesatria Muda akan dibekali pengetahuan mengenai
+        integritas akademik yang meliputi kecurangan akademik serta aturan
+        mengenai sitasi.
       </p>
     );
   };
@@ -275,7 +267,9 @@ const Chapter2_Tablet = () => {
     const Button = () => {
       return (
         <Link
-          href={"/materi/" + link}
+          target="_blank"
+          rel="noopener noreferrer"
+          href={link}
           className="w-fit rounded-[2.5vw] px-[5vw] bg-[#A01326] hover:bg-[#8a1020] transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,209,63,0.7)] hover:border-[2px] hover:border-[#FFA514]"
         >
           <p className="font-storybook text-[2vw] text-[#F9C157]">Baca Modul</p>
@@ -351,11 +345,11 @@ const Chapter2_Tablet = () => {
           {/* Arrow right placeholder */}
         </div>
       </div>
-      <div className="flex px-[0.5vw] gap-[0.5vw] z-[9999]">
+      <div className="flex px-[0.5vw] gap-[0.5vw] z-[100]">
         {CARDCONTENT.map((item, index) => (
           <div
             className={
-              "z-[9999] flex w-full cursor-pointer flex-col items-center rounded-b-[0.6vw] drop-shadow-[0_0.15vw_0.3vw_#000000] transition duration-100 " +
+              "z-[100] flex w-full cursor-pointer flex-col items-center rounded-b-[0.6vw] drop-shadow-[0_0.15vw_0.3vw_#000000] transition duration-100 " +
               (activeSwiper == index ? "bg-[#A01326]" : "bg-[#035A7A]")
             }
             key={index}
@@ -403,7 +397,7 @@ const Chapter2_HP = () => {
       <>
         <h1 className="text-[#ECC691] font-storybook text-[5vw]">Bagian 2:</h1>
         <h1 className="text-[#ECC691] font-storybook text-[5vw]">
-          Lika-Liku Kesatria
+          Ananta Satya Sang Kesatria
         </h1>
       </>
     );
@@ -412,15 +406,13 @@ const Chapter2_HP = () => {
   const Descrtiption = () => {
     return (
       <p className="w-[72vw] text-center font-primeform-medium  text-[3.25vw]/[4.5vw] font-light text-[#ECC691] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
-        Masa perkuliahan tentunya berbeda jika dibandingkan dengan masa saat
-        sekolah. Di mana saat sekolah, segala sesuatunya teratur dan memiliki
-        jadwal yang pasti. Selain itu, lingkup pergaulan yang akan ditemui di
-        masa kuliah juga semakin luas dan beragam. Ditambah lagi dengan
-        kesibukan akademik dan di luar akademik yang cukup kompleks semasa
-        kuliah. Hal-hal tersebut harus dapat dikenali terlebih dahulu untuk
-        menjadi bekal agar nantinya bisa menyesuaikan diri dengan lingkungan
-        yang baru. Yuk kita sama-sama lihat apa saja kesibukan di luar akademik
-        pada modul ini.
+        Integritas akademik merupakan salah satu hal penting dan pondasi utama
+        dalam melaksanakan kegiatan di perguruan tinggi. Kegiatan di perguruan
+        tinggi nantinya tidak terbatas mengenai perkuliahan dan nilai akademik
+        saja, tetapi juga mengenai pengembangan karakter sebagai insan akademik
+        yang beretika. Kesatria Muda akan dibekali pengetahuan mengenai
+        integritas akademik yang meliputi kecurangan akademik serta aturan
+        mengenai sitasi.
       </p>
     );
   };
@@ -442,7 +434,9 @@ const Chapter2_HP = () => {
     const Button = () => {
       return (
         <Link
-          href={"/materi/" + link}
+          target="_blank"
+          rel="noopener noreferrer"
+          href={link}
           className="w-fit rounded-[4vw] px-[6vw] py-[1vw] bg-[#A01326] hover:bg-[#8a1020] transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,209,63,0.7)] hover:border-[2px] hover:border-[#FFA514]"
         >
           <p className="font-storybook text-[3.5vw] text-[#F9C157]">
@@ -530,7 +524,7 @@ const Chapter2_HP = () => {
         </div>
       </div>
       {/* Indicators for the active swiper */}
-      <div className="flex justify-center px-[0.5vw] gap-[1vw] z-[9999]">
+      <div className="flex justify-center px-[0.5vw] gap-[1vw] z-[100]">
         {(() => {
           // Calculate which 3 indicators to show
           let startIndex, endIndex;
@@ -550,7 +544,7 @@ const Chapter2_HP = () => {
             return (
               <div
                 className={
-                  "z-[9999] flex w-[20vw] cursor-pointer flex-col items-center rounded-b-[1.2vw] drop-shadow-[0_0.3vw_0.6vw_#000000] transition duration-100 " +
+                  "z-[100] flex w-[20vw] cursor-pointer flex-col items-center rounded-b-[1.2vw] drop-shadow-[0_0.3vw_0.6vw_#000000] transition duration-100 " +
                   (activeSwiper === actualIndex
                     ? "bg-[#A01326]"
                     : "bg-[#035A7A]")
@@ -625,13 +619,28 @@ const TransitiAtas = () => {
           },
         }}
       > */}
-      <Image
-        className="absolute left-0 top-0 w-[13.5vw] translate-x-[24vw] translate-y-[18vw] z-[200]"
-        alt="Bulu Kuning"
-        src={"/images/assets_beranda_chapter2_bulu1.svg"}
-        width={100}
-        height={100}
-      />
+      <motion.div
+        whileHover={{
+          scale: 1.05,
+          rotate: [0, 2, 0, -2, 0],
+          transition: {
+            duration: 0.5,
+            rotate: {
+              repeat: Infinity,
+              repeatType: "mirror",
+              duration: 2,
+            },
+          },
+        }}
+      >
+        <Image
+          className="absolute left-0 top-0 w-[13.5vw] translate-x-[24vw] translate-y-[18vw] z-[200]"
+          alt="Bulu Kuning"
+          src={"/images/assets_beranda_chapter2_bulu1.svg"}
+          width={100}
+          height={100}
+        />
+      </motion.div>
       {/* </motion.div> */}
 
       <Image

@@ -72,7 +72,11 @@ const KesatriaMudaBerkarya = () => {
             {CONTENT[0].subtitle1desc}
           </p>
           <Link
-            href={"/materi/1g3khW7dKm8xqAjmtJpuWJk13jIyt-4fr"}
+            target="_blank"
+            rel="noopener noreferrer"
+            href={
+              "https://drive.google.com/file/d/157RNpG_SA8OliPWnuBfHIPXGBr-c1OOb/view?usp=sharing"
+            }
             className="w-[16.5vw] rounded-[2vw] bg-[#A01326] hover:bg-[#8a1020] transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,209,63,0.7)] hover:border-[2px] hover:border-[#FFA514]"
           >
             <p className="z-[10] text-[#F9C157] text-center font-storybook text-[2vw]">
@@ -82,18 +86,41 @@ const KesatriaMudaBerkarya = () => {
         </div>
 
         {/* Image Section */}
-        <div
+        <motion.div
           data-aos="fade-left"
-          className="h-[24vw] w-[31.5vw] rounded-[2.9vw] bg-[#013047] drop-shadow-[0_0.1vw_1vw_#000000] flex items-center justify-center"
+          className="h-[24vw] w-[31.5vw] rounded-[2.9vw] bg-[#013047] drop-shadow-[0_0.1vw_1vw_#000000] flex items-center justify-center overflow-hidden cursor-pointer"
+          whileHover={{
+            scale: 1.05,
+            rotateY: 5,
+            boxShadow: "0 0.2vw 2vw rgba(255, 209, 99, 0.6)",
+          }}
+          transition={{
+            type: "spring",
+            stiffness: 300,
+            damping: 20,
+          }}
         >
-          <Image
-            className="w-[90%] aspect-auto object-cover"
-            alt="Image"
-            src={"/nalatugtek.svg"}
-            width={1000}
-            height={1000}
-          />
-        </div>
+          <motion.div
+            whileHover={{
+              scale: 1.1,
+              rotate: 2,
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 400,
+              damping: 15,
+            }}
+            className="justify-center items-center flex"
+          >
+            <Image
+              className="w-[80%] aspect-auto object-cover"
+              alt="Image"
+              src={"/nalatugtek.svg"}
+              width={1000}
+              height={1000}
+            />
+          </motion.div>
+        </motion.div>
       </div>
 
       {/* Tablet Version - md: to lg: */}
@@ -123,17 +150,46 @@ const KesatriaMudaBerkarya = () => {
               width={1965}
               height={880}
             /> */}
-            <div className="z-[1] h-[23.2vw] w-[39.7vw] rounded-[2.9vw] bg-[#013047] drop-shadow-[0_0.1vw_1vw_#000000] flex items-center justify-center">
-              <Image
-                className="w-[40%] aspect-auto object-cover"
-                alt=""
-                src={"/nalatugtek.svg"}
-                width={1000}
-                height={1000}
-              />
-            </div>
+            <motion.div
+              className="z-[1] h-[23.2vw] w-[39.7vw] rounded-[2.9vw] bg-[#013047] drop-shadow-[0_0.1vw_1vw_#000000] flex items-center justify-center overflow-hidden cursor-pointer"
+              whileHover={{
+                scale: 1.03,
+                rotateX: 5,
+                boxShadow: "0 0.3vw 2.5vw rgba(255, 209, 99, 0.5)",
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 300,
+                damping: 20,
+              }}
+            >
+              <motion.div
+                whileHover={{
+                  scale: 1.15,
+                  rotate: -3,
+                }}
+                transition={{
+                  type: "spring",
+                  stiffness: 400,
+                  damping: 15,
+                }}
+                className="justify-center items-center flex w-full h-full"
+              >
+                <Image
+                  className="w-[70%] aspect-auto object-cover"
+                  alt=""
+                  src={"/nalatugtek.svg"}
+                  width={1000}
+                  height={1000}
+                />
+              </motion.div>
+            </motion.div>
             <Link
-              href={"/materi/1g3khW7dKm8xqAjmtJpuWJk13jIyt-4fr"}
+              target="_blank"
+              rel="noopener noreferrer"
+              href={
+                "https://drive.google.com/file/d/157RNpG_SA8OliPWnuBfHIPXGBr-c1OOb/view?usp=sharing"
+              }
               className=" w-[26.9vw] rounded-[3.5vw] bg-[#A01326] hover:bg-[#8a1020] transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,209,63,0.7)] hover:border-[2px] hover:border-[#FFA514]"
             >
               <p className="text-[#F9C157] text-center font-storybook text-[3vw]">
@@ -157,26 +213,55 @@ const KesatriaMudaBerkarya = () => {
             {CONTENT[0].subtitle1desc}
           </p>
         </div>
-        <div data-aos="fade-up" className="relative h-[41.2vw] w-[70vw]">
-          <div className="absolute left-0 top-0 z-10 h-full w-full rounded-[5vw] bg-[#013047] drop-shadow-[0_0.4vw_2vw_rgba(0,0,0,0.6)] p-[2vw] flex items-center justify-center">
-            <Image
-              className="w-[40%] aspect-auto object-cover"
-              alt="Image"
-              src={"/nalatugtek.svg"}
-              width={1000}
-              height={1000}
-            />
-          </div>
+        <motion.div data-aos="fade-up" className="relative h-[41.2vw] w-[70vw]">
+          <motion.div
+            className="absolute left-0 top-0 z-10 h-full w-full rounded-[5vw] bg-[#013047] drop-shadow-[0_0.4vw_2vw_rgba(0,0,0,0.6)] p-[2vw] flex items-center justify-center overflow-hidden cursor-pointer"
+            whileHover={{
+              scale: 1.02,
+              rotateZ: 1,
+              boxShadow: "0 0.6vw 3vw rgba(255, 209, 99, 0.4)",
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 300,
+              damping: 20,
+            }}
+          >
+            <motion.div
+              whileHover={{
+                scale: 1.2,
+                rotate: 5,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 15,
+              }}
+              className="justify-center items-center flex w-full h-full"
+            >
+              <Image
+                className="w-[70%] aspect-auto object-cover"
+                alt="Image"
+                src={"/nalatugtek.svg"}
+                width={1000}
+                height={1000}
+              />
+            </motion.div>
+          </motion.div>
           <Link
             data-aos="fade-up"
-            href={"/materi/1g3khW7dKm8xqAjmtJpuWJk13jIyt-4fr"}
+            target="_blank"
+            rel="noopener noreferrer"
+            href={
+              "https://drive.google.com/file/d/157RNpG_SA8OliPWnuBfHIPXGBr-c1OOb/view?usp=sharing"
+            }
             className="z-[1] rounded-[3.5vw] bg-[#A01326] hover:bg-[#8a1020] transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,209,63,0.7)] hover:border-[2px] hover:border-[#FFA514]"
           >
             <p className="z-[10] text-[#F9C157] text-center font-storybook text-[4vw] px[7vw] py-[0.5]">
               Baca Modul
             </p>
           </Link>
-        </div>
+        </motion.div>
       </div>
     </>
   );
@@ -185,18 +270,41 @@ const KesatriaMudaBerkarya = () => {
 const KaryaAplikatif = () => {
   return (
     <div className="flex w-full items-center justify-between max-lg:hidden">
-      <div
+      <motion.div
         data-aos="fade-right"
-        className="h-[24vw] w-[31.5vw] rounded-[2.9vw] bg-[#013047] drop-shadow-[0_0.1vw_1vw_#000000] flex items-center justify-center"
+        className="h-[24vw] w-[31.5vw] rounded-[2.9vw] bg-[#013047] drop-shadow-[0_0.1vw_1vw_#000000] flex items-center justify-center overflow-hidden cursor-pointer"
+        whileHover={{
+          scale: 1.05,
+          rotateY: -5,
+          boxShadow: "0 0.2vw 2vw rgba(255, 209, 99, 0.6)",
+        }}
+        transition={{
+          type: "spring",
+          stiffness: 300,
+          damping: 20,
+        }}
       >
-        <Image
-          className="w-[60%] aspect-auto object-cover "
-          alt=""
-          src={"/nala1.svg"}
-          width={1000}
-          height={1000}
-        />
-      </div>
+        <motion.div
+          whileHover={{
+            scale: 1.1,
+            rotate: -2,
+          }}
+          transition={{
+            type: "spring",
+            stiffness: 400,
+            damping: 15,
+          }}
+          className="justify-center items-center flex w-full h-full"
+        >
+          <Image
+            className="w-[50%] aspect-auto object-cover"
+            alt=""
+            src={"/nala1.svg"}
+            width={1000}
+            height={1000}
+          />
+        </motion.div>
+      </motion.div>
       <div
         data-aos="fade-left"
         className="flex max-w-[40vw] flex-col gap-[1vw] items-start"
@@ -208,7 +316,11 @@ const KaryaAplikatif = () => {
           {CONTENT[0].subtitle2desc}
         </p>
         <Link
-          href={"/materi/1I1Gy5ds5m49J61qDT2hxvqygN1rWniWo"}
+          target="_blank"
+          rel="noopener noreferrer"
+          href={
+            "https://drive.google.com/file/d/157RNpG_SA8OliPWnuBfHIPXGBr-c1OOb/view?usp=sharing"
+          }
           className="w-[16.5vw] rounded-[2vw] bg-[#A01326] hover:bg-[#8a1020] transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,209,63,0.7)] hover:border-[2px] hover:border-[#FFA514]"
         >
           <p className="z-[10] text-[#F9C157] text-center font-storybook text-[2vw]">
@@ -300,18 +412,47 @@ const KaryaAplikatifTab = () => {
             width={1965}
             height={880}
           /> */}
-          <div className="z-[1] h-[23.2vw] w-[39.7vw] rounded-[2.9vw] bg-[#013047] drop-shadow-[0_0.1vw_1vw_#000000] flex items-center justify-center">
+          <motion.div
+            className="z-[1] h-[23.2vw] w-[39.7vw] rounded-[2.9vw] bg-[#013047] drop-shadow-[0_0.1vw_1vw_#000000] flex items-center justify-center overflow-hidden cursor-pointer"
+            whileHover={{
+              scale: 1.03,
+              rotateX: -5,
+              boxShadow: "0 0.3vw 2.5vw rgba(255, 209, 99, 0.5)",
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 300,
+              damping: 20,
+            }}
+          >
             {/* Tablet */}
-            <Image
-              className="w-[40%] aspect-auto object-cover "
-              alt=""
-              src={"/nala1.svg"}
-              width={1000}
-              height={1000}
-            />
-          </div>
+            <motion.div
+              whileHover={{
+                scale: 1.15,
+                rotate: 3,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 400,
+                damping: 15,
+              }}
+              className="justify-center items-center flex w-full h-full"
+            >
+              <Image
+                className="w-[45%] aspect-auto object-cover "
+                alt=""
+                src={"/nala1.svg"}
+                width={1000}
+                height={1000}
+              />
+            </motion.div>
+          </motion.div>
           <Link
-            href={"/materi/1I1Gy5ds5m49J61qDT2hxvqygN1rWniWo"}
+            target="_blank"
+            rel="noopener noreferrer"
+            href={
+              "https://drive.google.com/file/d/157RNpG_SA8OliPWnuBfHIPXGBr-c1OOb/view?usp=sharing"
+            }
             className="z-[1] w-[26.9vw] rounded-[3.5vw] bg-[#A01326] hover:bg-[#8a1020] transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,209,63,0.7)] hover:border-[2px] hover:border-[#FFA514]"
           >
             <p className="text-[#F9C157] text-center font-storybook">
@@ -396,16 +537,41 @@ const KaryaAplikasiHP = () => {
           {CONTENT[0].subtitle2desc}
         </p>
       </div>
-      <div data-aos="fade-up" className="relative h-[41.2vw] w-[70vw]">
-        <div className="absolute left-0 top-0 z-10 h-full w-full rounded-[5vw] bg-[#013047] p-[2vw] drop-shadow-[0_0.4vw_2vw_rgba(0,0,0,0.6)] flex items-center justify-center">
-          <Image
-            className="w-[40%] aspect-auto object-cover "
-            alt=""
-            src={"/nala1.svg"}
-            width={1000}
-            height={1000}
-          />
-        </div>
+      <motion.div data-aos="fade-up" className="relative h-[41.2vw] w-[70vw]">
+        <motion.div
+          className="absolute left-0 top-0 z-10 h-full w-full rounded-[5vw] bg-[#013047] p-[2vw] drop-shadow-[0_0.4vw_2vw_rgba(0,0,0,0.6)] flex items-center justify-center overflow-hidden cursor-pointer"
+          whileHover={{
+            scale: 1.02,
+            rotateZ: -1,
+            boxShadow: "0 0.6vw 3vw rgba(255, 209, 99, 0.4)",
+          }}
+          transition={{
+            type: "spring",
+            stiffness: 300,
+            damping: 20,
+          }}
+        >
+          <motion.div
+            whileHover={{
+              scale: 1.2,
+              rotate: -5,
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 400,
+              damping: 15,
+            }}
+            className="justify-center items-center flex w-full h-full"
+          >
+            <Image
+              className="w-[45%] aspect-auto object-cover "
+              alt=""
+              src={"/nala1.svg"}
+              width={1000}
+              height={1000}
+            />
+          </motion.div>
+        </motion.div>
         {/* <div className="absolute z-0 w-full translate-x-[30vw] scale-[0.35]">
           <motion.div
             animate={{ rotate: 360 }}
@@ -424,10 +590,14 @@ const KaryaAplikasiHP = () => {
             />
           </motion.div>
         </div> */}
-      </div>
+      </motion.div>
       <Link
         data-aos="fade-up"
-        href={"/materi/1I1Gy5ds5m49J61qDT2hxvqygN1rWniWo"}
+        target="_blank"
+        rel="noopener noreferrer"
+        href={
+          "https://drive.google.com/file/d/157RNpG_SA8OliPWnuBfHIPXGBr-c1OOb/view?usp=sharing"
+        }
         className="z-[1] rounded-[3.5vw] bg-[#A01326] hover:bg-[#8a1020] transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,209,63,0.7)] hover:border-[2px] hover:border-[#FFA514]"
       >
         <p className="text-[#F9C157] px-[7vw] py-[0.5] text-center font-storybook">
