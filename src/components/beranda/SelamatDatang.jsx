@@ -68,7 +68,7 @@ const SelamatDatang = () => {
         className="relative z-50 flex flex-row justify-center gap-0 md:gap-[8vw]"
       >
         <Image
-          className="w-[45vw] h-[55vw] mt-[20vw] z-50 md:w-[30vw] md:h-[40vw] md:mt-[10vw] lg:mt-[5vw] goyang-hover"
+          className="w-[45vw] h-[55vw] mt-[20vw] z-50 md:w-[30vw] md:h-[40vw] md:mt-[10vw] lg:mt-[5vw] goyang-anim"
           alt="nala"
           src="/images/selamatdatang/nala-menyapa2.webp"
           width={800}

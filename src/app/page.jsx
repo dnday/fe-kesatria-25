@@ -4,6 +4,7 @@ import Chapter2 from "@/components/beranda/chapter2";
 import Chapter3 from "@/components/beranda/chapter3";
 import SelamatDatang from "@/components/beranda/selamatdatang";
 import SelamatDatangVideo from "@/components/beranda/selamatdatangvideo";
+import AgendaAtribut from "@/components/beranda/agendaAtribut";
 // import Footer from "@/components/layout/footer";
 
 import { useEffect } from "react";
@@ -21,12 +22,13 @@ export default function Home() {
       <meta name="description" content="Kegiatan Penerimaan Mahasiswa Baru Fakultas Teknik UGM Tahun 2024" />
       <meta name="keywords" content="Pionir, Kesatria, FT, UGM, Teknik, PPSMB, Maba" />
       <link rel="icon" href="/images/logo/logo_yellow.svg"/> */}
-      {/* <SelamatDatang />
+      <SelamatDatang />
       <SelamatDatangVideo />
       <Chapter1 />
       <Chapter2 />
-      <Chapter3 /> */}
-      {/* <Footer /> */}
+      <Chapter3 />
+      <AgendaAtribut />
+      {/* <Footer />
       <iframe
         className="fixed top-[80px] left-[50px] bottom-[50px] w-[900vw] h-[900vh] border-none"
         src="https://ft-digitaltwin3d.id/"
