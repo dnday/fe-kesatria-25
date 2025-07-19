@@ -16,6 +16,6 @@
   }
 }
 
-.goyang-hover:hover {
+.goyang-anim {
   animation: goyang 3s ease-in-out;
 }

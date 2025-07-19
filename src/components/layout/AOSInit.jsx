@@ -2,11 +2,24 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { usePathname } from "next/navigation";
 
-export default function AOSInit() {
+const AOSInit = () => {
+  const pathname = usePathname();
+
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({
+      once: false, // supaya animasi bisa muncul tiap scroll
+      duration: 1000,
+    });
   }, []);
 
-  return null; // ga render apa-apa, cuma jalanin AOS
-}
+  useEffect(() => {
+    // Setiap kali route berubah, refresh animasi AOS
+    AOS.refreshHard(); // atau AOS.refresh()
+  }, [pathname]);
+
+  return null;
+};
+
+export default AOSInit;
