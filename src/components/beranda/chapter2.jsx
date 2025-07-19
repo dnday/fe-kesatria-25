@@ -101,28 +101,35 @@ const Chapter2_Desktop = () => {
 
   return (
     <div
-      data-aos="fade-up"
       className="flex min-h-[90vh] flex-col place-content-center items-center bg-[url('/images/background/pattern-parang-dark.svg')] bg-[size:80%] bg-repeat sm:bg-[size:75%] lg:bg-[size:70%] z-[-2] pb-[20vw] pt-[10vw] max-lg:hidden"
       style={{ backgroundSize: "100%, 100%, 100%" }}
     >
-      <h1 className="font-storybook text-[4vw] text-[#ECC691] text-shadow-[inset_-1px_-1px_0px_0px_#FFFFFF40, inset_1px_1px_0px_0px_#00000059]">
-        Bagian 2:
-      </h1>
-      <h1 className="font-storybook text-[4vw] text-[#ECC691] text-shadow-[inset_-1px_-1px_0px_0px_#FFFFFF40, inset_1px_1px_0px_0px_#00000059]">
-        Lika-Liku Kesatria
-      </h1>
-      <p className="w-[80vw] pb-[2vw] px-[6vw] text-center font-primeform-medium text-[1.5vw]/[2vw] font-light text-[#ECC691] drop-shadow-[-20_0.4vw_0.2vw_rgba(0,0,0,0.6)]">
-        Masa perkuliahan tentunya berbeda jika dibandingkan dengan masa saat
-        sekolah. Di mana saat sekolah, segala sesuatunya teratur dan memiliki
-        jadwal yang pasti. Selain itu, lingkup pergaulan yang akan ditemui di
-        masa kuliah juga semakin luas dan beragam. Ditambah lagi dengan
-        kesibukan akademik dan di luar akademik yang cukup kompleks semasa
-        kuliah. Hal-hal tersebut harus dapat dikenali terlebih dahulu untuk
-        menjadi bekal agar nantinya bisa menyesuaikan diri dengan lingkungan
-        yang baru. Yuk kita sama-sama lihat apa saja kesibukan di luar akademik
-        pada modul ini.
-      </p>
-      <div className="z-[1000] flex h-[25vw] w-[75vw] items-center justify-center gap-[0vw] rounded-[2vw] bg-[#ECC691]">
+      <div
+        data-aos="fade-up"
+        className="flex flex-col items-center pb-[5vw] gap-[1vw]"
+      >
+        <h1 className="font-storybook text-[4vw] text-[#ECC691] text-shadow-[inset_-1px_-1px_0px_0px_#FFFFFF40, inset_1px_1px_0px_0px_#00000059]">
+          Bagian 2:
+        </h1>
+        <h1 className="font-storybook text-[4vw] text-[#ECC691] text-shadow-[inset_-1px_-1px_0px_0px_#FFFFFF40, inset_1px_1px_0px_0px_#00000059]">
+          Lika-Liku Kesatria
+        </h1>
+        <p className="w-[80vw] pb-[2vw] px-[6vw] text-center font-primeform-medium text-[1.5vw]/[2vw] font-light text-[#ECC691] drop-shadow-[-20_0.4vw_0.2vw_rgba(0,0,0,0.6)]">
+          Masa perkuliahan tentunya berbeda jika dibandingkan dengan masa saat
+          sekolah. Di mana saat sekolah, segala sesuatunya teratur dan memiliki
+          jadwal yang pasti. Selain itu, lingkup pergaulan yang akan ditemui di
+          masa kuliah juga semakin luas dan beragam. Ditambah lagi dengan
+          kesibukan akademik dan di luar akademik yang cukup kompleks semasa
+          kuliah. Hal-hal tersebut harus dapat dikenali terlebih dahulu untuk
+          menjadi bekal agar nantinya bisa menyesuaikan diri dengan lingkungan
+          yang baru. Yuk kita sama-sama lihat apa saja kesibukan di luar
+          akademik pada modul ini.
+        </p>
+      </div>
+      <div
+        data-aos="fade-up"
+        className="z-[1000] flex h-[25vw] w-[75vw] items-center justify-center gap-[0vw] rounded-[2vw] bg-[#ECC691]"
+      >
         <div
           className="flex h-full min-w-[3vw] items-center justify-center"
           onClick={() => {
@@ -595,11 +602,11 @@ const TransitiAtas = () => {
 
       {/* Kain Merah Kuning - always on top with highest z-index */}
       <Image
-        className="relative z-[1000] w-full h-auto object-cover translate-y-[-6vw]"
-        alt="Background"
-        src={"/images/assets_beranda_chapter2_kainmerahkuning.svg"}
-        width={1920}
-        height={500}
+        className="relative z-[1000] w-full h-auto object-cover translate-y-[-5vw]"
+        alt="Kain Merah Kuning"
+        src={"/images/assets_beranda_chapter2_kainmerahkuning.png"}
+        width={3840}
+        height={1000}
         priority
       />
 

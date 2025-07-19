@@ -1,39 +1,43 @@
 export const listPertanyaanUmum = [
   {
-    question: "Untuk ketentuan topi cap berwarna hitam apakah harus polos ?",
+    question: "Untuk ketentuan topi cap berwarna hitam apakah harus polos?",
     answer:
-      "Disarankan untuk polos tetapi apabila tidak memungkinkan setidaknya terlihat dominan hitam",
+      "Disarankan untuk polos, tetapi apabila tidak memungkinkan setidaknya terlihat dominan hitam",
   },
   {
-    question: "Pembagian forum dan akses eLOK dapat dilihat dimana ?",
+    question: "Pembagian forum dan akses eLOK dapat dilihat dimana?",
     answer:
-      "Di Simaster (Kemahasiswaan -> Pionir Gadjah Mada (d.h. PPSMB) -> Fakultas/Sekolah Vokasi ",
+      "Di Simaster (Akademik Kemahasiswaan -> Kemahasiswaan -> Pionir Gadjah Mada (d.h. PPSMB) -> Fakultas/Sekolah Vokasi ",
+  },
+  {
+    question: "Apakah Jurnal harus dijilid dengan metode tertentu? ",
+    answer: "Penjilidan untuk jurnal dengan sampul plastik mika bening",
+  },
+  {
+    question: "Ukuran untuk tanda pengenal tas apakah ditentukan?",
+    answer: "Ukuran tanda pengenal tas yaitu 100 mm x 100 mm",
   },
   {
     question:
-      "Untuk atribut formasi, apakah harus menggunakan karton dengan menggunakan ketebalan 0.5 mm ?",
-    answer: "Diwajibkan untuk menggunakan karton 0.5 mm",
+      "Untuk perlengkapan formasi angkatan apakah cukup membawa bahan saja atau sudah dibuat dari rumah?",
+    answer:
+      "Perlengkapan formasi sudah harus jadi dibuat dari rumah sesuai dengan ketentuan yang telah diberikan pada Modul Atribut",
+  },
+  {
+    question: "Apakah tas berwarna bebas?",
+    answer:
+      "Tas adalah tas ransel dengan warna menyesuaikan ketentuan universitas dan dilengkapi tanda pengenal tas ",
   },
   {
     question:
-      "Untuk ID Card apakah boleh dipotong menyesuaikan wadah dengan ukuran B4 ?",
-    answer:
-      "Lembar ID Card boleh dipotong menyesuaikan ukuran asalkan data diri Kesatria Muda tetap terlihat dengan jelas",
-  },
-  {
-    question: "Ukuran untuk tanda pengenal tas apakah ditentukan ?",
-    answer: "Ukuran untuk tanda pengenal tas yaitu 100 mm x 100 mm",
+      "Apakah soal Sejarah Fakultas Teknik di jurnal harus dikerjakan terlebih dahulu sebelum hari Pionir Kesatria 2025?",
+    answer: "Tidak, jurnal diisi saat hari pelaksanaan Pionir Kesatria 2025",
   },
   {
     question:
-      "Untuk warna dari atribut formasi, apakah kertas putih dapat menggunakan bahan selain hvs ?",
+      "Jenis kertas untuk print name tag, tanda pengenal tas, dan jurnal apakah kertas HVS biasa atau jenis kertas yang lain?",
     answer:
-      "diizinkan asal tidak memunculkan perbedaan warna dengan kertas hvs",
-  },
-  {
-    question: "Apakah Jurnal harus dijilid dengan metode tertentu ?",
-    answer:
-      "Penjilidan untuk jurnal dibebaskan, dapat seperti dengan menggunakan staples",
+      "HVS biasa dengan ukuran sesuai dengan ketentuan pada Modul Atribut",
   },
 ];
 
