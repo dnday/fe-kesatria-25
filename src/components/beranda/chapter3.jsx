@@ -9,12 +9,12 @@ const CONTENT = [
     titleHP: ["Bagian III:", "Kesatria Muda Berkarya"],
     titleDesc:
       "Tentunya kesatria muda sebagai calon-calon insinyur muda akan menghadapi masalah-masalah yang terjadi di Indonesia baik itu dari sektor manufaktur, infrastruktur, dan energi. Di bagian 3 ini, kesatria muda akan mengerjakan sebuah masalah keteknikan yang mana nantinya akan melatih kemampuan berpikir kritis, problem solving, dan kerja sama.",
-    subtitle1: "Kesatria Muda Berkarya",
+    subtitle1: "Karya Aplikatif",
     subtitle1desc:
       "Para kesatria muda diharapkan mampu mengaplikasikan pengetahuan dan keterampilan yang relevan serta pemahaman mendalam mengenai  jurusan Teknik yang kesatria muda ambil untuk kontribusi mereka bagi bangsa dan negara di masa depan.",
     subtitle2: "Karya Aplikatif",
     subtitle2desc:
-      "Indonesia sebagai negara berkembang terus menghadapi berbagai tantangan dalam sektor manufaktur, infrastruktur, dan energi. Di era globalisasi dan revolusi industri 4.0, kebutuhan akan tenaga ahli di bidang teknik semakin meningkat. Kesatria muda sebagai calon-calon insinyur muda berperan penting dalam pembangunan berkelanjutan dan peningkatan kualitas hidup masyarakat. Oleh karena itu, pendidikan teknik harus dapat membekali pengetahuan dan keterampilan yang relevan serta pemahaman mendalam tentang kontribusi mereka bagi bangsa.",
+      "Sebagai calon insinyur, Kesatria Muda diharapkan mampu mengaplikasikan pengetahuan yang didapat selama menempuh perkuliahan untuk menyelesaikan masalah-masalah yang ada di masyarakat, baik di bidang infrastruktur, energi, manufaktur, lingkungan, teknologi, maupun sosial kemasyarakatan. Kesatria Muda diharapkan dapat menghasilkan ide-ide kreatif dan inovatif dalam merespons tantangan zaman yang semakin kompleks.",
   },
 ];
 
@@ -28,7 +28,7 @@ const JudulChapter = () => {
         Bagian 3:
       </h1>
       <h1 className="font-storybook text-[4vw] text-[#013047] max-lg:text-[4.8vw] ">
-        Kesatria Muda Berkarya
+        Karya Aplikatif
       </h1>
       <p className="text-center font-primeform-medium text-[1.5vw]/[2vw] text-[#013047] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)] max-lg:text-[2.5vw]/[3.2vw] max-sm:text-[3.5vw]/[4.5vw] font-medium max-w-[80%] mx-auto max-sm:max-w-[90%]">
         {CONTENT[0].titleDesc}
@@ -309,9 +309,9 @@ const KaryaAplikatif = () => {
         data-aos="fade-left"
         className="flex max-w-[40vw] flex-col gap-[1vw] items-start"
       >
-        <h2 className="font-storybook text-[3vw] text-[#013047] max-lg:text-[3.8vw] ">
+        {/* <h2 className="font-storybook text-[3vw] text-[#013047] max-lg:text-[3.8vw] ">
           {CONTENT[0].subtitle2}
-        </h2>
+        </h2> */}
         <p className="text-justify font-primeform-medium text-[1.5vw]/[2vw] font-light text-[#013047] drop-shadow-[-20_0.4vw_0.2vw_rgba(0,0,0,0.6)]">
           {CONTENT[0].subtitle2desc}
         </p>
@@ -391,9 +391,9 @@ const KaryaAplikatifTab = () => {
         data-aos="fade-up"
         className="flex w-full flex-col items-center gap-[1vw]"
       >
-        <h2 className="text-[#013047] font-storybook text-[4.5vw]">
+        {/* <h2 className="text-[#013047] font-storybook text-[4.5vw]">
           {CONTENT[0].subtitle2}
-        </h2>
+        </h2> */}
         <p className="max-w-[65vw] text-justify font-primeform-medium text-[2.5vw]/[3.2vw] font-light text-[#013047] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
           {CONTENT[0].subtitle2desc}
         </p>
@@ -530,9 +530,9 @@ const KaryaAplikasiHP = () => {
         data-aos="fade-up"
         className="flex w-full flex-col place-content-center items-center gap-[1vw] text-center sm:hidden"
       >
-        <h1 className="font-storybook text-[5vw]">
+        {/* <h1 className="font-storybook text-[5vw]">
           <span className="text-[#013047] s">{CONTENT[0].subtitle2}</span>
-        </h1>
+        </h1> */}
         <p className="max-w-[72vw] text-justify font-primeform-medium text-[3.5vw]/[4.5vw] font-light text-[#013047] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
           {CONTENT[0].subtitle2desc}
         </p>
@@ -662,10 +662,10 @@ const TransitiAtas = () => {
 
 const Content = () => {
   return (
-    <div className="relative z-[999] flex min-h-screen w-full flex-col place-content-center items-center gap-[5vw] px-[9.9vw] py-[0vw] pb-[30vw]">
+    <div className="relative z-[999] flex min-h-screen w-full flex-col place-content-center items-center gap-[5vw] px-[9.9vw] py-[0vw] pb-[5vw]">
       <JudulChapter />
       <JudulChapterHP />
-      <KesatriaMudaBerkarya />
+      {/* <KesatriaMudaBerkarya /> */}
       {/* <KesatriaMudaBerkaryaTab /> */}
       {/* <KesatriaMudaBerkaryaHP /> */}
       <KaryaAplikatif />
