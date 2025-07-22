@@ -51,45 +51,29 @@ const Chapter2_Desktop = () => {
             width={1000}
             height={1000}
           ></Image>
-          {/* <div className="absolute h-full w-full rounded-[2vw] bg-gradient-to-b from-[#FFD23F] to-[#FFA514] opacity-50">
-            opacity
-          </div> */}
-          {/* <div className="absolute -right-[7vw] -top-[8vw] w-full">
-            <Image
-              src="/images/beranda/pita-box-ungu-1.png"
-              alt=""
-              width={100}
-              height={100}
-              className="w-full scale-[0.5]"
-            />
-          </div>
-          <div className="absolute -bottom-[5.9vw] -left-[7.9vw] w-full">
-            <Image
-              src="/images/beranda/pita-box-ungu-2.png"
-              alt=""
-              width={100}
-              height={100}
-              className="w-full scale-[0.5]"
-            />
-          </div> */}
         </div>
-        <div className="flex h-[22vw] flex-col place-content-center gap-[0.5vw]">
-          <h2 className="font-storybook text-[3vw] text-[#013047] text-center">
-            {title}
-          </h2>
+        <div className="flex h-[22vw] flex-col place-content-center gap-[0.2vw]">
+          {/* Title without border */}
+          <div className="w-full pb-[0.5vw] mb-[0.5vw]">
+            <h2 className="font-storybook text-[3vw] text-[#013047] text-center">
+              {title}
+            </h2>
+          </div>
           <p className="w-[36vw] text-justify font-primeform-medium text-[#013047] text-[1.2vw]">
             {desc}
           </p>
-          <Link
-            target="_blank"
-            rel="noopener noreferrer"
-            href={link}
-            className="w-fit rounded-[1.5vw] bg-[#A01326] hover:bg-[#8a1020] transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,209,63,0.7)] hover:border-[2px] hover:border-[#FFA514] px-[2.5vw]"
-          >
-            <p className="font-storybook text-[1.5vw] text-[#F9C157]">
-              Baca Modul
-            </p>
-          </Link>
+          <div className="flex justify-center">
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              href={link}
+              className="w-fit rounded-[1.5vw] bg-[#A01326] hover:bg-[#8a1020] transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,209,63,0.7)] hover:border-[2px] hover:border-[#FFA514] px-[2.5vw]"
+            >
+              <p className="font-storybook text-[1.5vw] text-[#F9C157]">
+                Baca Modul
+              </p>
+            </Link>
+          </div>
         </div>
       </div>
     );
@@ -264,6 +248,7 @@ const Chapter2_Tablet = () => {
         </div>
       );
     };
+
     const Button = () => {
       return (
         <Link
@@ -276,14 +261,22 @@ const Chapter2_Tablet = () => {
         </Link>
       );
     };
+
     return (
-      <div className="flex w-full flex-col place-content-center items-center px-[3vw] py-[3vw]">
-        <h1 className="font-storybook text-[4vw] text-[#013047]">{title}</h1>
+      <div className="flex w-full flex-col place-content-center items-center px-[3vw] py-[3vw] gap-[2vw]">
+        {/* Title without border */}
+        <div className="w-full pb-[1.5vw]">
+          <h1 className="font-storybook text-[4vw] text-[#013047] text-center">
+            {title}
+          </h1>
+        </div>
         <Gambar />
         <p className="px-[2vw] font-primeform-medium text-[2vw]/[2.5vw] text-center text-[#013047]">
           {desc}
         </p>
-        <Button />
+        <div className="flex justify-center">
+          <Button />
+        </div>
       </div>
     );
   };
@@ -447,15 +440,17 @@ const Chapter2_HP = () => {
     };
 
     return (
-      <div className="flex w-full flex-col place-content-center items-center px-[5vw] py-[4vw]">
-        <h1 className="font-storybook text-[5.5vw] text-[#013047] pb-[3vw] text-center leading-tight">
+      <div className="flex w-full flex-col place-content-center items-center px-[5vw] py-[4vw] gap-[3vw]">
+        <h1 className="font-storybook text-[5.5vw] text-[#013047] text-center leading-tight">
           {title}
         </h1>
         <Gambar />
-        <p className="px-[3vw] pt-[3vw] pb-[4vw] font-primeform-medium text-[2.8vw]/[3.5vw] text-center text-[#013047]">
+        <p className="px-[3vw] font-primeform-medium text-[2.8vw]/[3.5vw] text-center text-[#013047]">
           {desc}
         </p>
-        <Button />
+        <div className="flex justify-center">
+          <Button />
+        </div>
       </div>
     );
   };

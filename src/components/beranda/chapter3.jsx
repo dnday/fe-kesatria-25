@@ -65,24 +65,27 @@ const KesatriaMudaBerkarya = () => {
           data-aos="fade-right"
           className="flex max-w-[40vw] flex-col gap-[1vw]"
         >
-          <h2 className="font-storybook text-[3vw] text-[#013047] ">
-            {CONTENT[0].subtitle1}
-          </h2>
+          {/* Header with title and button aligned */}
+          <div className="flex items-center justify-between mb-[1vw]">
+            <h2 className="font-storybook text-[3vw] text-[#013047]">
+              {CONTENT[0].subtitle1}
+            </h2>
+            <Link
+              target="_blank"
+              rel="noopener noreferrer"
+              href={
+                "https://drive.google.com/file/d/157RNpG_SA8OliPWnuBfHIPXGBr-c1OOb/view?usp=sharing"
+              }
+              className="w-[16.5vw] rounded-[2vw] bg-[#A01326] hover:bg-[#8a1020] transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,209,63,0.7)] hover:border-[2px] hover:border-[#FFA514]"
+            >
+              <p className="z-[10] text-[#F9C157] text-center font-storybook text-[2vw]">
+                Baca Modul
+              </p>
+            </Link>
+          </div>
           <p className="text-justify font-primeform-medium text-[1.5vw]/[2vw] font-light text-[#013047] drop-shadow-[-20_0.4vw_0.2vw_rgba(0,0,0,0.6)]">
             {CONTENT[0].subtitle1desc}
           </p>
-          <Link
-            target="_blank"
-            rel="noopener noreferrer"
-            href={
-              "https://drive.google.com/file/d/157RNpG_SA8OliPWnuBfHIPXGBr-c1OOb/view?usp=sharing"
-            }
-            className="w-[16.5vw] rounded-[2vw] bg-[#A01326] hover:bg-[#8a1020] transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,209,63,0.7)] hover:border-[2px] hover:border-[#FFA514]"
-          >
-            <p className="z-[10] text-[#F9C157] text-center font-storybook text-[2vw]">
-              Baca Modul
-            </p>
-          </Link>
         </div>
 
         {/* Image Section */}
