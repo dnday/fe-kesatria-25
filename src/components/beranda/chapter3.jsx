@@ -620,6 +620,7 @@ const TransitiAtas = () => {
         src="/images/assets_beranda_chapter2_tugtek.svg"
         width={960}
         height={250}
+        draggable={false}
       />
       {/* Tugu Teknik - positioned behind kain kuning with low z-index */}
       <Image
@@ -628,6 +629,7 @@ const TransitiAtas = () => {
         src="/images/assets_beranda_chapter2_bulu3.svg"
         width={960}
         height={250}
+        draggable={false}
       />
 
       {/* Kain Kuning - always on top with highest z-index */}
@@ -638,6 +640,7 @@ const TransitiAtas = () => {
         width={1920}
         height={500}
         priority
+        draggable={false}
       />
 
       {/* Gambar yang diletakkan di atas latar belakang */}
@@ -647,6 +650,7 @@ const TransitiAtas = () => {
         src={"/images/assets_beranda_chapter3_abimanyu.svg"}
         width={100}
         height={100}
+        draggable={false}
       />
 
       <Image
@@ -655,6 +659,7 @@ const TransitiAtas = () => {
         src={"/images/assets_beranda_chapter3_subadra.svg"}
         width={100}
         height={100}
+        draggable={false}
       />
     </div>
   );

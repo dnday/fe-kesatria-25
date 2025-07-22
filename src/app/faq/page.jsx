@@ -4,7 +4,6 @@ import { RiArrowDownSLine } from "react-icons/ri";
 import { useEffect, useState } from "react";
 import { listPertanyaanUmum, listPertanyaanMateri } from "./listPertanyaan";
 import AOS from "aos";
-import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Faq() {
@@ -19,39 +18,40 @@ export default function Faq() {
       duration: 700,
       easing: "ease-in-out",
     });
-  });
+  }, []);
 
-  const checkSearchResult = () => {
+  const checkSearchResult = (searchTerm) => {
     let questionUmum = [];
     let questionMateri = [];
+
+    if (searchTerm === "") {
+      setFoundPertanyaanUmum(listPertanyaanUmum);
+      setFoundPertanyaanMateri(listPertanyaanMateri);
+      return;
+    }
+
     listPertanyaanUmum.forEach((item) => {
       let _question = item.question.toUpperCase();
-      if (_question.includes(userInput.toUpperCase())) {
+      if (_question.includes(searchTerm.toUpperCase())) {
         questionUmum.push(item);
       }
     });
+
     listPertanyaanMateri.forEach((item) => {
       let _question = item.question.toUpperCase();
-      if (_question.includes(userInput.toUpperCase())) {
+      if (_question.includes(searchTerm.toUpperCase())) {
         questionMateri.push(item);
       }
     });
+
     setFoundPertanyaanUmum(questionUmum);
     setFoundPertanyaanMateri(questionMateri);
   };
 
   const handleChange = (e) => {
-    setUserInput(e.target.value);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (userInput === "") {
-      setFoundPertanyaanUmum(listPertanyaanUmum);
-      setFoundPertanyaanMateri(listPertanyaanMateri);
-    } else {
-      checkSearchResult();
-    }
+    const value = e.target.value;
+    setUserInput(value);
+    checkSearchResult(value);
   };
 
   return (
@@ -59,7 +59,6 @@ export default function Faq() {
       className="min-h-screen bg-[url('/images/background/pattern-parang-dark.svg')] bg-[size:80%] bg-repeat sm:bg-[size:75%] lg:bg-[size:70%] py-36 pb-[40vw] pt-[10vw]"
       style={{ backgroundSize: "100%, 100%, 100%" }}
     >
-      {/* Main Content */}
       <div className="container mx-auto py-6 px-6 md:px-12 flex flex-col items-center">
         <h1
           data-aos="fade-up"
@@ -85,15 +84,8 @@ export default function Faq() {
           menghubungi kami.
         </p>
 
-        {/* Main Content Area */}
         <div className="w-full max-w-5xl space-y-20">
-          {/* Search Form */}
-          <form
-            data-aos="fade-up"
-            data-aos-delay="200"
-            onSubmit={handleSubmit}
-            className="w-full"
-          >
+          <div data-aos="fade-up" data-aos-delay="200" className="w-full">
             <label htmlFor="default-search" className="sr-only">
               Search
             </label>
@@ -123,16 +115,9 @@ export default function Faq() {
                 className="block w-full p-4 pl-10 text-base text-[#013047] font-primeform-medium border-2 border-[#A01326] rounded-lg bg-[#ECC691] focus:outline-none focus:ring-2 focus:ring-[#A01326] focus:border-[#A01326] placeholder-[#013047] placeholder-opacity-60"
                 placeholder="Cari di sini..."
               />
-              <button
-                type="submit"
-                className="text-[#ECC691] absolute right-2.5 bottom-2.5 bg-[#A01326] hover:bg-[#8a1020] hover:shadow-[0_0_15px_rgba(255,209,63,0.7)] hover:border-2 hover:border-[#F9C157] focus:outline-none active:scale-95 font-primeform-medium font-medium rounded-lg text-base px-4 py-2 transition-all duration-300"
-              >
-                Search
-              </button>
             </div>
-          </form>
+          </div>
 
-          {/* FAQ Section */}
           <div
             data-aos="fade-up"
             data-aos-delay="400"

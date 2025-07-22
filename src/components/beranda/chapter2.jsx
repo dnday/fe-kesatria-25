@@ -602,6 +602,7 @@ const TransitiAtas = () => {
         width={3840}
         height={1000}
         priority
+        draggable={false}
       />
 
       {/* Gambar yang diletakkan di atas latar belakang */}
@@ -639,6 +640,7 @@ const TransitiAtas = () => {
           src={"/images/assets_beranda_chapter2_bulu1.svg"}
           width={100}
           height={100}
+          draggable={false}
         />
       </motion.div>
       {/* </motion.div> */}
@@ -649,6 +651,7 @@ const TransitiAtas = () => {
         src={"/images/assets_beranda_chapter2_bulu2.svg"}
         width={25}
         height={25}
+        draggable={false}
       />
     </div>
   );
