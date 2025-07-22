@@ -8,7 +8,7 @@ const Tombol = ({ label = "", href = "#", dataAos = "" }) => {
       rel="noopener noreferrer"
       href={href}
       data-aos={dataAos}
-      className="bg-[#A01326] text-[#F9C157] font-storybook px-[10vw] xl:px-[5vw] py-[0.5vw] rounded-4xl text-[2vw] xl:text-[1.5vw] font-bold shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] hover:bg-[#7f0818] cursor-pointer transition duration-300"
+      className="bg-[#A01326] text-[#F9C157] font-storybook px-[10vw] xl:px-[5vw] py-[1vw] rounded-4xl text-[2.5vw] xl:text-[1.5vw] font-bold shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] hover:bg-[#7f0818] cursor-pointer transition duration-300"
     >
       <p className="text-[#F9C157] items-center text-center font-storybook">
         {label}
@@ -49,7 +49,7 @@ const agendaAtribut = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-[40vw] md:h-[30vw]"></div>
+      <div className="w-full h-[33vw] md:h-[25vw]"></div>
     </div>
   );
 };
