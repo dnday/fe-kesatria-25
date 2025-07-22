@@ -62,12 +62,12 @@ const Chapter2_Desktop = () => {
           <p className="w-[36vw] text-justify font-primeform-medium text-[#013047] text-[1.2vw]">
             {desc}
           </p>
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-[1vw]">
             <Link
               target="_blank"
               rel="noopener noreferrer"
               href={link}
-              className="w-fit rounded-[1.5vw] bg-[#A01326] hover:bg-[#8a1020] transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,209,63,0.7)] hover:border-[2px] hover:border-[#FFA514] px-[2.5vw]"
+              className="w-fit rounded-[1.5vw] bg-[#A01326] hover:bg-[#7f0818] px-[2.5vw] font-bold shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] cursor-pointer"
             >
               <p className="font-storybook text-[1.5vw] text-[#F9C157]">
                 Baca Modul
@@ -86,7 +86,7 @@ const Chapter2_Desktop = () => {
     >
       <div
         data-aos="fade-up"
-        className="flex flex-col items-center pb-[5vw] gap-[1vw]"
+        className="flex flex-col items-center pb-[1.25vw] gap-[1vw]"
       >
         <h1 className="font-storybook text-[4vw] text-[#ECC691] text-shadow-[inset_-1px_-1px_0px_0px_#FFFFFF40, inset_1px_1px_0px_0px_#00000059]">
           Bagian 2:
@@ -255,7 +255,7 @@ const Chapter2_Tablet = () => {
           target="_blank"
           rel="noopener noreferrer"
           href={link}
-          className="w-fit rounded-[2.5vw] px-[5vw] bg-[#A01326] hover:bg-[#8a1020] transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,209,63,0.7)] hover:border-[2px] hover:border-[#FFA514]"
+          className="w-fit rounded-[2.5vw] px-[5vw] bg-[#A01326] hover:bg-[#7f0818] hover:shadow-[0_0_15px_rgba(255,209,63,0.7)] font-bold shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] cursor-pointer"
         >
           <p className="font-storybook text-[2vw] text-[#F9C157]">Baca Modul</p>
         </Link>
@@ -430,7 +430,7 @@ const Chapter2_HP = () => {
           target="_blank"
           rel="noopener noreferrer"
           href={link}
-          className="w-fit rounded-[4vw] px-[6vw] py-[1vw] bg-[#A01326] hover:bg-[#8a1020] transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,209,63,0.7)] hover:border-[2px] hover:border-[#FFA514]"
+          className="w-fit rounded-[4vw] px-[6vw] py-[1vw] bg-[#A01326] hover:bg-[#7f0818] hover:shadow-[0_0_15px_rgba(255,209,63,0.7)] font-bold shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] cursor-pointer"
         >
           <p className="font-storybook text-[3.5vw] text-[#F9C157]">
             Baca Modul

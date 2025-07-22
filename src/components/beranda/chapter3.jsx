@@ -76,7 +76,7 @@ const KesatriaMudaBerkarya = () => {
               href={
                 "https://drive.google.com/file/d/157RNpG_SA8OliPWnuBfHIPXGBr-c1OOb/view?usp=sharing"
               }
-              className="w-[16.5vw] rounded-[2vw] bg-[#A01326] hover:bg-[#8a1020] transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,209,63,0.7)] hover:border-[2px] hover:border-[#FFA514]"
+              className="w-[16.5vw] rounded-[2vw] bg-[#A01326] hover:bg-[#7f0818] font-bold shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] cursor-pointer"
             >
               <p className="z-[10] text-[#F9C157] text-center font-storybook text-[2vw]">
                 Baca Modul
@@ -193,7 +193,7 @@ const KesatriaMudaBerkarya = () => {
               href={
                 "https://drive.google.com/file/d/157RNpG_SA8OliPWnuBfHIPXGBr-c1OOb/view?usp=sharing"
               }
-              className=" w-[26.9vw] rounded-[3.5vw] bg-[#A01326] hover:bg-[#8a1020] transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,209,63,0.7)] hover:border-[2px] hover:border-[#FFA514]"
+              className=" w-[26.9vw] rounded-[3.5vw] bg-[#A01326] hover:bg-[#7f0818] font-bold shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] cursor-pointer"
             >
               <p className="text-[#F9C157] text-center font-storybook text-[3vw]">
                 Baca Modul
@@ -252,13 +252,12 @@ const KesatriaMudaBerkarya = () => {
             </motion.div>
           </motion.div>
           <Link
-            data-aos="fade-up"
             target="_blank"
             rel="noopener noreferrer"
             href={
               "https://drive.google.com/file/d/157RNpG_SA8OliPWnuBfHIPXGBr-c1OOb/view?usp=sharing"
             }
-            className="z-[1] rounded-[3.5vw] bg-[#A01326] hover:bg-[#8a1020] transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,209,63,0.7)] hover:border-[2px] hover:border-[#FFA514]"
+            className="z-[1] rounded-[3.5vw] bg-[#A01326] hover:bg-[#7f0818] font-bold shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] cursor-pointer"
           >
             <p className="z-[10] text-[#F9C157] text-center font-storybook text-[4vw] px[7vw] py-[0.5]">
               Baca Modul
@@ -324,7 +323,7 @@ const KaryaAplikatif = () => {
           href={
             "https://drive.google.com/file/d/157RNpG_SA8OliPWnuBfHIPXGBr-c1OOb/view?usp=sharing"
           }
-          className="w-[16.5vw] rounded-[2vw] bg-[#A01326] hover:bg-[#8a1020] transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,209,63,0.7)] hover:border-[2px] hover:border-[#FFA514]"
+          className="w-[16.5vw] rounded-[2vw] bg-[#A01326] hover:bg-[#7f0818] font-bold shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] cursor-pointer"
         >
           <p className="z-[10] text-[#F9C157] text-center font-storybook text-[2vw]">
             Baca Modul
@@ -456,7 +455,7 @@ const KaryaAplikatifTab = () => {
             href={
               "https://drive.google.com/file/d/157RNpG_SA8OliPWnuBfHIPXGBr-c1OOb/view?usp=sharing"
             }
-            className="z-[1] w-[26.9vw] rounded-[3.5vw] bg-[#A01326] hover:bg-[#8a1020] transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,209,63,0.7)] hover:border-[2px] hover:border-[#FFA514]"
+            className="z-[1] w-[26.9vw] rounded-[3.5vw] bg-[#A01326] hover:bg-[#7f0818] font-bold shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] cursor-pointer"
           >
             <p className="text-[#F9C157] text-center font-storybook">
               Baca Modul
@@ -601,7 +600,7 @@ const KaryaAplikasiHP = () => {
         href={
           "https://drive.google.com/file/d/157RNpG_SA8OliPWnuBfHIPXGBr-c1OOb/view?usp=sharing"
         }
-        className="z-[1] rounded-[3.5vw] bg-[#A01326] hover:bg-[#8a1020] transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,209,63,0.7)] hover:border-[2px] hover:border-[#FFA514]"
+        className="z-[1] rounded-[3.5vw] bg-[#A01326] hover:bg-[#7f0818] font-bold shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] cursor-pointer"
       >
         <p className="text-[#F9C157] px-[7vw] py-[0.5] text-center font-storybook">
           Baca Modul
@@ -648,6 +647,8 @@ const TransitiAtas = () => {
 
       {/* Gambar yang diletakkan di atas latar belakang */}
       <Image
+        data-aos="fade-right"
+        data-aos-delay="600"
         className="absolute left-0 top-0 w-[17.5vw] translate-x-[-1.8vw] translate-y-[7vw] z-[200]"
         alt="Abimanyu"
         src={"/images/assets_beranda_chapter3_abimanyu.svg"}
@@ -657,6 +658,8 @@ const TransitiAtas = () => {
       />
 
       <Image
+        data-aos="fade-left"
+        data-aos-delay="600"
         className="absolute right-0 top-0 w-[20vw] translate-x-[-0.01vw] translate-y-[10vw] z-[200]"
         alt="Subadra"
         src={"/images/assets_beranda_chapter3_subadra.svg"}

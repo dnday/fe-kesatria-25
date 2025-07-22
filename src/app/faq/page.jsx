@@ -112,9 +112,31 @@ export default function Faq() {
                 value={userInput}
                 type="search"
                 id="default-search"
-                className="block w-full p-4 pl-10 text-base text-[#013047] font-primeform-medium border-2 border-[#A01326] rounded-lg bg-[#ECC691] focus:outline-none focus:ring-2 focus:ring-[#A01326] focus:border-[#A01326] placeholder-[#013047] placeholder-opacity-60"
+                className="block w-full p-4 pl-10 pr-24 text-base text-[#013047] font-primeform-medium border-2 border-[#A01326] rounded-lg bg-[#ECC691] focus:outline-none focus:ring-2 focus:ring-[#A01326] focus:border-[#A01326] placeholder-[#013047] placeholder-opacity-60"
                 placeholder="Cari di sini..."
               />
+              <button
+                type="button"
+                onClick={() => checkSearchResult(userInput)}
+                className="absolute inset-y-0 right-0 flex items-center px-4 text-sm font-medium text-white bg-[#A01326] rounded-r-lg border border-[#A01326] hover:bg-[#7f0818] focus:ring-2 focus:outline-none focus:ring-[#A01326] transition-colors duration-300"
+              >
+                <svg
+                  className="w-4 h-4"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                  />
+                </svg>
+                <span className="sr-only">Search</span>
+              </button>
             </div>
           </div>
 

@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Peta() {
   return (
@@ -92,16 +94,16 @@ export default function Peta() {
             ></iframe>
 
             {/* Subtitle dengan bahasa yang lebih jelas */}
-            <div
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.7, ease: "easeInOut" }}
               className="mt-2 sm:mt-2 md:mt-3 relative z-[110]"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="800"
             >
               <p className="text-sm sm:text-base md:text-lg lg:text-xl text-center text-[#013047] font-primeform-medium font-bold opacity-90 rounded-lg py-2 px-4 mb-6">
                 Nikmati Pengalaman Terbaik dengan Desktop/PC 💻
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
