@@ -35,7 +35,7 @@ const Chapter1 = () => {
       </div>
       <div data-aos="fade-up">
         <Button
-          className="mt-[-1vw] z-30"
+          className="mt-[-3vw] md:mt-[-1vw] z-30"
           href="https://drive.google.com/file/d/19y_12wJcJkrK3KziJYkH62Ak7aIU5Z2t/view?usp=sharing"
         />
       </div>
