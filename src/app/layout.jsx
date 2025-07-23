@@ -1,7 +1,7 @@
 import "./globals.css";
 import "../style/animation.css";
-import Navbar from "../components/layout/Navbar.jsx";
-import Footer from "../components/layout/Footer.jsx";
+import Navbar from "../components/layout/navbar.jsx";
+import Footer from "../components/layout/footer.jsx";
 import AOSInit from "@/components/layout/AOSInit";
 // import AOS from "aos";
 // import "aos/dist/aos.css";
