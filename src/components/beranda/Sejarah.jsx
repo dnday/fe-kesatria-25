@@ -34,7 +34,7 @@ const Sejarah = () => {
         </div>
         <div
           data-aos="fade-left"
-          className="flex flex-col mt-[-30vw] md:mt-[-50vw] ml-[50vw] z-10 lg:mt-0 lg:ml-[10vw]"
+          className="flex flex-col mt-[-25vw] md:mt-[-50vw] ml-[50vw] z-10 lg:mt-0 lg:ml-[10vw]"
         >
           <div
             data-aos="zoom-in"
