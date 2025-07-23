@@ -10,7 +10,7 @@ const AOSInit = () => {
   useEffect(() => {
     AOS.init({
       once: false, // supaya animasi bisa muncul tiap scroll
-      duration: 1000,
+      duration: 800,
     });
   }, []);
 
