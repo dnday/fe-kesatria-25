@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* Font Primeform Pro Demo - Optimized with font-display: swap */
+/* Font Primeform Pro Demo */
 @font-face {
   font-family: "Primeform Pro Demo";
   src: url("/fonts/PrimeformProDemo/PrimeformProDemo-Regular.otf")
@@ -19,11 +19,10 @@
   font-display: swap;
 }
 
-/* Font Storybook - Add font-display: swap */
+/* Font Storybook */
 @font-face {
   font-family: "Storybook";
   src: url("/fonts/storybook/Storybook.TTF") format("truetype");
-  font-display: swap;
 }
 
 :root {
@@ -70,4 +69,216 @@ body {
 
 .font-storybook {
   font-family: "Storybook", sans-serif;
+}
+
+/* Custom animations untuk subtitle */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 0.6;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    text-shadow: 0 0 5px rgba(1, 48, 71, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 10px rgba(1, 48, 71, 0.5), 0 0 15px rgba(1, 48, 71, 0.3);
+  }
+}
+
+.animate-glow {
+  animation: glow 3s ease-in-out infinite;
+}
+
+/* New animations for subtitle */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 0.8;
+    transform: translateX(0);
+  }
+}
+
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
+@keyframes typewriter {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-10px);
+    opacity: 0.8;
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse-slow {
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.02);
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 1.5s ease-out;
+}
+
+.animate-wiggle {
+  animation: wiggle 2s ease-in-out infinite;
+}
+
+.animate-typewriter {
+  animation: typewriter 3s steps(40) infinite;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 4s linear infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s ease-in-out infinite;
+}
+
+/* Better, more elegant subtitle animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 0.9;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 0.7;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gentle-bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-3px);
+  }
+  60% {
+    transform: translateY(-2px);
+  }
+}
+
+@keyframes gentle-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.animate-slideInBottom {
+  animation: slideInBottom 1.5s ease-out 0.3s both;
+}
+
+.animate-gentle-bounce {
+  animation: gentle-bounce 2s ease-in-out infinite;
+}
+
+.animate-gentle-rotate {
+  animation: gentle-rotate 3s ease-in-out infinite;
 }
