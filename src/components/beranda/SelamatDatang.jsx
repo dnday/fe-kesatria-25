@@ -43,6 +43,7 @@ const SelamatDatang = () => {
       />
       <Image
         className="absolute w-[54vw] h-[34vw] top-[77vw] left-0 z-10 md:top-[48vw] lg:top-[44vw]"
+        priority
         alt="kainmerah2"
         src="/images/selamatdatang/kainmerah2.webp"
         width={800}
@@ -50,6 +51,7 @@ const SelamatDatang = () => {
       />
       <Image
         className="absolute w-[100vw] top-[63vw] h-auto md:top-[34vw] lg:top-[30vw] z-10"
+        priority
         alt="kain kuning"
         src="/images/selamatdatang/kainnkuning.webp"
         width={800}
@@ -57,6 +59,7 @@ const SelamatDatang = () => {
       />
       <Image
         className="absolute w-[35vw] top-[58vw] h-auto z-20 left-0 md:top-[35vw] lg:top-[30vw]"
+        priority
         alt="pojokbawah"
         src="/images/selamatdatang/pojokbawah.webp"
         width={800}
@@ -68,7 +71,7 @@ const SelamatDatang = () => {
         className="relative z-50 flex flex-row justify-center gap-0 md:gap-[8vw]"
       >
         <Image
-          className="w-[45vw] h-[55vw] mt-[20vw] z-50 md:w-[30vw] md:h-[40vw] md:mt-[10vw] lg:mt-[5vw] goyang-anim"
+          className="w-[45vw] aspect-[3/4] mt-[20vw] z-50 md:w-[30vw] md:h-[40vw] md:mt-[10vw] lg:mt-[5vw] goyang-anim"
           alt="nala"
           src="/images/selamatdatang/nala-menyapa2.webp"
           width={800}
