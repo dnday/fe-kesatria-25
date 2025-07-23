@@ -12,25 +12,25 @@ const CARDCONTENT = [
     title: "Pengenalan Jurusan",
     desc: "Fakultas Teknik terdiri dari 8 departemen yang di dalamnya terdapat 15 program studi atau yang biasa dikenal sebagai jurusan. Yuk, kita kenali jurusan dari masing-masing Kesatria Muda melalui modul berikut!",
     link: "https://drive.google.com/drive/folders/114MDFkrS6-VxJ4EKQ0nh2YhR9gQdytBg?usp=sharing",
-    imgpath: "/images/chapter 2/pengenalan.jpg",
+    imgpath: "/images/chapter2/pengenalan.jpg",
   },
   {
     title: "Jalan-Jalan Teknik",
     desc: "Melalui modul ini, Kesatria Muda dapat mengenal lebih jauh mengenai BSO yang ada di Fakultas Teknik UGM sebagai wadah untuk mengembangkan minat bakat dan kreativitas. Modul ini juga akan menjadi bekal bagi para Kesatria Muda untuk “Jalan-Jalan Teknik” saat Pionir Kesatria 2025 nanti!",
     link: "https://drive.google.com/file/d/1gs6_zwLcce-RXB8fsylD2JCuNkjCzZoH/view?usp=sharing",
-    imgpath: "/images/chapter 2/jalanjalanteknik.jpg",
+    imgpath: "/images/chapter2/jalanjalanteknik.jpg",
   },
   {
     title: "Pameran Karya",
     desc: "Pameran Karya adalah bagian dari serangkaian kegiatan PIONIR Kesatria 2025. Melalui modul ini, Kesatria Muda dapat mengenal 9 tim terbaik Fakultas Teknik UGM dan 2 lembaga yang nantinya akan menunjukkan karya-karya mereka dalam kegiatan Pameran Karya!",
     link: "https://drive.google.com/file/d/1m9L-TR0BJW8BN83_HsnYp0N1AT2BHaAx/view?usp=sharing",
-    imgpath: "/images/chapter 2/pameran.jpg",
+    imgpath: "/images/chapter2/pamerankarya.jpg",
   },
   {
     title: "Fasilitas Fakultas",
     desc: "Fakultas Teknik merupakan fakultas terbesar di Universitas Gadjah Mada dan tentunya memiliki beragam fasilitas penunjang guna mendukung kegiatan mahasiswanya. Simak modul berikut untuk mengetahui apa saja fasilitas di Fakultas Teknik UGM!",
     link: "https://drive.google.com/file/d/158yF8Rij22YHMTXLGpGhc3ADjgfFAB2J/view?usp=sharing",
-    imgpath: "/images/chapter 2/teknik.jpg",
+    imgpath: "/images/chapter2/fasilitas.png",
   },
 ];
 
@@ -41,7 +41,7 @@ const Chapter2_Desktop = () => {
     return (
       <div className="flex items-center justify-center gap-[2.5vw]">
         <div
-          className="relative h-[13.5vw] w-[20vw] rounded-[2vw] bg-[#A01326] overflow-hidden justify-center items-center flex"
+          className="relative h-[13.5vw] w-[20vw] rounded-[2vw] bg-[#A01326] overflow-hidden justify-center items-center flex border-4 border-[#A01326]"
           data-aos="fade-left"
         >
           <Image
@@ -109,20 +109,16 @@ const Chapter2_Desktop = () => {
         className="z-[1000] flex h-[25vw] w-[75vw] items-center justify-center gap-[0vw] rounded-[2vw] bg-[#ECC691]"
       >
         <div
-          className="flex h-full min-w-[3vw] items-center justify-center"
+          className={`flex h-full min-w-[3vw] items-center justify-center cursor-pointer ${
+            activeSwiper === 0 ? "opacity-30" : "opacity-100"
+          }`}
           onClick={() => {
             if (swiper?.activeIndex == 0) return;
             swiper?.slidePrev();
             setActiveSwiper(swiper?.activeIndex ?? 0);
           }}
         >
-          {/* <Image
-            className="absolute h-[8vw] w-[3vw] cursor-pointer duration-100 hover:w-[5vw] hover:translate-x-[-1vw]"
-            alt=""
-            src={"/images/assets_beranda_chapter2_arrow_kiri.svg"}
-            width={52.7}
-            height={95.23}
-          /> */}
+          <div className="text-[4vw] text-[#A01326]">‹</div>
         </div>
         <Swiper
           slidesPerView={1}
@@ -145,20 +141,18 @@ const Chapter2_Desktop = () => {
           ))}
         </Swiper>
         <div
-          className="flex h-full min-w-[3vw] items-center justify-center"
+          className={`flex h-full min-w-[3vw] items-center justify-center cursor-pointer ${
+            activeSwiper === CARDCONTENT.length - 1
+              ? "opacity-30"
+              : "opacity-100"
+          }`}
           onClick={() => {
-            if (swiper?.activeIndex == CARDCONTENT.length) return;
+            if (swiper?.activeIndex == CARDCONTENT.length - 1) return;
             swiper?.slideNext();
             setActiveSwiper(swiper?.activeIndex ?? 0);
           }}
         >
-          {/* <Image
-            className="absolute h-[8vw] w-[3vw] cursor-pointer duration-100 hover:w-[5vw] hover:translate-x-[1vw]"
-            alt=""
-            src={"/images/assets_beranda_chapter2_arrow_kanan.svg"}
-            width={52.7}
-            height={95.23}
-          /> */}
+          <div className="text-[4vw] text-[#A01326]">›</div>
         </div>
       </div>
       <div className="flex px-[2vw] gap-[1vw] z-[100]">
@@ -237,7 +231,7 @@ const Chapter2_Tablet = () => {
   const SwiperCard = ({ title, desc, imgpath, link }) => {
     const Gambar = () => {
       return (
-        <div className="relative flex h-[12vw] w-[18vw] items-center justify-center rounded-[2vw] bg-[#A01326] overflow-hidden">
+        <div className="relative flex h-[12vw] w-[18vw] items-center justify-center rounded-[2vw] bg-[#A01326] overflow-hidden border-4 border-[#A01326]">
           <Image
             className="absolute h-full w-full rounded-[2vw]"
             alt=""
@@ -298,14 +292,16 @@ const Chapter2_Tablet = () => {
         className="z-[1] flex h-[50vw] w-[70vw] items-center justify-center gap-[0vw] rounded-[2vw] bg-[#ECC691]"
       >
         <div
-          className="flex h-full min-w-[3vw] items-center justify-center"
+          className={`flex h-full min-w-[5vw] items-center justify-center cursor-pointer ${
+            activeSwiper === 0 ? "opacity-30" : "opacity-100"
+          }`}
           onClick={() => {
             if (swiper?.activeIndex == 0) return;
             swiper?.slidePrev();
             setActiveSwiper(swiper?.activeIndex ?? 0);
           }}
         >
-          {/* Arrow left placeholder */}
+          <div className="text-[5vw] text-[#A01326]">‹</div>
         </div>
         <Swiper
           slidesPerView={1}
@@ -328,14 +324,18 @@ const Chapter2_Tablet = () => {
           ))}
         </Swiper>
         <div
-          className="flex h-full min-w-[3vw] items-center justify-center"
+          className={`flex h-full min-w-[5vw] items-center justify-center cursor-pointer ${
+            activeSwiper === CARDCONTENT.length - 1
+              ? "opacity-30"
+              : "opacity-100"
+          }`}
           onClick={() => {
             if (swiper?.activeIndex == CARDCONTENT.length - 1) return;
             swiper?.slideNext();
             setActiveSwiper(swiper?.activeIndex ?? 0);
           }}
         >
-          {/* Arrow right placeholder */}
+          <div className="text-[5vw] text-[#A01326]">›</div>
         </div>
       </div>
       <div className="flex px-[0.5vw] gap-[0.5vw] z-[100]">
@@ -412,7 +412,7 @@ const Chapter2_HP = () => {
   const SwiperCard = ({ title, desc, imgpath, link }) => {
     const Gambar = () => {
       return (
-        <div className="relative flex h-[25vw] w-[35vw] items-center justify-center rounded-[4vw] bg-[#A01326] overflow-hidden">
+        <div className="relative flex h-[25vw] w-[35vw] items-center justify-center rounded-[4vw] bg-[#A01326] overflow-hidden border-4 border-[#A01326]">
           <Image
             className="absolute h-full w-full rounded-[4vw]"
             alt=""
