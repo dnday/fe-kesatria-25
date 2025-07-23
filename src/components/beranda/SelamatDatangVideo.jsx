@@ -4,6 +4,7 @@ const Background = () => {
   return (
     <div className="bg-[#013047] w-full mt-[5vw] z-0 md:mt-[1vw] lg:mt-[2vw] xl:mt-[2]">
       <Image
+        priority
         className="w-[100vw] h-auto"
         alt="pattern"
         src="/images/selamatdatangvideo/pattern.webp"
@@ -11,20 +12,15 @@ const Background = () => {
         height={800}
       />
       <Image
+        priority
         className="w-[100vw] h-auto mt-[3vw] py-3 xl:py-0"
         alt="pattern"
         src="/images/selamatdatangvideo/pattern.webp"
         width={800}
         height={800}
       />
-      {/* <Image
-        className="w-[100vw] h-auto mt-[3vw] hidden xl:block"
-        alt="parang"
-        src="/images/selamatdatangvideo/parang.webp"
-        width={800}
-        height={800}
-      /> */}
       <Image
+        priority
         className="w-[100vw] h-auto"
         alt="wayang"
         src="/images/selamatdatangvideo/4wayang.webp"
