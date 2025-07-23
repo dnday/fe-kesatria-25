@@ -82,7 +82,7 @@ const SelamatDatangVideo = () => {
           >
             <iframe
               className="w-full mx-auto aspect-video rounded-2xl"
-              src="https://www.youtube.com/embed/zuJbK71Zjfo"
+              src="https://www.youtube.com/embed/zuJbK71Zjfo?modestbranding=1&rel=0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
