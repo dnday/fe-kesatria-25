@@ -619,7 +619,7 @@ const TransitiAtas = () => {
       <Image
         className="z-[1] translate-y-[-30vw] absolute bottom-[-17vw] left-0 w-[30vw] h-auto md:absolute md:bottom-[-17vw] md:left-0 md:w-[30vw] md:h-auto lg:absolute lg:bottom-[-17vw] lg:left-0 lg:w-[30vw] lg:h-auto"
         alt="Tugu Teknik"
-        src="/images/assets_beranda_chapter2_tugtek.svg"
+        src="/images/assets_beranda_chapter2_tugtek.webp"
         width={960}
         height={250}
         draggable={false}
@@ -638,7 +638,7 @@ const TransitiAtas = () => {
       <Image
         className="relative z-[1000] w-full h-auto object-cover translate-y-[-13vw]"
         alt="Background"
-        src={"/images/assets_beranda_chapter3_kainkuningatas.svg"}
+        src={"/images/assets_beranda_chapter3_kainkuningatas.webp"}
         width={1920}
         height={500}
         priority

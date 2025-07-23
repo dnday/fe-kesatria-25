@@ -593,7 +593,7 @@ const TransitiAtas = () => {
       <Image
         className="relative z-[1000] w-full h-auto object-cover translate-y-[-5vw]"
         alt="Kain Merah Kuning"
-        src={"/images/assets_beranda_chapter2_kainmerahkuning.png"}
+        src={"/images/assets_beranda_chapter2_kainmerahkuning.webp"}
         width={3840}
         height={1000}
         priority

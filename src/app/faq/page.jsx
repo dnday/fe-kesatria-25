@@ -84,7 +84,7 @@ export default function Faq() {
           menghubungi kami.
         </p>
 
-        <div className="w-full max-w-5xl space-y-20">
+        <div className="w-full max-w-5xl space-y-8 md:space-y-20">
           <div data-aos="fade-up" data-aos-delay="200" className="w-full">
             <label htmlFor="default-search" className="sr-only">
               Search
