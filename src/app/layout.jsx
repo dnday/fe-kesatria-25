@@ -14,13 +14,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html className="!overflow-x-hidden flex flex-col" lang="en">
+    <html className="!overflow-x-hidden w-full" lang="en">
       <head>
-        <link rel="icon" href="/logo_cream.png" />
+        <link rel="icon" href="/images/logo/logo_yellow.svg" />
       </head>
       <body
         className={
-          "z-[-10] bg-pattern-parang-kreme bg-[size:80%] bg-repeat sm:bg-[size:75%] lg:bg-[size:70%]"
+          "z-[-10] bg-pattern-parang-kreme bg-[size:80%] bg-repeat sm:bg-[size:75%] lg:bg-[size:70%] w-full overflow-x-hidden"
         }
         style={{
           backgroundImage: `url('/images/background/pattern-parang-krem.svg')`,
