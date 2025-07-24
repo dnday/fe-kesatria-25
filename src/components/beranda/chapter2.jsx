@@ -49,8 +49,8 @@ const Chapter2_Desktop = () => {
             className="absolute h-full w-full rounded-[2vw]"
             alt=""
             src={imgpath}
-            width={1000}
-            height={1000}
+            width={300}
+            height={300}
           />
         </div>
         <div className="flex h-[22vw] flex-col place-content-center gap-[0.2vw]">
@@ -237,8 +237,8 @@ const Chapter2_Tablet = () => {
             className="absolute h-full w-full rounded-[2vw]"
             alt=""
             src={imgpath}
-            width={1000}
-            height={1000}
+            width={200}
+            height={200}
           />
         </div>
       );
@@ -418,8 +418,8 @@ const Chapter2_HP = () => {
             className="absolute h-full w-full rounded-[4vw]"
             alt=""
             src={imgpath}
-            width={1000}
-            height={1000}
+            width={200}
+            height={200}
           />
         </div>
       );
@@ -595,8 +595,8 @@ const TransitiAtas = () => {
         className="relative z-[1000] w-full h-auto object-cover translate-y-[-5vw]"
         alt="Kain Merah Kuning"
         src={"/images/assets_beranda_chapter2_kainmerahkuning.webp"}
-        width={3840}
-        height={1000}
+        width={400}
+        height={400}
         priority
         draggable={false}
       />
