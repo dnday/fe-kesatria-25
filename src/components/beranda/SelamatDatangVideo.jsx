@@ -3,7 +3,7 @@ import LazyYouTube from "@/components/common/LazyYouTube";
 
 const Background = () => {
   return (
-    <div className="bg-[#013047] w-full mt-[5vw] z-0 md:mt-[1vw] lg:mt-[2vw] xl:mt-[2]">
+    <div className="bg-[#013047] w-full mt-[5vw] z-0 md:mt-[1vw] lg:mt-[2vw] xl:mt-[3.5vw]">
       <Image
         priority
         className="w-[100vw] h-auto"
