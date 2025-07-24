@@ -595,8 +595,8 @@ const TransitiAtas = () => {
         className="relative z-[1000] w-full h-auto object-cover translate-y-[-5vw]"
         alt="Kain Merah Kuning"
         src={"/images/assets_beranda_chapter2_kainmerahkuning.webp"}
-        width={400}
-        height={400}
+        width={200}
+        height={200}
         priority
         draggable={false}
       />
