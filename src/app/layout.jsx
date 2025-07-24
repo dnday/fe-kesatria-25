@@ -14,12 +14,8 @@ export const metadata = {
   icons: {
     icon: "/images/logo/logo_yellow.svg",
   },
+  viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
-};
-
-export const viewport = {
-  width: "device-width",
-  initialScale: 1,
 };
 
 export default function RootLayout({ children }) {
@@ -35,6 +31,20 @@ export default function RootLayout({ children }) {
         />
         <link rel="dns-prefetch" href="https://www.youtube.com" />
         <link rel="dns-prefetch" href="https://img.youtube.com" />
+
+        {/* Critical CSS untuk font display */}
+        <style jsx global>{`
+          * {
+            font-display: swap;
+          }
+
+          /* Critical above-the-fold styles */
+          body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+          }
+        `}</style>
       </head>
       <body
         className={
