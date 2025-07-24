@@ -75,7 +75,7 @@ const SelamatDatang = () => {
           alt="nala"
           src="/images/selamatdatang/nala-menyapa2.webp"
           width={800}
-          height={1200}
+          height={800}
         />
         <div className="text-center text-[4vw] text-[#0C1A35] mt-[32vw] left-[10vw] z-30 md:mt-[20vw] lg:mt-[16vw] md:text-[3vw] ">
           <p className="font-primeform-bold">SELAMAT DATANG</p>

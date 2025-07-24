@@ -22,6 +22,7 @@ const agendaAtribut = () => {
     <div className="relative flex flex-col items-center w-full text-[#013047]">
       <div className="flex flex-row">
         <Image
+          priority
           className="w-[30vw] h-auto"
           alt="nala"
           src="/images/selamatdatang/nala-menyapa2.webp"

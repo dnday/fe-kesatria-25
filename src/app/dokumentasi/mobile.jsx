@@ -15,7 +15,7 @@ const Mobile = () => {
             alt="nala"
             src="/images/selamatdatang/nala-menyapa2.webp"
             width={800}
-            height={1200}
+            height={800}
           />
           <div className="flex flex-col text-[30px] font-bold font-storybook">
             <p> Day 1</p>
@@ -73,7 +73,7 @@ const Mobile = () => {
             alt="nala"
             src="/images/selamatdatang/nala-menyapa2.webp"
             width={800}
-            height={1200}
+            height={800}
           />
           <div className="flex flex-col text-[30px] font-bold font-storybook">
             <p> Day 2</p>
