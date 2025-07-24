@@ -3,6 +3,8 @@ import "../style/animation.css";
 import Navbar from "../components/layout/navbar.jsx";
 import Footer from "../components/layout/footer.jsx";
 import AOSInit from "@/components/layout/AOSInit";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 // import AOS from "aos";
 // import "aos/dist/aos.css";
 
@@ -31,6 +33,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <Footer />
+        <SpeedInsights />
       </body>
     </html>
   );
