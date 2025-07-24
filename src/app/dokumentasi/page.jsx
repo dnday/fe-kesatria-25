@@ -10,8 +10,8 @@ const dokumentasi = () => {
           className="w-[25vw] h-auto mt-[10vw]"
           alt="nala"
           src="/images/selamatdatang/nala-menyapa2.webp"
-          width={405}
-          height={540}
+          width={800}
+          height={800}
         />
         <p
           data-aos="zoom-in"
