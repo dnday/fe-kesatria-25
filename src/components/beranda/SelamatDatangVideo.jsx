@@ -1,4 +1,5 @@
 import Image from "next/image";
+import LazyYouTube from "@/components/common/LazyYouTube";
 
 const Background = () => {
   return (
