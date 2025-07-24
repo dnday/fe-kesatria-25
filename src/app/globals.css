@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+/* Critical CSS untuk optimasi performance */
+* {
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 /* Font Primeform Pro Demo */
 @font-face {
   font-family: "Primeform Pro Demo";
@@ -30,13 +41,9 @@
   --background: #ffffff;
   --foreground: #171717;
   --teksbiru: #013047;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-primeform: "Primeform Pro Demo", var(--font-geist-sans), sans-serif;
-  --font-mono: var(--font-geist-mono);
+  --color-background: #ffffff;
+  --color-foreground: #171717;
+  --font-primeform: "Primeform Pro Demo", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {

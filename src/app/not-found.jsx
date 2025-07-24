@@ -1,14 +1,21 @@
 "use client";
 import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import dynamic from "next/dynamic";
+
+// Lazy load AOS untuk menghindari SSR issues
+const AOS = dynamic(() => import("aos"), { ssr: false });
 
 export default function Custom404() {
   useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: true,
-    });
+    const initAOS = async () => {
+      const AOS = await import("aos");
+      await import("aos/dist/aos.css");
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+    };
+    initAOS();
   }, []);
 
   return (
