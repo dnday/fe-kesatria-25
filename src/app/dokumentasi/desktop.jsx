@@ -15,7 +15,7 @@ const Desktop = () => {
             alt="nala"
             src="/images/selamatdatang/nala-menyapa2.webp"
             width={800}
-            height={1200}
+            height={800}
           />
           <div className="flex flex-col">
             <p className="text-[2.5vw] font-bold font-storybook">
@@ -73,7 +73,7 @@ const Desktop = () => {
             alt="nala"
             src="/images/selamatdatang/nala-menyapa2.webp"
             width={800}
-            height={1200}
+            height={800}
           />
           <div className="flex flex-col">
             <p className="text-[2.5vw] font-bold font-storybook">
