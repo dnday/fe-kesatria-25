@@ -23,16 +23,16 @@ const SelamatDatang = () => {
           className="w-full h-auto"
           alt="kain merah kiri"
           src="/images/selamatdatang/KainMerahKiri.webp"
-          width={800}
-          height={800}
+          width={124}
+          height={93}
         />
       </div>
       <Image
         className="absolute w-[30vw] top-[45vw] h-auto right-[0] md:top-[20vw] lg:top-[16vw]"
         alt="tutek"
         src="/images/selamatdatang/tutek.webp"
-        width={800}
-        height={800}
+        width={144}
+        height={234}
       />
       <Image
         className="absolute w-[35vw] top-[45vw] h-auto z-10 right-[0] md:top-[16vw] lg:top-[15vw] lg:right-0"
@@ -54,8 +54,8 @@ const SelamatDatang = () => {
         priority
         alt="kain kuning"
         src="/images/selamatdatang/kainnkuning.webp"
-        width={800}
-        height={400}
+        width={412}
+        height={181}
       />
       <Image
         className="absolute w-[35vw] top-[58vw] h-auto z-20 left-0 md:top-[35vw] lg:top-[30vw]"
