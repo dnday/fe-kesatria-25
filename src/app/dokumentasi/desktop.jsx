@@ -14,8 +14,8 @@ const Desktop = () => {
             className="w-[30vw] h-auto"
             alt="nala"
             src="/images/selamatdatang/nala-menyapa2.webp"
-            width={800}
-            height={800}
+            width={405}
+            height={540}
           />
           <div className="flex flex-col">
             <p className="text-[2.5vw] font-bold font-storybook">
@@ -72,8 +72,8 @@ const Desktop = () => {
             className="w-[30vw] h-auto"
             alt="nala"
             src="/images/selamatdatang/nala-menyapa2.webp"
-            width={800}
-            height={800}
+            width={405}
+            height={540}
           />
           <div className="flex flex-col">
             <p className="text-[2.5vw] font-bold font-storybook">

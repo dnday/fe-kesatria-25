@@ -14,8 +14,8 @@ const Mobile = () => {
             className="w-[30vw] h-auto"
             alt="nala"
             src="/images/selamatdatang/nala-menyapa2.webp"
-            width={800}
-            height={800}
+            width={405}
+            height={540}
           />
           <div className="flex flex-col text-[30px] font-bold font-storybook">
             <p> Day 1</p>
@@ -72,8 +72,8 @@ const Mobile = () => {
             className="w-[30vw] h-auto"
             alt="nala"
             src="/images/selamatdatang/nala-menyapa2.webp"
-            width={800}
-            height={800}
+            width={405}
+            height={540}
           />
           <div className="flex flex-col text-[30px] font-bold font-storybook">
             <p> Day 2</p>

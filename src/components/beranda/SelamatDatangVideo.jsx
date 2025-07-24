@@ -8,24 +8,24 @@ const Background = () => {
         className="w-[100vw] h-auto"
         alt="pattern"
         src="/images/selamatdatangvideo/pattern.webp"
-        width={800}
-        height={800}
+        width={412}
+        height={97}
       />
       <Image
         priority
         className="w-[100vw] h-auto mt-[3vw] py-3 xl:py-0"
         alt="pattern"
         src="/images/selamatdatangvideo/pattern.webp"
-        width={800}
-        height={800}
+        width={412}
+        height={97}
       />
       <Image
         priority
         className="w-[100vw] h-auto"
         alt="wayang"
         src="/images/selamatdatangvideo/4wayang.webp"
-        width={800}
-        height={800}
+        width={412}
+        height={56}
       />
     </div>
   );
@@ -52,8 +52,8 @@ const SelamatDatangVideo = () => {
               className="w-full h-auto"
               alt="sayap kiri"
               src="/images/selamatdatangvideo/sayapkiri.webp"
-              width={800}
-              height={800}
+              width={338}
+              height={377}
             />
           </div>
 
@@ -66,8 +66,8 @@ const SelamatDatangVideo = () => {
               className="w-full h-auto"
               alt="sayap kanan"
               src="/images/selamatdatangvideo/sayapkanan.webp"
-              width={800}
-              height={800}
+              width={338}
+              height={386}
             />
           </div>
 
@@ -89,8 +89,8 @@ const SelamatDatangVideo = () => {
           className="absolute w-[100vw] h-[20vw] bottom-[-11vw] z-10"
           alt="wayang"
           src="/images/selamatdatangvideo/kainwayang1.webp"
-          width={800}
-          height={800}
+          width={412}
+          height={82}
         />
       </div>
     </div>
