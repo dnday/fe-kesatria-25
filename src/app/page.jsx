@@ -5,6 +5,7 @@ import Chapter3 from "@/components/beranda/chapter3";
 import SelamatDatang from "@/components/beranda/SelamatDatang";
 import SelamatDatangVideo from "@/components/beranda/SelamatDatangVideo";
 import AgendaAtribut from "@/components/beranda/agendaAtribut";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 // import Footer from "@/components/layout/footer";
 
 import { useEffect } from "react";
@@ -34,6 +35,7 @@ export default function Home() {
       <Chapter2 />
       <Chapter3 />
       <AgendaAtribut />
+      <SpeedInsights />
       {/* <Footer />
       <iframe
         className="fixed top-[80px] left-[50px] bottom-[50px] w-[900vw] h-[900vh] border-none"
