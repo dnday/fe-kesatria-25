@@ -9,14 +9,42 @@ import AOSInit from "@/components/layout/AOSInit";
 export const metadata = {
   title: "PIONIR KESATRIA 2025",
   description:
-    "PPSMB Kesatria merupakan masa orientasi kepada Mahasiswa Baru Teknik UGM 2023 yang bertujuan untuk memperkenalkan lingkungan Teknik UGM kepada para Mahasiswa Baru",
+    "PPSMB Kesatria merupakan masa orientasi kepada Mahasiswa Baru Teknik UGM 2025 yang bertujuan untuk memperkenalkan lingkungan Teknik UGM kepada para Mahasiswa Baru",
+  keywords: "Pionir, Kesatria, FT, UGM, Teknik, PPSMB, Maba, 2025",
+  icons: {
+    icon: "/images/logo/logo_yellow.svg",
+  },
+  viewport: "width=device-width, initial-scale=1",
+  robots: "index, follow",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html className="!overflow-x-hidden w-full" lang="en">
+    <html className="!overflow-x-hidden w-full" lang="id">
       <head>
-        <link rel="icon" href="/images/logo/logo_yellow.svg" />
+        {/* Preconnect untuk optimasi loading */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link rel="dns-prefetch" href="https://www.youtube.com" />
+        <link rel="dns-prefetch" href="https://img.youtube.com" />
+
+        {/* Critical CSS untuk font display */}
+        <style jsx global>{`
+          * {
+            font-display: swap;
+          }
+
+          /* Critical above-the-fold styles */
+          body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+          }
+        `}</style>
       </head>
       <body
         className={
