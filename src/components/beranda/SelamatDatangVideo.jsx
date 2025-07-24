@@ -77,11 +77,10 @@ const SelamatDatangVideo = () => {
             data-aos="zoom-in"
             className="relative h-auto w-[45vw] bg-[#A01326] rounded-2xl border-6 border-[#A01326] z-10 md:rounded-4xl md:p-2"
           >
-            <iframe
+            <LazyYouTube
+              videoId="zuJbK71Zjfo"
+              title="Kesatria Muda 2025 Welcome Video"
               className="w-full mx-auto aspect-video rounded-2xl"
-              src="https://www.youtube.com/embed/zuJbK71Zjfo?modestbranding=1&rel=0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
             />
           </div>
         </div>

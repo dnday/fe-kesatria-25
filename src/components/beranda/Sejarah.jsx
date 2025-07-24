@@ -2,6 +2,7 @@ import content from "../../modular/bagian1.js";
 import Button from "../../modular/Button.jsx";
 import Box from "../../modular/Box.jsx";
 import Image from "next/image";
+import LazyYouTube from "@/components/common/LazyYouTube";
 
 const Sejarah = () => {
   return (
@@ -40,11 +41,10 @@ const Sejarah = () => {
             data-aos="zoom-in"
             className="relative mt-[5vw] h-auto w-[45vw] bg-[#A01326] rounded-2xl border-6 border-[#A01326] z-10 md:w-[35vw] md:rounded-4xl md:p-2"
           >
-            <iframe
+            <LazyYouTube
+              videoId="RFMczbX3Lsc"
+              title="Sejarah Kesatria Video 1"
               className="w-full mx-auto aspect-video rounded-2xl"
-              src="https://www.youtube.com/embed/RFMczbX3Lsc"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
             />
           </div>
           <Image
@@ -73,11 +73,10 @@ const Sejarah = () => {
           data-aos="zoom-in"
           className="relative h-auto w-[45vw] bg-[#A01326] rounded-2xl border-6 border-[#A01326] z-10 md:w-[35vw] md:rounded-4xl md:p-2"
         >
-          <iframe
+          <LazyYouTube
+            videoId="jbaLBFLdMMA"
+            title="Sejarah Kesatria Video 2"
             className="w-full mx-auto aspect-video rounded-2xl"
-            src="https://www.youtube.com/embed/jbaLBFLdMMA"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
           />
         </div>
         <Image

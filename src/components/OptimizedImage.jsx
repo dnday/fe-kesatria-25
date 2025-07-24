@@ -22,6 +22,9 @@ const OptimizedImage = ({
   // For local images, use the built-in optimization
   const isLocalImage = src?.startsWith("/");
 
+  // When priority is true, don't set loading prop (Next.js handles it automatically)
+  const loadingProp = priority ? undefined : loading;
+
   return (
     <Image
       src={src}
@@ -33,7 +36,7 @@ const OptimizedImage = ({
       priority={priority}
       quality={quality}
       sizes={sizes}
-      loading={loading}
+      {...(loadingProp && { loading: loadingProp })}
       placeholder={blurDataURL ? "blur" : "empty"}
       blurDataURL={blurDataURL}
       {...(isLocalImage && {
