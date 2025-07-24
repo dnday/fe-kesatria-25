@@ -1,4 +1,5 @@
 import Image from "next/image";
+import OptimizedImage from "../OptimizedImage";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -115,12 +116,14 @@ const KesatriaMudaBerkarya = () => {
             }}
             className="justify-center items-center flex"
           >
-            <Image
+            <OptimizedImage
               className="w-[80%] aspect-auto object-cover"
-              alt="Image"
+              alt="Nala tugtek - ilustrasi karya aplikatif"
               src={"/nalatugtek.svg"}
               width={1000}
               height={1000}
+              optimizationType="icon"
+              sizes="(max-width: 768px) 40vw, 25vw"
             />
           </motion.div>
         </motion.div>
@@ -178,12 +181,14 @@ const KesatriaMudaBerkarya = () => {
                 }}
                 className="justify-center items-center flex w-full h-full"
               >
-                <Image
+                <OptimizedImage
                   className="w-[70%] aspect-auto object-cover"
-                  alt=""
+                  alt="Nala tugtek - ilustrasi karya aplikatif"
                   src={"/nalatugtek.svg"}
                   width={1000}
                   height={1000}
+                  optimizationType="icon"
+                  sizes="(max-width: 768px) 35vw, 28vw"
                 />
               </motion.div>
             </motion.div>
@@ -242,12 +247,14 @@ const KesatriaMudaBerkarya = () => {
               }}
               className="justify-center items-center flex w-full h-full"
             >
-              <Image
+              <OptimizedImage
                 className="w-[70%] aspect-auto object-cover"
-                alt="Image"
+                alt="Nala tugtek - ilustrasi karya aplikatif"
                 src={"/nalatugtek.svg"}
                 width={1000}
                 height={1000}
+                optimizationType="icon"
+                sizes="(max-width: 768px) 35vw, 29vw"
               />
             </motion.div>
           </motion.div>
@@ -298,12 +305,14 @@ const KaryaAplikatif = () => {
           }}
           className="justify-center items-center flex w-full h-full"
         >
-          <Image
+          <OptimizedImage
             className="w-[50%] aspect-auto object-cover"
-            alt=""
+            alt="Nala 1 - ilustrasi karya aplikatif"
             src={"/nala1.svg"}
             width={1000}
             height={1000}
+            optimizationType="icon"
+            sizes="(max-width: 768px) 25vw, 16vw"
           />
         </motion.div>
       </motion.div>
@@ -440,12 +449,14 @@ const KaryaAplikatifTab = () => {
               }}
               className="justify-center items-center flex w-full h-full"
             >
-              <Image
+              <OptimizedImage
                 className="w-[45%] aspect-auto object-cover "
-                alt=""
+                alt="Nala 1 - ilustrasi karya aplikatif"
                 src={"/nala1.svg"}
                 width={1000}
                 height={1000}
+                optimizationType="icon"
+                sizes="(max-width: 768px) 22vw, 18vw"
               />
             </motion.div>
           </motion.div>
@@ -565,12 +576,14 @@ const KaryaAplikasiHP = () => {
             }}
             className="justify-center items-center flex w-full h-full"
           >
-            <Image
+            <OptimizedImage
               className="w-[45%] aspect-auto object-cover "
-              alt=""
+              alt="Nala 1 - ilustrasi karya aplikatif"
               src={"/nala1.svg"}
               width={1000}
               height={1000}
+              optimizationType="icon"
+              sizes="(max-width: 768px) 22vw, 32vw"
             />
           </motion.div>
         </motion.div>
@@ -616,37 +629,43 @@ const TransitiAtas = () => {
       {/* Container utama dengan overflow visible */}
 
       {/* Tugu Teknik - positioned behind kain kuning with low z-index */}
-      <Image
+      <OptimizedImage
         className="z-[1] translate-y-[-30vw] absolute bottom-[-17vw] left-0 w-[30vw] h-auto md:absolute md:bottom-[-17vw] md:left-0 md:w-[30vw] md:h-auto lg:absolute lg:bottom-[-17vw] lg:left-0 lg:w-[30vw] lg:h-auto"
         alt="Tugu Teknik"
         src="/images/assets_beranda_chapter2_tugtek.webp"
         width={960}
         height={250}
+        optimizationType="background"
+        sizes="30vw"
         draggable={false}
       />
       {/* Tugu Teknik - positioned behind kain kuning with low z-index */}
-      <Image
+      <OptimizedImage
         className="z-[10] translate-y-[-45vw] translate-x-[-3vw] absolute bottom-[-17vw] right-0 w-[12vw] h-auto md:absolute md:bottom-[-17vw] md:right-0 md:w-[12vw] md:h-auto lg:absolute lg:bottom-[-17vw] lg:right-0 lg:w-[12vw] lg:h-auto"
         alt="Bulu Kuning"
         src="/images/assets_beranda_chapter2_bulu3.svg"
         width={960}
         height={250}
+        optimizationType="background"
+        sizes="12vw"
         draggable={false}
       />
 
       {/* Kain Kuning - always on top with highest z-index */}
-      <Image
+      <OptimizedImage
         className="relative z-[1000] w-full h-auto object-cover translate-y-[-13vw]"
-        alt="Background"
+        alt="Kain Kuning Atas - Background"
         src={"/images/assets_beranda_chapter3_kainkuningatas.webp"}
         width={1920}
         height={500}
-        priority
+        optimizationType="background"
+        priority={true}
+        sizes="100vw"
         draggable={false}
       />
 
       {/* Gambar yang diletakkan di atas latar belakang */}
-      <Image
+      <OptimizedImage
         data-aos="fade-right"
         data-aos-delay="600"
         className="absolute left-0 top-0 w-[17.5vw] translate-x-[-1.8vw] translate-y-[7vw] z-[200]"
@@ -654,10 +673,12 @@ const TransitiAtas = () => {
         src={"/images/assets_beranda_chapter3_abimanyu.svg"}
         width={100}
         height={100}
+        optimizationType="background"
+        sizes="(max-width: 768px) 25vw, 17.5vw"
         draggable={false}
       />
 
-      <Image
+      <OptimizedImage
         data-aos="fade-left"
         data-aos-delay="600"
         className="absolute right-0 top-0 w-[20vw] translate-x-[-0.01vw] translate-y-[10vw] z-[200]"
@@ -665,6 +686,8 @@ const TransitiAtas = () => {
         src={"/images/assets_beranda_chapter3_subadra.svg"}
         width={100}
         height={100}
+        optimizationType="background"
+        sizes="(max-width: 768px) 30vw, 20vw"
         draggable={false}
       />
     </div>

@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { useState } from "react";
 import Image from "next/image";
+import OptimizedImage from "../OptimizedImage";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -44,13 +45,15 @@ const Chapter2_Desktop = () => {
           className="relative h-[13.5vw] w-[20vw] rounded-[2vw] bg-[#A01326] overflow-hidden justify-center items-center flex border-4 border-[#A01326]"
           data-aos="fade-left"
         >
-          <Image
+          <OptimizedImage
             className="absolute h-full w-full rounded-[2vw]"
-            alt=""
+            alt={`${title} - gambar ilustrasi`}
             src={imgpath}
             width={1000}
             height={1000}
-          ></Image>
+            optimizationType="content"
+            sizes="(max-width: 768px) 50vw, 20vw"
+          />
         </div>
         <div className="flex h-[22vw] flex-col place-content-center gap-[0.2vw]">
           {/* Title without border */}
@@ -232,12 +235,14 @@ const Chapter2_Tablet = () => {
     const Gambar = () => {
       return (
         <div className="relative flex h-[12vw] w-[18vw] items-center justify-center rounded-[2vw] bg-[#A01326] overflow-hidden border-4 border-[#A01326]">
-          <Image
+          <OptimizedImage
             className="absolute h-full w-full rounded-[2vw]"
-            alt=""
+            alt={`${title} - gambar ilustrasi`}
             src={imgpath}
             width={1000}
             height={1000}
+            optimizationType="content"
+            sizes="(max-width: 768px) 30vw, 18vw"
           />
         </div>
       );
@@ -413,12 +418,14 @@ const Chapter2_HP = () => {
     const Gambar = () => {
       return (
         <div className="relative flex h-[25vw] w-[35vw] items-center justify-center rounded-[4vw] bg-[#A01326] overflow-hidden border-4 border-[#A01326]">
-          <Image
+          <OptimizedImage
             className="absolute h-full w-full rounded-[4vw]"
-            alt=""
+            alt={`${title} - gambar ilustrasi`}
             src={imgpath}
             width={1000}
             height={1000}
+            optimizationType="content"
+            sizes="(max-width: 768px) 60vw, 35vw"
           />
         </div>
       );
@@ -590,13 +597,15 @@ const TransitiAtas = () => {
       {/* Container utama dengan overflow visible */}
 
       {/* Kain Merah Kuning - always on top with highest z-index */}
-      <Image
+      <OptimizedImage
         className="relative z-[1000] w-full h-auto object-cover translate-y-[-5vw]"
         alt="Kain Merah Kuning"
         src={"/images/assets_beranda_chapter2_kainmerahkuning.webp"}
         width={3840}
         height={1000}
-        priority
+        optimizationType="background"
+        priority={true}
+        sizes="100vw"
         draggable={false}
       />
 
@@ -629,23 +638,27 @@ const TransitiAtas = () => {
           },
         }}
       >
-        <Image
+        <OptimizedImage
           className="absolute left-0 top-0 w-[13.5vw] translate-x-[24vw] translate-y-[18vw] z-[200]"
           alt="Bulu Kuning"
           src={"/images/assets_beranda_chapter2_bulu1.svg"}
           width={100}
           height={100}
+          optimizationType="background"
+          sizes="15vw"
           draggable={false}
         />
       </motion.div>
       {/* </motion.div> */}
 
-      <Image
+      <OptimizedImage
         className="absolute right-0 top-0 w-[13vw] translate-x-[-24vw] translate-y-[20vw] z-[200]"
         alt="Bulu Kuning"
         src={"/images/assets_beranda_chapter2_bulu2.svg"}
         width={25}
         height={25}
+        optimizationType="background"
+        sizes="15vw"
         draggable={false}
       />
     </div>
