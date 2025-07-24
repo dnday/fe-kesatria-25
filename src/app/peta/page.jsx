@@ -76,6 +76,18 @@ export default function Peta() {
             <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-storybook text-[#013047] text-center lg:text-right mb-2 mt-5 sm:mb-3 md:mb-4">
               3D Maps Fakultas Teknik
             </h1>
+
+            {/* Button Buka 3D Maps */}
+            <div className="flex justify-center lg:justify-end mt-4">
+              <a
+                href="https://ft-digitaltwin3d.id/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#A01326] text-[#F9C157] font-storybook px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-3 lg:px-6 lg:py-2 xl:px-8 xl:py-3 rounded-3xl text-sm sm:text-base md:text-lg lg:text-base xl:text-lg font-bold shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] hover:bg-[#7f0818] hover:scale-105 transition duration-300 cursor-pointer"
+              >
+                Buka 3D Maps
+              </a>
+            </div>
           </div>
 
           {/* Map container - scaled proportionally for each breakpoint */}
