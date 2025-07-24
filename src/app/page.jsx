@@ -18,7 +18,7 @@ export default function Home() {
   //   }, []);
   return (
     <main className="min-h-screen w-full overflow-x-hidden">
-      <title>Pionir Kesatria 2024</title>
+      <title>Pionir Kesatria 2025</title>
       <meta
         name="description"
         content="Kegiatan Penerimaan Mahasiswa Baru Fakultas Teknik UGM Tahun 2025"
