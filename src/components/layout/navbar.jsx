@@ -81,6 +81,11 @@ const Navbar = () => {
             onClick={() => setToggle(!toggle)}
             className="p-2 text-[#FFE5C7] focus:outline-none transition-transform duration-200 ease-in-out hover:scale-110"
             whileTap={{ scale: 0.95 }}
+            aria-label={
+              toggle ? "Close navigation menu" : "Open navigation menu"
+            }
+            aria-expanded={toggle}
+            aria-controls="mobile-menu"
           >
             <motion.div
               animate={{ rotate: toggle ? 180 : 0 }}
@@ -106,6 +111,7 @@ const Navbar = () => {
                 opacity: { duration: 0.2 },
               }}
               className="overflow-hidden"
+              id="mobile-menu"
             >
               <motion.div
                 className="px-4 font-primeform font-bold bg-gradient-to-r from-[#065B5B] from-50% to-[#035A7A] text-sm"
