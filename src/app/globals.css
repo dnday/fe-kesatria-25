@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* Font Primeform Pro Demo */
+/* Font Primeform Pro Demo - Optimized with font-display: swap */
 @font-face {
   font-family: "Primeform Pro Demo";
   src: url("/fonts/PrimeformProDemo/PrimeformProDemo-Regular.otf")
@@ -19,7 +19,7 @@
   font-display: swap;
 }
 
-/* Font Storybook */
+/* Font Storybook - Optimized */
 @font-face {
   font-family: "Storybook";
   src: url("/fonts/storybook/Storybook.TTF") format("truetype");

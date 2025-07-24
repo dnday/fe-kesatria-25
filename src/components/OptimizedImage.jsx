@@ -2,7 +2,7 @@ import Image from "next/image";
 
 /**
  * OptimizedImage component - Enhanced Next.js Image component
- * Uses Next.js built-in optimization instead of sharp
+ * Uses Next.js built-in optimization with lazy loading and blur placeholders
  * Provides consistent API and additional optimization features
  */
 const OptimizedImage = ({
@@ -15,6 +15,8 @@ const OptimizedImage = ({
   quality = 75,
   fill = false,
   sizes = "100vw",
+  blurDataURL,
+  loading = "lazy",
   ...props
 }) => {
   // For local images, use the built-in optimization
@@ -31,6 +33,9 @@ const OptimizedImage = ({
       priority={priority}
       quality={quality}
       sizes={sizes}
+      loading={loading}
+      placeholder={blurDataURL ? "blur" : "empty"}
+      blurDataURL={blurDataURL}
       {...(isLocalImage && {
         loader: ({ src, width }) => `${src}?w=${width}&q=${quality}`,
       })}
