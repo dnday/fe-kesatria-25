@@ -12,8 +12,8 @@ const Sejarah = () => {
             className="w-[50vw] h-auto lg:w-[20vw]"
             alt="katrol"
             src="/images/chapter1/katrol.webp"
-            width={270}
-            height={469}
+            width={800}
+            height={800}
           />
           <div data-aos="fade-right" className="flex flex-col mt-[5vw] z-10">
             <div className="flex flex-row">
@@ -51,8 +51,8 @@ const Sejarah = () => {
             className="w-[40vw] h-auto ml-[10vw] mt-[-8vw] lg:w-[37vw] lg:ml-[5vw] z-20"
             alt="awan"
             src="/images/chapter1/pitakuning1.webp"
-            width={165}
-            height={71}
+            width={800}
+            height={200}
           />
         </div>
       </div>
@@ -66,8 +66,8 @@ const Sejarah = () => {
           className="w-[15vw] h-auto mt-[3vw] z-0 mb-[-10vw] ml-[30vw]"
           alt="awan"
           src="/images/chapter1/gearkuning.webp"
-          width={62}
-          height={62}
+          width={800}
+          height={200}
         />
         <div
           data-aos="zoom-in"
@@ -84,8 +84,8 @@ const Sejarah = () => {
           className="w-[50vw] h-auto z-20 mt-[-10vw] mr-[50vw]"
           alt="awan"
           src="/images/chapter1/pitacoklat1.webp"
-          width={206}
-          height={90}
+          width={800}
+          height={200}
         />
       </div>
     </div>
