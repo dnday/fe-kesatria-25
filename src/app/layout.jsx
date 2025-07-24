@@ -17,42 +17,6 @@ export default function RootLayout({ children }) {
     <html className="!overflow-x-hidden w-full" lang="en">
       <head>
         <link rel="icon" href="/images/logo/logo_yellow.svg" />
-        {/* Preload critical fonts */}
-        <link
-          rel="preload"
-          href="/fonts/PrimeformProDemo/PrimeformProDemo-Regular.otf"
-          as="font"
-          type="font/otf"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/fonts/PrimeformProDemo/PrimeformProDemo-Bold.otf"
-          as="font"
-          type="font/otf"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/fonts/storybook/Storybook.TTF"
-          as="font"
-          type="font/ttf"
-          crossOrigin="anonymous"
-        />
-        {/* Preload critical background image */}
-        <link rel="preload" href="/images/background/pattern-parang-krem.svg" as="image" />
-        {/* Critical CSS inline */}
-        <style>{`
-          .font-storybook{font-family:'Storybook',Arial,sans-serif}
-          .font-primeform{font-family:'PrimeformPro',Arial,sans-serif}
-          .font-primeform-medium{font-family:'PrimeformPro',Arial,sans-serif;font-weight:500}
-          .font-primeform-bold{font-family:'PrimeformPro',Arial,sans-serif;font-weight:700}
-          .overflow-x-hidden{overflow-x:hidden}
-          .min-h-screen{min-height:100vh}
-          @font-face{font-family:'PrimeformPro';src:url('/fonts/PrimeformProDemo/PrimeformProDemo-Regular.otf') format('opentype');font-weight:normal;font-style:normal;font-display:swap}
-          @font-face{font-family:'PrimeformPro';src:url('/fonts/PrimeformProDemo/PrimeformProDemo-Bold.otf') format('opentype');font-weight:bold;font-style:normal;font-display:swap}
-          @font-face{font-family:'Storybook';src:url('/fonts/storybook/Storybook.TTF') format('truetype');font-weight:normal;font-style:normal;font-display:swap}
-        `}</style>
       </head>
       <body
         className={

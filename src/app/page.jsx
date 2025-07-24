@@ -5,61 +5,20 @@ import Chapter3 from "@/components/beranda/chapter3";
 import SelamatDatang from "@/components/beranda/SelamatDatang";
 import SelamatDatangVideo from "@/components/beranda/SelamatDatangVideo";
 import AgendaAtribut from "@/components/beranda/agendaAtribut";
+// import Footer from "@/components/layout/footer";
 
 import { useEffect } from "react";
+// import AOS from "aos";
 
 export default function Home() {
-  useEffect(() => {
-    // Preload critical images untuk optimasi loading
-    const preloadImages = () => {
-      const criticalImages = [
-        '/images/footer/tugu.png',
-        '/images/footer/kainBiru.png',
-        '/images/footer/burung.png',
-        '/images/footer/merahKiri.png',
-        '/images/footer/merahKanan.png',
-        '/images/footer/gir.png',
-        '/images/footer/title2.png',
-        '/images/background/pattern-parang-krem.svg'
-      ];
-      
-      criticalImages.forEach(src => {
-        const link = document.createElement('link');
-        link.rel = 'preload';
-        link.as = 'image';
-        link.href = src;
-        document.head.appendChild(link);
-      });
-    };
-    
-    // Force assets reload untuk iframe compatibility
-    const handleAssets = () => {
-      const images = document.querySelectorAll('img');
-      images.forEach(img => {
-        if (!img.complete) {
-          const src = img.src;
-          img.src = '';
-          img.src = src;
-        }
-      });
-    };
-
-    // Delay untuk memastikan DOM ready
-    setTimeout(() => {
-      preloadImages();
-      handleAssets();
-    }, 100);
-    
-    // Handle iframe scroll detection
-    const isInIframe = window !== window.parent;
-    if (isInIframe) {
-      document.body.setAttribute('data-iframe', 'true');
-    }
-  }, []);
-
+  //   useEffect(() => {
+  //     AOS.init({
+  //       duration: 700, // Durasi animasi dalam milidetik
+  //     });
+  //   }, []);
   return (
     <main className="min-h-screen w-full overflow-x-hidden">
-      <title>Pionir Kesatria 2025</title>
+      <title>Pionir Kesatria 2024</title>
       <meta
         name="description"
         content="Kegiatan Penerimaan Mahasiswa Baru Fakultas Teknik UGM Tahun 2025"
@@ -75,6 +34,28 @@ export default function Home() {
       <Chapter2 />
       <Chapter3 />
       <AgendaAtribut />
+      {/* <Footer />
+      <iframe
+        className="fixed top-[80px] left-[50px] bottom-[50px] w-[900vw] h-[900vh] border-none"
+        src="https://ft-digitaltwin3d.id/"
+        frameBorder="0"
+        allowFullScreen
+        style={{ zIndex: 9999 }}
+      >
+        <a href="https://ft-digitaltwin3d.id/">
+          FT Digital Twin 3D - Fakultas Teknik UGM
+        </a>
+      </iframe>
+      {/* <iframe
+        frameborder="0"
+        src="https://itch.io/embed/2382211"
+        width="552"
+        height="167"
+      >
+        <a href="https://yudhantoa.itch.io/mustadam-project">
+          Visualisasi Model 3D Masjid Al Mustadam FT UGMM by yudhantoa
+        </a>
+      </iframe> */}
     </main>
   );
 }
