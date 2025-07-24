@@ -38,8 +38,8 @@ const Chapter1 = () => {
         className="w-[20vw] h-auto mt-[3vw]"
         alt="awan"
         src="/images/chapter1/awan.webp"
-        width={800}
-        height={800}
+        width={270}
+        height={93}
       />
       <Sejarah />
     </section>

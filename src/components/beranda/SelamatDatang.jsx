@@ -11,8 +11,8 @@ const SelamatDatang = () => {
           className="w-full h-auto"
           alt="pojok atas"
           src="/images/selamatdatang/pojokatas.webp"
-          width={800}
-          height={800}
+          width={270}
+          height={347}
         />
       </div>
       <div
@@ -62,8 +62,8 @@ const SelamatDatang = () => {
         priority
         alt="pojokbawah"
         src="/images/selamatdatang/pojokbawah.webp"
-        width={800}
-        height={800}
+        width={473}
+        height={346}
       />
 
       <div
@@ -74,8 +74,8 @@ const SelamatDatang = () => {
           className="w-[45vw] aspect-[3/4] mt-[20vw] z-50 md:w-[30vw] md:h-[40vw] md:mt-[10vw] lg:mt-[5vw] goyang-anim"
           alt="nala"
           src="/images/selamatdatang/nala-menyapa2.webp"
-          width={800}
-          height={800}
+          width={405}
+          height={540}
         />
         <div className="text-center text-[4vw] text-[#0C1A35] mt-[32vw] left-[10vw] z-30 md:mt-[20vw] lg:mt-[16vw] md:text-[3vw] ">
           <p className="font-primeform-bold">SELAMAT DATANG</p>

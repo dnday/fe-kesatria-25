@@ -29,8 +29,8 @@ import Image from "next/image";
 
 <Image
   src="/images/selamatdatang/pojokatas.webp"
-  width={800}
-  height={800}
+  width={270}
+  height={347}
   alt="pojok atas"
   className="w-full h-auto"
 />;
@@ -43,8 +43,8 @@ import OptimizedImage from "@/components/OptimizedImage";
 
 <OptimizedImage
   src="/images/selamatdatang/pojokatas.webp"
-  width={800}
-  height={800}
+  width={270}
+  height={347}
   alt="pojok atas"
   className="w-full h-auto"
   quality={75}

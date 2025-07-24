@@ -52,8 +52,8 @@ const SelamatDatangVideo = () => {
               className="w-full h-auto"
               alt="sayap kiri"
               src="/images/selamatdatangvideo/sayapkiri.webp"
-              width={800}
-              height={800}
+              width={338}
+              height={377}
             />
           </div>
 
@@ -66,8 +66,8 @@ const SelamatDatangVideo = () => {
               className="w-full h-auto"
               alt="sayap kanan"
               src="/images/selamatdatangvideo/sayapkanan.webp"
-              width={800}
-              height={800}
+              width={338}
+              height={386}
             />
           </div>
 

@@ -12,8 +12,8 @@ const Sejarah = () => {
             className="w-[50vw] h-auto lg:w-[20vw]"
             alt="katrol"
             src="/images/chapter1/katrol.webp"
-            width={800}
-            height={800}
+            width={270}
+            height={469}
           />
           <div data-aos="fade-right" className="flex flex-col mt-[5vw] z-10">
             <div className="flex flex-row">
