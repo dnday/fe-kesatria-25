@@ -1,5 +1,4 @@
 import "./globals.css";
-import "../style/animation.css";
 import Navbar from "../components/layout/navbar.jsx";
 import Footer from "../components/layout/footer.jsx";
 import AOSInit from "@/components/layout/AOSInit";
