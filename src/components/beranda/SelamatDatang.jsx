@@ -11,8 +11,8 @@ const SelamatDatang = () => {
           className="w-full h-auto"
           alt="pojok atas"
           src="/images/selamatdatang/pojokatas.webp"
-          width={270}
-          height={347}
+          width={800}
+          height={800}
         />
       </div>
       <div
@@ -23,16 +23,16 @@ const SelamatDatang = () => {
           className="w-full h-auto"
           alt="kain merah kiri"
           src="/images/selamatdatang/KainMerahKiri.webp"
-          width={124}
-          height={93}
+          width={800}
+          height={800}
         />
       </div>
       <Image
         className="absolute w-[30vw] top-[45vw] h-auto right-[0] md:top-[20vw] lg:top-[16vw]"
         alt="tutek"
         src="/images/selamatdatang/tutek.webp"
-        width={144}
-        height={234}
+        width={800}
+        height={800}
       />
       <Image
         className="absolute w-[35vw] top-[45vw] h-auto z-10 right-[0] md:top-[16vw] lg:top-[15vw] lg:right-0"
@@ -54,16 +54,16 @@ const SelamatDatang = () => {
         priority
         alt="kain kuning"
         src="/images/selamatdatang/kainnkuning.webp"
-        width={412}
-        height={181}
+        width={800}
+        height={400}
       />
       <Image
         className="absolute w-[35vw] top-[58vw] h-auto z-20 left-0 md:top-[35vw] lg:top-[30vw]"
         priority
         alt="pojokbawah"
         src="/images/selamatdatang/pojokbawah.webp"
-        width={473}
-        height={346}
+        width={800}
+        height={800}
       />
 
       <div
@@ -74,8 +74,8 @@ const SelamatDatang = () => {
           className="w-[45vw] aspect-[3/4] mt-[20vw] z-50 md:w-[30vw] md:h-[40vw] md:mt-[10vw] lg:mt-[5vw] goyang-anim"
           alt="nala"
           src="/images/selamatdatang/nala-menyapa2.webp"
-          width={405}
-          height={540}
+          width={800}
+          height={800}
         />
         <div className="text-center text-[4vw] text-[#0C1A35] mt-[32vw] left-[10vw] z-30 md:mt-[20vw] lg:mt-[16vw] md:text-[3vw] ">
           <p className="font-primeform-bold">SELAMAT DATANG</p>

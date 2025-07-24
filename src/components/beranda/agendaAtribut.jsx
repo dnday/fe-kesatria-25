@@ -26,8 +26,8 @@ const agendaAtribut = () => {
           className="w-[30vw] h-auto"
           alt="nala"
           src="/images/selamatdatang/nala-menyapa2.webp"
-          width={405}
-          height={540}
+          width={800}
+          height={800}
         />
         <div className="flex flex-col items-center justify-center">
           <h2
