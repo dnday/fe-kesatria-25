@@ -30,7 +30,7 @@ const JudulChapter = () => {
       <h1 className="font-storybook text-[4vw] text-[#013047] max-lg:text-[4.8vw] ">
         Karya Aplikatif
       </h1>
-      <p className="text-center font-primeform-medium text-[1.5vw]/[2vw] text-[#013047] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)] max-lg:text-[2.5vw]/[3.2vw] max-sm:text-[3.5vw]/[4.5vw] font-medium max-w-[80%] mx-auto max-sm:max-w-[90%]">
+      <p className="text-justify font-primeform-medium text-[1.5vw]/[2vw] text-[#013047] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)] max-lg:text-[2.5vw]/[3.2vw] max-sm:text-[3.5vw]/[4.5vw] font-medium max-w-[80%] mx-auto max-sm:max-w-[90%]">
         {CONTENT[0].titleDesc}
       </p>
     </div>

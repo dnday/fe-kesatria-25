@@ -14,7 +14,7 @@ const Chapter1 = () => {
         <p className="text-[3vw] text-center font-storybook">
           {content.subTitle1}
         </p>
-        <p className=" text-[10px] md:text-[1.5vw] text-center mx-[10vw] mt-[1vw] font-primeform-medium">
+        <p className=" text-[10px] md:text-[1.5vw] text-justify mx-[10vw] mt-[1vw] font-primeform-medium">
           {content.content1}
         </p>
       </div>
@@ -24,7 +24,7 @@ const Chapter1 = () => {
         className="w-[90vw] bg-[#013047] mt-[1vw] rounded-4xl flex flex-col items-center border-6 shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] lg:flex-row lg:w-[80vw]"
       >
         <Box bgColor="#A01326" imageSrc="/nala1.svg" w="20vw" h="25vw" />
-        <p className=" w-[80vw] text-[10px] p-3 text-[#ECC691] text-center ml-[2vw] mt-[3vw] md:text-[1.5vw] lg:mt-[0] lg:text-left lg:w-[50vw] lg:mx-[2vw]">
+        <p className=" w-[80vw] text-[10px] p-3 text-[#ECC691] text-justify ml-[2vw] mt-[3vw] md:text-[1.5vw] lg:mt-[0] lg:text-left lg:w-[50vw] lg:mx-[2vw]">
           {content.personalbranding}
         </p>
       </div>
