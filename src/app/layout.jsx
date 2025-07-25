@@ -15,7 +15,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html className="!overflow-x-hidden w-full" lang="en">
+    <html className="!overflow-x-hidden w-full h-full" lang="en">
       <head>
         <link rel="icon" href="/images/logo/logo_yellow.svg" />
       </head>
