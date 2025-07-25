@@ -59,7 +59,7 @@ export default function Faq() {
       className="min-h-screen bg-[url('/images/background/pattern-parang-dark.svg')] bg-[size:80%] bg-repeat sm:bg-[size:75%] lg:bg-[size:70%] py-36 pb-[40vw] pt-[10vw]"
       style={{ backgroundSize: "100%, 100%, 100%" }}
     >
-      <div className="container mx-auto py-6 px-6 md:px-12 flex flex-col items-center">
+      <div className="container mx-auto py-6 px-6 mt-5 md:px-12 flex flex-col items-center">
         <h1
           data-aos="fade-up"
           className="font-storybook text-4xl md:text-6xl lg:text-7xl text-[#ECC691] text-center mb-6 md:mb-8"
