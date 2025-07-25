@@ -18,7 +18,7 @@ const Sejarah = () => {
           />
           <div data-aos="fade-right" className="flex flex-col mt-[5vw] z-10">
             <p className="text-[4vw] font-storybook">{content.title2}</p>
-            <p className="text-[10px] md:text-[1.5vw] w-[35vw] font-primeform-medium">
+            <p className="text-[10px] md:text-[1.5vw] w-[35vw] text-justify font-primeform-medium">
               {content.content2}
             </p>
           </div>
@@ -48,7 +48,7 @@ const Sejarah = () => {
       </div>
       <div data-aos="fade-up" className="flex flex-col items-center">
         <p className="text-[4vw] font-storybook">{content.title3}</p>
-        <p className="text-[10px] md:text-[1.5vw] w-[80vw] font-primeform-medium text-center">
+        <p className="text-[10px] md:text-[1.5vw] w-[80vw] font-primeform-medium text-justify">
           {content.content3}
         </p>
         <Image

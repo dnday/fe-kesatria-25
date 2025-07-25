@@ -95,7 +95,7 @@ const Chapter2_Desktop = () => {
         <h1 className="font-storybook text-[4vw] text-[#ECC691] text-shadow-[inset_-1px_-1px_0px_0px_#FFFFFF40, inset_1px_1px_0px_0px_#00000059]">
           Ananta Satya Sang Kesatria
         </h1>
-        <p className="w-[80vw] pb-[2vw] px-[6vw] text-center font-primeform-medium text-[1.5vw]/[2vw] font-light text-[#ECC691] drop-shadow-[-20_0.4vw_0.2vw_rgba(0,0,0,0.6)]">
+        <p className="w-[80vw] pb-[2vw] px-[6vw] text-justify font-primeform-medium text-[1.5vw]/[2vw] font-light text-[#ECC691] drop-shadow-[-20_0.4vw_0.2vw_rgba(0,0,0,0.6)]">
           Integritas akademik merupakan salah satu hal penting dan pondasi utama
           dalam melaksanakan kegiatan di perguruan tinggi. Kegiatan di perguruan
           tinggi nantinya tidak terbatas mengenai perkuliahan dan nilai akademik
@@ -266,7 +266,7 @@ const Chapter2_Tablet = () => {
           </h1>
         </div>
         <Gambar />
-        <p className="px-[2vw] font-primeform-medium text-[2vw]/[2.5vw] text-center text-[#013047]">
+        <p className="px-[2vw] font-primeform-medium text-[2vw]/[2.5vw] text-justify text-[#013047]">
           {desc}
         </p>
         <div className="flex justify-center">
@@ -399,7 +399,7 @@ const Chapter2_HP = () => {
 
   const Descrtiption = () => {
     return (
-      <p className="w-[72vw] text-center font-primeform-medium  text-[3.25vw]/[4.5vw] font-light text-[#ECC691] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
+      <p className="w-[72vw] text-justify font-primeform-medium  text-[3.25vw]/[4.5vw] font-light text-[#ECC691] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
         Integritas akademik merupakan salah satu hal penting dan pondasi utama
         dalam melaksanakan kegiatan di perguruan tinggi. Kegiatan di perguruan
         tinggi nantinya tidak terbatas mengenai perkuliahan dan nilai akademik
@@ -446,7 +446,7 @@ const Chapter2_HP = () => {
           {title}
         </h1>
         <Gambar />
-        <p className="px-[3vw] font-primeform-medium text-[2.8vw]/[3.5vw] text-center text-[#013047]">
+        <p className="px-[3vw] font-primeform-medium text-[2.8vw]/[3.5vw] text-justify text-[#013047]">
           {desc}
         </p>
         <div className="flex justify-center">
