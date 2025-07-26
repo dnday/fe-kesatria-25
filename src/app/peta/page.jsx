@@ -143,33 +143,6 @@ export default function Peta() {
                 </div>
               )}
 
-              {/* Fullscreen Button */}
-              <button
-                onClick={handleFullscreen}
-                className="absolute top-2 right-2 z-[140] bg-[#A01326] text-white p-2 rounded-md hover:bg-[#7f0818] transition-colors duration-300 shadow-lg"
-                title="Fullscreen"
-              >
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  {isFullscreen ? (
-                    <path
-                      d="M8 3V5H4V9H2V3H8ZM2 21V15H4V19H8V21H2ZM22 21H16V19H20V15H22V21ZM22 9H20V5H16V3H22V9Z"
-                      fill="currentColor"
-                    />
-                  ) : (
-                    <path
-                      d="M7 14H5V19H10V17H7V14ZM5 10H7V7H10V5H5V10ZM17 17H14V19H19V14H17V17ZM14 5V7H17V10H19V5H14Z"
-                      fill="currentColor"
-                    />
-                  )}
-                </svg>
-              </button>
-
               <iframe
                 id="3d-map-iframe"
                 className="w-full h-[240px] sm:h-[300px] md:h-[450px] lg:h-[420px] xl:h-[500px] rounded-lg border-4 relative z-[130]"
@@ -193,6 +166,16 @@ export default function Peta() {
               <p className="text-sm sm:text-base md:text-lg lg:text-xl text-center text-[#013047] font-primeform-medium font-bold opacity-90 rounded-lg py-2 px-4 mb-6">
                 Nikmati Pengalaman Terbaik dengan Desktop/PC 💻
               </p>
+
+              {/* Fullscreen Button */}
+              <div className="flex justify-center">
+                <button
+                  onClick={handleFullscreen}
+                  className="bg-[#A01326] text-[#F9C157] font-primeform-medium px-6 py-3 rounded-lg text-sm hover:bg-[#7f0818] transition-colors duration-300 shadow-lg"
+                >
+                  🖥️ Fullscreen Mode
+                </button>
+              </div>
             </motion.div>
           </div>
         </div>
