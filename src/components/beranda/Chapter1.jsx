@@ -3,6 +3,7 @@ import Image from "next/image";
 import Button from "../../modular/Button.jsx";
 import Box from "../../modular/Box.jsx";
 import Sejarah from "./Sejarah.jsx";
+import { motion } from "framer-motion";
 
 const Chapter1 = () => {
   return (
@@ -34,13 +35,22 @@ const Chapter1 = () => {
           href="https://drive.google.com/file/d/19y_12wJcJkrK3KziJYkH62Ak7aIU5Z2t/view?usp=sharing"
         />
       </div>
-      <Image
+      <motion.div
+        animate={{ x: [0, 20, 0] }}
+        transition={{
+          repeat: Infinity,
+          duration: 5,
+          ease: "linear",
+        }}
         className="w-[20vw] h-auto mt-[3vw]"
-        alt="awan"
-        src="/images/chapter1/awan.webp"
-        width={800}
-        height={800}
-      />
+      >
+        <Image
+          alt="awan"
+          src="/images/chapter1/awan.webp"
+          width={800}
+          height={800}
+        />
+      </motion.div>
       <Sejarah />
     </section>
   );

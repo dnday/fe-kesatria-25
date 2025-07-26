@@ -3,6 +3,7 @@ import Button from "../../modular/Button.jsx";
 import Box from "../../modular/Box.jsx";
 import Image from "next/image";
 import LazyYouTube from "@/components/common/LazyYouTube";
+import { motion } from "framer-motion";
 
 const Sejarah = () => {
   return (
@@ -39,7 +40,7 @@ const Sejarah = () => {
           </div>
           <Image
             className="w-[40vw] h-auto ml-[10vw] mt-[-8vw] lg:w-[37vw] lg:ml-[5vw] z-20"
-            alt="awan"
+            alt="pitakuning"
             src="/images/chapter1/pitakuning1.webp"
             width={800}
             height={200}
@@ -51,13 +52,19 @@ const Sejarah = () => {
         <p className="text-[10px] md:text-[1.5vw] w-[80vw] font-primeform-medium text-justify">
           {content.content3}
         </p>
-        <Image
+        <motion.div
+          initial={{ rotate: 0 }}
+          animate={{ rotate: 360 }}
+          transition={{ duration: 10, repeat: Infinity }}
           className="w-[15vw] h-auto mt-[3vw] z-0 mb-[-10vw] ml-[30vw]"
-          alt="awan"
-          src="/images/chapter1/gearkuning.webp"
-          width={800}
-          height={200}
-        />
+        >
+          <Image
+            alt="awan"
+            src="/images/chapter1/gearkuning.webp"
+            width={800}
+            height={200}
+          />
+        </motion.div>
         <div
           data-aos="zoom-in"
           className="relative h-auto w-[45vw] bg-[#A01326] rounded-2xl border-6 border-[#A01326] z-10 md:w-[35vw] md:rounded-4xl md:p-2"

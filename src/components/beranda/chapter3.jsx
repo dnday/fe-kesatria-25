@@ -625,14 +625,23 @@ const TransitiAtas = () => {
         draggable={false}
       />
       {/* Tugu Teknik - positioned behind kain kuning with low z-index */}
-      <Image
+      <motion.div
+        animate={{ rotate: [0, 10, -10, 0] }}
+        transition={{
+          repeat: Infinity,
+          duration: 2,
+          ease: "linear",
+        }}
         className="z-[10] translate-y-[-45vw] translate-x-[-3vw] absolute bottom-[-17vw] right-0 w-[12vw] h-auto md:absolute md:bottom-[-17vw] md:right-0 md:w-[12vw] md:h-auto lg:absolute lg:bottom-[-17vw] lg:right-0 lg:w-[12vw] lg:h-auto"
-        alt="Bulu Kuning"
-        src="/images/assets_beranda_chapter2_bulu3.svg"
-        width={960}
-        height={250}
-        draggable={false}
-      />
+      >
+        <Image
+          alt="Bulu Kuning"
+          src="/images/assets_beranda_chapter2_bulu3.svg"
+          width={960}
+          height={250}
+          draggable={false}
+        />
+      </motion.div>
 
       {/* Kain Kuning - always on top with highest z-index */}
       <Image
