@@ -6,7 +6,7 @@ const CONTENT = [
   {
     title: "Bagian III: Kesatria Muda Berkarya",
     titleTab: "Bagian III: Kesatria Muda Berkarya",
-    titleHP: ["Bagian III:", "Kesatria Muda Berkarya"],
+    titleHP: ["Bagian 3:", "Karya Aplikatif"],
     titleDesc:
       "Tentunya kesatria muda sebagai calon-calon insinyur muda akan menghadapi masalah-masalah yang terjadi di Indonesia baik itu dari sektor manufaktur, infrastruktur, dan energi. Di bagian 3 ini, kesatria muda akan mengerjakan sebuah masalah keteknikan yang mana nantinya akan melatih kemampuan berpikir kritis, problem solving, dan kerja sama.",
     subtitle1: "Karya Aplikatif",

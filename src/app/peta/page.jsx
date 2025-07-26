@@ -1,8 +1,41 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
 export default function Peta() {
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
+
+  const handleFullscreen = () => {
+    const iframe = document.getElementById("3d-map-iframe");
+    if (!document.fullscreenElement) {
+      iframe
+        .requestFullscreen()
+        .then(() => {
+          setIsFullscreen(true);
+        })
+        .catch((err) => {
+          console.log("Fullscreen error:", err);
+        });
+    } else {
+      document.exitFullscreen().then(() => {
+        setIsFullscreen(false);
+      });
+    }
+  };
+
+  // Listen for fullscreen changes
+  useEffect(() => {
+    const handleFullscreenChange = () => {
+      setIsFullscreen(!!document.fullscreenElement);
+    };
+
+    document.addEventListener("fullscreenchange", handleFullscreenChange);
+    return () => {
+      document.removeEventListener("fullscreenchange", handleFullscreenChange);
+    };
+  }, []);
   return (
     <div className="min-h-screen pb-[20vw] relative">
       {/* Kain Merah dengan wrapper untuk responsivitas yang lebih baik */}
@@ -95,13 +128,60 @@ export default function Peta() {
             data-aos-duration="1200"
             data-aos-delay="600"
           >
-            <iframe
-              className="w-full h-[240px] sm:h-[300px] md:h-[450px] lg:h-[420px] xl:h-[500px] rounded-lg border-4 relative z-[130]"
-              style={{ borderColor: "#A01326" }}
-              src="https://ft-digitaltwin3d.id/"
-              frameBorder="0"
-              allowFullScreen
-            ></iframe>
+            {/* Iframe Container with Loading State */}
+            <div className="relative">
+              {/* Loading Spinner */}
+              {!isLoaded && (
+                <div
+                  className="absolute inset-0 flex items-center justify-center bg-gray-100 rounded-lg border-4"
+                  style={{ borderColor: "#A01326" }}
+                >
+                  <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#A01326]"></div>
+                  <span className="ml-3 text-[#013047] font-primeform-medium">
+                    Loading 3D Map...
+                  </span>
+                </div>
+              )}
+
+              {/* Fullscreen Button */}
+              <button
+                onClick={handleFullscreen}
+                className="absolute top-2 right-2 z-[140] bg-[#A01326] text-white p-2 rounded-md hover:bg-[#7f0818] transition-colors duration-300 shadow-lg"
+                title="Fullscreen"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  {isFullscreen ? (
+                    <path
+                      d="M8 3V5H4V9H2V3H8ZM2 21V15H4V19H8V21H2ZM22 21H16V19H20V15H22V21ZM22 9H20V5H16V3H22V9Z"
+                      fill="currentColor"
+                    />
+                  ) : (
+                    <path
+                      d="M7 14H5V19H10V17H7V14ZM5 10H7V7H10V5H5V10ZM17 17H14V19H19V14H17V17ZM14 5V7H17V10H19V5H14Z"
+                      fill="currentColor"
+                    />
+                  )}
+                </svg>
+              </button>
+
+              <iframe
+                id="3d-map-iframe"
+                className="w-full h-[240px] sm:h-[300px] md:h-[450px] lg:h-[420px] xl:h-[500px] rounded-lg border-4 relative z-[130]"
+                style={{ borderColor: "#A01326" }}
+                src="https://ft-digitaltwin3d.id/"
+                frameBorder="0"
+                allowFullScreen
+                loading="lazy"
+                onLoad={() => setIsLoaded(true)}
+                onError={() => setIsLoaded(true)}
+              ></iframe>
+            </div>
 
             {/* Subtitle dengan bahasa yang lebih jelas */}
             <motion.div
