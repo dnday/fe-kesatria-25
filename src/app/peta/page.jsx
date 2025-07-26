@@ -166,16 +166,6 @@ export default function Peta() {
               <p className="text-sm sm:text-base md:text-lg lg:text-xl text-center text-[#013047] font-primeform-medium font-bold opacity-90 rounded-lg py-2 px-4 mb-6">
                 Nikmati Pengalaman Terbaik dengan Desktop/PC 💻
               </p>
-
-              {/* Fullscreen Button */}
-              <div className="flex justify-center">
-                <button
-                  onClick={handleFullscreen}
-                  className="bg-[#A01326] text-[#F9C157] font-primeform-medium px-6 py-3 rounded-lg text-sm hover:bg-[#7f0818] transition-colors duration-300 shadow-lg"
-                >
-                  🖥️ Fullscreen Mode
-                </button>
-              </div>
             </motion.div>
           </div>
         </div>

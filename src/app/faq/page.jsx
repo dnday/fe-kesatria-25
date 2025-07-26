@@ -184,7 +184,7 @@ const QAPlaceholder = ({ question, answer }) => {
     <div className="w-full">
       <div
         onClick={handleClick}
-        className="flex flex-row gap-4 items-center px-5 py-4 text-[#013047] font-primeform-medium bg-[#F9C157] rounded-lg transition-all duration-500 ease-linear hover:shadow-md border-2 border-[#A01326] cursor-pointer"
+        className="flex flex-row gap-4 items-center px-5 py-4 text-[#013047] font-primeform-medium bg-[#F9C157] rounded-lg transition-all duration-300 ease-out hover:shadow-xl hover:bg-[#F7B947] hover:scale-[1.01] hover:-translate-y-1 border-2 border-[#A01326] cursor-pointer transform"
       >
         <div className="font-bold text-[#A01326] text-lg">Q:</div>
         <div className="flex flex-row justify-between w-full items-center">
@@ -193,7 +193,7 @@ const QAPlaceholder = ({ question, answer }) => {
           </div>
           <RiArrowDownSLine
             size={24}
-            className={`duration-700 transform text-[#A01326] flex-shrink-0 ${
+            className={`duration-500 transform text-[#A01326] flex-shrink-0 transition-all ease-[cubic-bezier(0.4,0,0.2,1)] hover:text-[#8B1020] hover:scale-110 ${
               isActive ? "rotate-180" : "rotate-0"
             }`}
           />
@@ -208,15 +208,33 @@ const QAPlaceholder = ({ question, answer }) => {
             animate="open"
             exit="hidden"
             variants={{
-              open: { opacity: 1, scaleY: 1 },
-              collapsed: { opacity: 0, scaleY: 0 },
+              open: {
+                opacity: 1,
+                height: "auto",
+                y: 0,
+                scale: 1,
+              },
+              collapsed: {
+                opacity: 0,
+                height: 0,
+                y: -10,
+                scale: 0.95,
+              },
             }}
-            transition={{ duration: 0.7, ease: [0.4, 0, 0.2, 1] }}
+            transition={{
+              duration: 0.4,
+              ease: [0.4, 0, 0.2, 1],
+              opacity: { duration: 0.3 },
+              scale: { duration: 0.3 },
+              y: { duration: 0.3 },
+            }}
             className="overflow-hidden origin-top"
             style={{ transformOrigin: "top" }}
           >
-            <div className="flex flex-row gap-4 bg-[#013047] bg-opacity-90 rounded-b-lg px-5 py-4 text-[#ECC691] font-primeform-medium text-base border-x-2 border-b-2 border-[#A01326] mt-1">
-              <div className="font-bold text-[#F9C157] text-lg">A:</div>
+            <div className="flex flex-row gap-4 bg-[#013047] bg-opacity-90 rounded-b-lg px-5 py-4 text-[#ECC691] font-primeform-medium text-base border-x-2 border-b-2 border-[#A01326] mt-1 backdrop-blur-sm">
+              <div className="font-bold text-[#F9C157] text-lg animate-pulse">
+                A:
+              </div>
               <div className="font-light leading-relaxed">{answer}</div>
             </div>
           </motion.div>
