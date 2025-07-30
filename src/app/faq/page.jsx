@@ -182,9 +182,17 @@ const QAPlaceholder = ({ question, answer }) => {
 
   return (
     <div className="w-full">
+      {/* Question Header */}
       <div
         onClick={handleClick}
-        className="flex flex-row gap-4 items-center px-5 py-4 text-[#013047] font-primeform-medium bg-[#F9C157] rounded-lg transition-all duration-300 ease-out hover:shadow-xl hover:bg-[#F7B947] hover:scale-[1.01] hover:-translate-y-1 border-2 border-[#A01326] cursor-pointer transform"
+        className={`
+          flex flex-row gap-4 items-center px-5 py-4 
+          text-[#013047] font-primeform-medium bg-[#F9C157] 
+          border-2 border-[#A01326] cursor-pointer
+          transition-all duration-150 ease-out
+          hover:bg-[#F7B947] hover:shadow-lg
+          ${isActive ? "rounded-t-lg" : "rounded-lg"}
+        `}
       >
         <div className="font-bold text-[#A01326] text-lg">Q:</div>
         <div className="flex flex-row justify-between w-full items-center">
@@ -193,53 +201,25 @@ const QAPlaceholder = ({ question, answer }) => {
           </div>
           <RiArrowDownSLine
             size={24}
-            className={`duration-500 transform text-[#A01326] flex-shrink-0 transition-all ease-[cubic-bezier(0.4,0,0.2,1)] hover:text-[#8B1020] hover:scale-110 ${
+            className={`transition-transform duration-200 ease-out text-[#A01326] flex-shrink-0 ${
               isActive ? "rotate-180" : "rotate-0"
             }`}
           />
         </div>
       </div>
 
-      <AnimatePresence initial={false}>
-        {isActive && (
-          <motion.div
-            key="content"
-            initial="collapsed"
-            animate="open"
-            exit="hidden"
-            variants={{
-              open: {
-                opacity: 1,
-                height: "auto",
-                y: 0,
-                scale: 1,
-              },
-              collapsed: {
-                opacity: 0,
-                height: 0,
-                y: -10,
-                scale: 0.95,
-              },
-            }}
-            transition={{
-              duration: 0.4,
-              ease: [0.4, 0, 0.2, 1],
-              opacity: { duration: 0.3 },
-              scale: { duration: 0.3 },
-              y: { duration: 0.3 },
-            }}
-            className="overflow-hidden origin-top"
-            style={{ transformOrigin: "top" }}
-          >
-            <div className="flex flex-row gap-4 bg-[#013047] bg-opacity-90 rounded-b-lg px-5 py-4 text-[#ECC691] font-primeform-medium text-base border-x-2 border-b-2 border-[#A01326] mt-1 backdrop-blur-sm">
-              <div className="font-bold text-[#F9C157] text-lg animate-pulse">
-                A:
-              </div>
-              <div className="font-light leading-relaxed">{answer}</div>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {/* Answer Content - Simple & Smooth */}
+      <div
+        className={`
+          overflow-hidden transition-all duration-300 ease-out
+          ${isActive ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}
+        `}
+      >
+        <div className="flex flex-row gap-4 bg-[#013047] bg-opacity-90 rounded-b-lg px-5 py-4 text-[#ECC691] font-primeform-medium text-base border-x-2 border-b-2 border-[#A01326]">
+          <div className="font-bold text-[#F9C157] text-lg">A:</div>
+          <div className="font-light leading-relaxed">{answer}</div>
+        </div>
+      </div>
     </div>
   );
 };
