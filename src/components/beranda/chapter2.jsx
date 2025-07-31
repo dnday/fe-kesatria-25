@@ -56,11 +56,11 @@ const Chapter2_Desktop = () => {
         <div className="flex h-[22vw] flex-col place-content-center gap-[0.2vw]">
           {/* Title without border */}
           <div className="w-full pb-[0.5vw] mb-[0.5vw]">
-            <h2 className="font-storybook text-[3vw] text-[#013047] text-center">
+            <h2 className="font-storybook text-[4vw] sm:text-[3.5vw] md:text-[3.2vw] lg:text-[3vw] text-[#013047] text-center">
               {title}
             </h2>
           </div>
-          <p className="w-[36vw] text-justify font-primeform-medium text-[#013047] text-[1.2vw]">
+          <p className="w-[36vw] text-justify font-primeform-medium text-[#013047] text-[1.8vw] sm:text-[1.6vw] md:text-[1.4vw] lg:text-[1.2vw] leading-relaxed">
             {desc}
           </p>
           <div className="flex justify-center mt-[1vw]">
@@ -70,7 +70,7 @@ const Chapter2_Desktop = () => {
               href={link}
               className="w-fit rounded-[1.5vw] bg-[#A01326] hover:bg-[#7f0818] px-[2.5vw] font-bold shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] cursor-pointer"
             >
-              <p className="font-storybook text-[1.5vw] text-[#F9C157]">
+              <p className="font-storybook text-[2vw] sm:text-[1.8vw] md:text-[1.6vw] lg:text-[1.5vw] text-[#F9C157]">
                 Baca Modul
               </p>
             </Link>
@@ -89,13 +89,13 @@ const Chapter2_Desktop = () => {
         data-aos="fade-up"
         className="flex flex-col items-center pb-[1.25vw] gap-[1vw]"
       >
-        <h1 className="font-storybook text-[4vw] text-[#ECC691] text-shadow-[inset_-1px_-1px_0px_0px_#FFFFFF40, inset_1px_1px_0px_0px_#00000059]">
+        <h1 className="font-storybook text-[6vw] sm:text-[5vw] md:text-[4.5vw] lg:text-[4vw] text-[#ECC691] text-shadow-[inset_-1px_-1px_0px_0px_#FFFFFF40, inset_1px_1px_0px_0px_#00000059]">
           Bagian 2:
         </h1>
-        <h1 className="font-storybook text-[4vw] text-[#ECC691] text-shadow-[inset_-1px_-1px_0px_0px_#FFFFFF40, inset_1px_1px_0px_0px_#00000059]">
+        <h1 className="font-storybook text-[6vw] sm:text-[5vw] md:text-[4.5vw] lg:text-[4vw] text-[#ECC691] text-shadow-[inset_-1px_-1px_0px_0px_#FFFFFF40, inset_1px_1px_0px_0px_#00000059]">
           Ananta Satya Sang Kesatria
         </h1>
-        <p className="w-[80vw] pb-[2vw] px-[6vw] text-justify font-primeform-medium text-[1.5vw]/[2vw] font-light text-[#ECC691] drop-shadow-[-20_0.4vw_0.2vw_rgba(0,0,0,0.6)]">
+        <p className="w-[80vw] pb-[2vw] px-[6vw] text-justify font-primeform-medium text-[2.5vw]/[3vw] sm:text-[2.2vw]/[2.8vw] md:text-[1.8vw]/[2.4vw] lg:text-[1.5vw]/[2vw] font-light text-[#ECC691] drop-shadow-[-20_0.4vw_0.2vw_rgba(0,0,0,0.6)]">
           Integritas akademik merupakan salah satu hal penting dan pondasi utama
           dalam melaksanakan kegiatan di perguruan tinggi. Kegiatan di perguruan
           tinggi nantinya tidak terbatas mengenai perkuliahan dan nilai akademik
@@ -206,10 +206,10 @@ const Chapter2_Tablet = () => {
   const Title = () => {
     return (
       <>
-        <h1 className="text-[#ECC691] font-storybook text-[4.8vw]">
+        <h1 className="text-[#ECC691] font-storybook text-[6vw] sm:text-[5.5vw] md:text-[5vw] lg:text-[4.8vw]">
           Bagian 2:
         </h1>
-        <h1 className="text-[#ECC691] font-storybook text-[4.8vw]">
+        <h1 className="text-[#ECC691] font-storybook text-[6vw] sm:text-[5.5vw] md:text-[5vw] lg:text-[4.8vw]">
           Ananta Satya Sang Kesatria
         </h1>
       </>
@@ -218,7 +218,7 @@ const Chapter2_Tablet = () => {
 
   const Descrtiption = () => {
     return (
-      <p className=" w-[70vw] text-justify font-primeform-medium text-[2.5vw]/[3.2vw] font-light text-[#ECC691]  drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
+      <p className="w-[70vw] text-justify font-primeform-medium text-[3.2vw] sm:text-[2.5vw] md:text-[2vw] lg:text-[1.5vw] font-light text-[#ECC691] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
         Integritas akademik merupakan salah satu hal penting dan pondasi utama
         dalam melaksanakan kegiatan di perguruan tinggi. Kegiatan di perguruan
         tinggi nantinya tidak terbatas mengenai perkuliahan dan nilai akademik
@@ -399,7 +399,7 @@ const Chapter2_HP = () => {
 
   const Descrtiption = () => {
     return (
-      <p className="w-[72vw] text-justify font-primeform-medium  text-[3.25vw]/[4.5vw] font-light text-[#ECC691] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
+      <p className="w-[72vw] text-justify font-primeform-medium text-[3.2vw] sm:text-[2.5vw] md:text-[2vw] lg:text-[1.5vw] font-light text-[#ECC691] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
         Integritas akademik merupakan salah satu hal penting dan pondasi utama
         dalam melaksanakan kegiatan di perguruan tinggi. Kegiatan di perguruan
         tinggi nantinya tidak terbatas mengenai perkuliahan dan nilai akademik

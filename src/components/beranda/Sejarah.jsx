@@ -18,8 +18,10 @@ const Sejarah = () => {
             height={800}
           />
           <div data-aos="fade-right" className="flex flex-col mt-[5vw] z-10">
-            <p className="text-[4vw] font-storybook">{content.title2}</p>
-            <p className="text-[10px] md:text-[1.5vw] w-[35vw] text-justify font-primeform-medium">
+            <p className="text-[5vw] sm:text-[4.5vw] md:text-[4.2vw] lg:text-[4vw] font-storybook">
+              {content.title2}
+            </p>
+            <p className="text-[3.2vw] sm:text-[2.5vw] md:text-[2vw] lg:text-[1.5vw] w-[35vw] text-justify font-primeform-medium leading-relaxed">
               {content.content2}
             </p>
           </div>
@@ -30,7 +32,7 @@ const Sejarah = () => {
         >
           <div
             data-aos="zoom-in"
-            className="relative mt-[5vw] h-auto w-[45vw] bg-[#A01326] rounded-2xl border-6 border-[#A01326] z-10 md:w-[35vw] md:rounded-4xl md:p-2"
+            className="relative mt-[15vw] md:mt-[5vw] h-auto w-[45vw] bg-[#A01326] rounded-2xl border-6 border-[#A01326] z-10 md:w-[35vw] md:rounded-4xl md:p-2"
           >
             <LazyYouTube
               videoId="RFMczbX3Lsc"
@@ -48,8 +50,10 @@ const Sejarah = () => {
         </div>
       </div>
       <div data-aos="fade-up" className="flex flex-col items-center">
-        <p className="text-[4vw] font-storybook">{content.title3}</p>
-        <p className="text-[10px] md:text-[1.5vw] w-[80vw] font-primeform-medium text-justify">
+        <p className="text-[5vw] sm:text-[4.5vw] md:text-[4.2vw] lg:text-[4vw] font-storybook">
+          {content.title3}
+        </p>
+        <p className="text-[3.2vw] sm:text-[2.5vw] md:text-[2vw] lg:text-[1.5vw] w-[80vw] font-primeform-medium text-justify leading-relaxed">
           {content.content3}
         </p>
         <motion.div

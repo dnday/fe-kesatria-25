@@ -22,15 +22,15 @@ const JudulChapter = () => {
   return (
     <div
       data-aos="fade-up"
-      className="flex flex-col items-center max-lg:max-w-[65vw] max-sm:hidden"
+      className="flex flex-col gap-[0.25vw] items-center max-lg:max-w-[65vw] max-sm:hidden"
     >
-      <h1 className="font-storybook text-[4vw] text-[#013047] max-lg:text-[4.8vw] ">
+      <h1 className="font-storybook text-[6vw] sm:text-[5.5vw] md:text-[5vw] lg:text-[4.8vw] xl:text-[4vw] text-[#013047]">
         Bagian 3:
       </h1>
-      <h1 className="font-storybook text-[4vw] text-[#013047] max-lg:text-[4.8vw] ">
+      <h1 className="font-storybook text-[6vw] sm:text-[5.5vw] md:text-[5vw] lg:text-[4.8vw] xl:text-[4vw] text-[#013047]">
         Karya Aplikatif
       </h1>
-      <p className="text-justify font-primeform-medium text-[1.5vw]/[2vw] text-[#013047] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)] max-lg:text-[2.5vw]/[3.2vw] max-sm:text-[3.5vw]/[4.5vw] font-medium max-w-[80%] mx-auto max-sm:max-w-[90%]">
+      <p className="text-justify font-primeform-medium text-[3.2vw] sm:text-[2.5vw] md:text-[2vw] lg:text-[1.5vw] text-[#013047] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)] font-medium max-w-[80%] mx-auto max-sm:max-w-[90%]">
         {CONTENT[0].titleDesc}
       </p>
     </div>
@@ -43,12 +43,12 @@ const JudulChapterHP = () => {
       data-aos="fade-up"
       className="flex w-full flex-col place-content-center items-center gap-[2.5vw] text-center sm:hidden"
     >
-      <h1 className="font-storybook text-[5vw]">
+      <h1 className="font-storybook text-[7vw] sm:text-[6vw] md:text-[5.5vw] lg:text-[5vw]">
         <span className="text-[#013047]">{CONTENT[0].titleHP[0]}</span>
         <br />
         <span className="text-[#013047]">{CONTENT[0].titleHP[1]}</span>
       </h1>
-      <p className="max-w-[72vw] text-justify font-primeform-medium text-[3.5vw]/[4.5vw] font-light text-[#013047] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
+      <p className="max-w-[72vw] text-justify font-primeform-medium text-[3.2vw] sm:text-[2.5vw] md:text-[2vw] lg:text-[1.5vw] font-light text-[#013047] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
         {CONTENT[0].titleDesc}
       </p>
     </div>
@@ -67,7 +67,7 @@ const KesatriaMudaBerkarya = () => {
         >
           {/* Header with title and button aligned */}
           <div className="flex items-center justify-between mb-[1vw]">
-            <h2 className="font-storybook text-[3vw] text-[#013047]">
+            <h2 className="font-storybook text-[4vw] sm:text-[3.8vw] md:text-[3.5vw] lg:text-[3.2vw] xl:text-[3vw] text-[#013047]">
               {CONTENT[0].subtitle1}
             </h2>
             <Link
@@ -78,12 +78,12 @@ const KesatriaMudaBerkarya = () => {
               }
               className="w-[16.5vw] rounded-[2vw] bg-[#A01326] hover:bg-[#7f0818] font-bold shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] cursor-pointer"
             >
-              <p className="z-[10] text-[#F9C157] text-center font-storybook text-[2vw]">
+              <p className="z-[10] text-[#F9C157] text-center font-storybook text-[2.5vw] sm:text-[2.3vw] md:text-[2.1vw] lg:text-[2vw]">
                 Baca Modul
               </p>
             </Link>
           </div>
-          <p className="text-justify font-primeform-medium text-[1.5vw]/[2vw] font-light text-[#013047] drop-shadow-[-20_0.4vw_0.2vw_rgba(0,0,0,0.6)]">
+          <p className="text-justify font-primeform-medium text-[3.2vw] sm:text-[2.5vw] md:text-[2vw] lg:text-[1.5vw] font-light text-[#013047] drop-shadow-[-20_0.4vw_0.2vw_rgba(0,0,0,0.6)]">
             {CONTENT[0].subtitle1desc}
           </p>
         </div>
@@ -127,18 +127,18 @@ const KesatriaMudaBerkarya = () => {
       </div>
 
       {/* Tablet Version - md: to lg: */}
-      <div className="flex w-[71vw] flex-col place-content-center items-center justify-between max-sm:hidden lg:hidden">
+      <div className="flex w-[80vw] flex-col place-content-center items-center justify-between max-sm:hidden lg:hidden">
         <div
           data-aos="fade-up"
-          className="flex w-full flex-col items-center gap-[1vw]"
+          className="flex w-full flex-col items-center gap-[2vw]"
         >
-          <h2 className="text-[#013047] font-storybook text-[5vw]">
+          <h2 className="text-[#013047] font-storybook text-[6vw] sm:text-[5.5vw] md:text-[5.2vw] lg:text-[5vw] text-center">
             {CONTENT[0].subtitle1}
           </h2>
-          <p className="max-w-[65vw] text-justify font-primeform-medium text-[2.5vw]/[3.2vw] font-light text-[#013047] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
+          <p className="max-w-[75vw] text-justify font-primeform-medium text-[3.2vw] sm:text-[2.5vw] md:text-[2vw] lg:text-[1.5vw] font-light text-[#013047] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)] text-center">
             {CONTENT[0].subtitle1desc}
           </p>
-          <div className="mt-[2vw] flex w-full flex-col items-center justify-center gap-[2vw] lg:hidden">
+          <div className="mt-[3vw] flex w-full flex-col items-center justify-center gap-[3vw] lg:hidden">
             {/* <Image
               className="absolute left-0 w-[50vw] translate-y-[5vw]"
               alt=""
@@ -154,7 +154,7 @@ const KesatriaMudaBerkarya = () => {
               height={880}
             /> */}
             <motion.div
-              className="z-[1] h-[23.2vw] w-[39.7vw] rounded-[2.9vw] bg-[#013047] drop-shadow-[0_0.1vw_1vw_#000000] flex items-center justify-center overflow-hidden cursor-pointer"
+              className="z-[1] h-[28vw] w-[45vw] rounded-[2.9vw] bg-[#013047] drop-shadow-[0_0.1vw_1vw_#000000] flex items-center justify-center overflow-hidden cursor-pointer"
               whileHover={{
                 scale: 1.03,
                 rotateX: 5,
@@ -193,9 +193,9 @@ const KesatriaMudaBerkarya = () => {
               href={
                 "https://drive.google.com/file/d/157RNpG_SA8OliPWnuBfHIPXGBr-c1OOb/view?usp=sharing"
               }
-              className=" w-[26.9vw] rounded-[3.5vw] bg-[#A01326] hover:bg-[#7f0818] font-bold shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] cursor-pointer"
+              className=" w-[30vw] rounded-[3.5vw] bg-[#A01326] hover:bg-[#7f0818] font-bold shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] cursor-pointer"
             >
-              <p className="text-[#F9C157] text-center font-storybook text-[3vw]">
+              <p className="text-[#F9C157] text-center font-storybook text-[4vw] sm:text-[3.8vw] md:text-[3.5vw] lg:text-[3vw] py-[1vw]">
                 Baca Modul
               </p>
             </Link>
@@ -209,10 +209,10 @@ const KesatriaMudaBerkarya = () => {
           data-aos="fade-up"
           className="flex w-full flex-col place-content-center items-center gap-[1vw] text-center sm:hidden"
         >
-          <h2 className="font-storybook text-[5vw] text-[#013047]  text-center">
+          <h2 className="font-storybook text-[7vw] sm:text-[6vw] md:text-[5.5vw] lg:text-[5vw] text-[#013047] text-center">
             {CONTENT[0].subtitle1}
           </h2>
-          <p className="max-w-[72vw] text-justify font-primeform-medium text-[3.5vw]/[4.5vw] font-light text-[#013047] drop-shadow-[-20_0.4vw_0.2vw_rgba(0,0,0,0.6)]">
+          <p className="max-w-[72vw] text-justify font-primeform-medium text-[3.2vw] sm:text-[2.5vw] md:text-[2vw] lg:text-[1.5vw] font-light text-[#013047] drop-shadow-[-20_0.4vw_0.2vw_rgba(0,0,0,0.6)]">
             {CONTENT[0].subtitle1desc}
           </p>
         </div>
@@ -259,7 +259,7 @@ const KesatriaMudaBerkarya = () => {
             }
             className="z-[1] rounded-[3.5vw] bg-[#A01326] hover:bg-[#7f0818] font-bold shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] cursor-pointer"
           >
-            <p className="z-[10] text-[#F9C157] text-center font-storybook text-[4vw] px[7vw] py-[0.5]">
+            <p className="z-[10] text-[#F9C157] text-center font-storybook text-[5vw] sm:text-[4.5vw] md:text-[4.2vw] lg:text-[4vw] px-[7vw] py-[0.5vw]">
               Baca Modul
             </p>
           </Link>
@@ -314,7 +314,7 @@ const KaryaAplikatif = () => {
         {/* <h2 className="font-storybook text-[3vw] text-[#013047] max-lg:text-[3.8vw] ">
           {CONTENT[0].subtitle2}
         </h2> */}
-        <p className="text-justify font-primeform-medium text-[1.5vw]/[2vw] font-light text-[#013047] drop-shadow-[-20_0.4vw_0.2vw_rgba(0,0,0,0.6)]">
+        <p className="text-justify font-primeform-medium text-[3.2vw] sm:text-[2.5vw] md:text-[2vw] lg:text-[1.5vw] font-light text-[#013047] drop-shadow-[-20_0.4vw_0.2vw_rgba(0,0,0,0.6)]">
           {CONTENT[0].subtitle2desc}
         </p>
         <Link
@@ -325,7 +325,7 @@ const KaryaAplikatif = () => {
           }
           className="w-[16.5vw] rounded-[2vw] bg-[#A01326] hover:bg-[#7f0818] font-bold shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] cursor-pointer"
         >
-          <p className="z-[10] text-[#F9C157] text-center font-storybook text-[2vw]">
+          <p className="z-[10] text-[#F9C157] text-center font-storybook text-[2.5vw] sm:text-[2.3vw] md:text-[2.1vw] lg:text-[2vw]">
             Baca Modul
           </p>
         </Link>
@@ -388,18 +388,18 @@ const KaryaAplikatif = () => {
 
 const KaryaAplikatifTab = () => {
   return (
-    <div className="flex w-[71vw] flex-col place-content-center items-center justify-between max-sm:hidden lg:hidden">
+    <div className="flex w-[80vw] flex-col place-content-center items-center justify-between max-sm:hidden lg:hidden">
       <div
         data-aos="fade-up"
-        className="flex w-full flex-col items-center gap-[1vw]"
+        className="flex w-full flex-col items-center gap-[2vw]"
       >
         {/* <h2 className="text-[#013047] font-storybook text-[4.5vw]">
           {CONTENT[0].subtitle2}
         </h2> */}
-        <p className="max-w-[65vw] text-justify font-primeform-medium text-[2.5vw]/[3.2vw] font-light text-[#013047] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
+        <p className="max-w-[75vw] text-justify font-primeform-medium text-[3.2vw] sm:text-[2.5vw] md:text-[2vw] lg:text-[1.5vw] font-light text-[#013047] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)] text-center">
           {CONTENT[0].subtitle2desc}
         </p>
-        <div className="mt-[2vw] flex w-full flex-col items-center justify-center gap-[2vw] lg:hidden">
+        <div className="mt-[3vw] flex w-full flex-col items-center justify-center gap-[3vw] lg:hidden">
           {/* <Image
             className="absolute left-0 w-[50vw] translate-y-[5vw]"
             alt=""
@@ -415,7 +415,7 @@ const KaryaAplikatifTab = () => {
             height={880}
           /> */}
           <motion.div
-            className="z-[1] h-[23.2vw] w-[39.7vw] rounded-[2.9vw] bg-[#013047] drop-shadow-[0_0.1vw_1vw_#000000] flex items-center justify-center overflow-hidden cursor-pointer"
+            className="z-[1] h-[28vw] w-[45vw] rounded-[2.9vw] bg-[#013047] drop-shadow-[0_0.1vw_1vw_#000000] flex items-center justify-center overflow-hidden cursor-pointer"
             whileHover={{
               scale: 1.03,
               rotateX: -5,
@@ -455,9 +455,9 @@ const KaryaAplikatifTab = () => {
             href={
               "https://drive.google.com/file/d/157RNpG_SA8OliPWnuBfHIPXGBr-c1OOb/view?usp=sharing"
             }
-            className="z-[1] w-[26.9vw] rounded-[3.5vw] bg-[#A01326] hover:bg-[#7f0818] font-bold shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] cursor-pointer"
+            className="z-[1] w-[30vw] rounded-[3.5vw] bg-[#A01326] hover:bg-[#7f0818] font-bold shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] cursor-pointer"
           >
-            <p className="text-[#F9C157] text-center font-storybook">
+            <p className="text-[#F9C157] text-center font-storybook py-[1vw]">
               Baca Modul
             </p>
           </Link>
@@ -535,7 +535,7 @@ const KaryaAplikasiHP = () => {
         {/* <h1 className="font-storybook text-[5vw]">
           <span className="text-[#013047] s">{CONTENT[0].subtitle2}</span>
         </h1> */}
-        <p className="max-w-[72vw] text-justify font-primeform-medium text-[3.5vw]/[4.5vw] font-light text-[#013047] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
+        <p className="max-w-[72vw] text-justify font-primeform-medium text-[3.2vw] sm:text-[2.5vw] md:text-[2vw] lg:text-[1.5vw] font-light text-[#013047] drop-shadow-[-10_4px_5px_rgba(0,0,0,0.7)]">
           {CONTENT[0].subtitle2desc}
         </p>
       </div>
