@@ -42,11 +42,11 @@ const Chapter2_Desktop = () => {
     return (
       <div className="flex items-center justify-center gap-[2.5vw]">
         <div
-          className="relative h-[13.5vw] w-[20vw] rounded-[2vw] bg-[#A01326] overflow-hidden justify-center items-center flex border-4 border-[#A01326]"
+          className="relative h-[13.5vw] w-[20vw] rounded-[2vw] bg-[#A01326] overflow-hidden justify-center items-center flex border-4 border-[#A01326] shadow-[inset_3px_3px_8px_rgba(0,0,0,0.4),inset_-3px_-3px_8px_rgba(255,255,255,0.3),4px_4px_12px_rgba(0,0,0,0.5),0_0_0_4px_#A01326,0_0_20px_rgba(160,19,38,0.6)] before:absolute before:inset-[-4px] before:border-[4px] before:border-[#A01326] before:rounded-[2.5vw] before:shadow-[inset_2px_2px_6px_rgba(255,255,255,0.5),inset_-2px_-2px_6px_rgba(0,0,0,0.4),0_0_15px_rgba(160,19,38,0.8)] after:absolute after:inset-[-8px] after:border-[3px] after:border-[#A01326] after:rounded-[3vw] after:shadow-[inset_3px_3px_8px_rgba(255,255,255,0.4),inset_-3px_-3px_8px_rgba(0,0,0,0.3),0_0_25px_rgba(160,19,38,0.7)]"
           data-aos="fade-left"
         >
           <OptimizedImage
-            className="absolute h-full w-full rounded-[2vw]"
+            className="absolute h-full w-full rounded-[2vw] z-20"
             alt=""
             src={imgpath}
             width={300}
@@ -121,7 +121,7 @@ const Chapter2_Desktop = () => {
         data-aos="fade-up"
         className="z-[1000] flex h-[25vw] w-[75vw] items-center justify-center gap-[0vw] rounded-[2vw] bg-[#ECC691]"
       >
-        <div
+        <motion.div
           className={`flex h-full min-w-[3vw] items-center justify-center cursor-pointer ${
             activeSwiper === 0 ? "opacity-30" : "opacity-100"
           }`}
@@ -130,9 +130,29 @@ const Chapter2_Desktop = () => {
             swiper?.slidePrev();
             setActiveSwiper(swiper?.activeIndex ?? 0);
           }}
+          whileHover={{
+            scale: activeSwiper !== 0 ? 1.2 : 1,
+            transition: { duration: 0.2 },
+          }}
+          whileTap={{
+            scale: activeSwiper !== 0 ? 0.9 : 1,
+            transition: { duration: 0.1 },
+          }}
         >
-          <div className="text-[4vw] text-[#A01326]">‹</div>
-        </div>
+          <motion.div
+            className="text-[4vw] text-[#A01326]"
+            animate={{
+              x: activeSwiper !== 0 ? [0, -5, 0] : 0,
+            }}
+            transition={{
+              repeat: activeSwiper !== 0 ? Infinity : 0,
+              duration: 1.5,
+              ease: "easeInOut",
+            }}
+          >
+            ‹
+          </motion.div>
+        </motion.div>
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
@@ -153,7 +173,7 @@ const Chapter2_Desktop = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div
+        <motion.div
           className={`flex h-full min-w-[3vw] items-center justify-center cursor-pointer ${
             activeSwiper === CARDCONTENT.length - 1
               ? "opacity-30"
@@ -164,9 +184,29 @@ const Chapter2_Desktop = () => {
             swiper?.slideNext();
             setActiveSwiper(swiper?.activeIndex ?? 0);
           }}
+          whileHover={{
+            scale: activeSwiper !== CARDCONTENT.length - 1 ? 1.2 : 1,
+            transition: { duration: 0.2 },
+          }}
+          whileTap={{
+            scale: activeSwiper !== CARDCONTENT.length - 1 ? 0.9 : 1,
+            transition: { duration: 0.1 },
+          }}
         >
-          <div className="text-[4vw] text-[#A01326]">›</div>
-        </div>
+          <motion.div
+            className="text-[4vw] text-[#A01326]"
+            animate={{
+              x: activeSwiper !== CARDCONTENT.length - 1 ? [0, 5, 0] : 0,
+            }}
+            transition={{
+              repeat: activeSwiper !== CARDCONTENT.length - 1 ? Infinity : 0,
+              duration: 1.5,
+              ease: "easeInOut",
+            }}
+          >
+            ›
+          </motion.div>
+        </motion.div>
       </div>
       <div className="flex px-[2vw] gap-[1vw] z-[100]">
         {CARDCONTENT.map((item, index) => (
@@ -244,9 +284,9 @@ const Chapter2_Tablet = () => {
   const SwiperCard = ({ title, desc, imgpath, link }) => {
     const Gambar = () => {
       return (
-        <div className="relative flex h-[12vw] w-[18vw] items-center justify-center rounded-[2vw] bg-[#A01326] overflow-hidden border-4 border-[#A01326]">
+        <div className="relative flex h-[12vw] w-[18vw] items-center justify-center rounded-[2vw] bg-[#A01326] overflow-hidden border-4 border-[#A01326] shadow-[inset_2px_2px_6px_rgba(0,0,0,0.4),inset_-2px_-2px_6px_rgba(255,255,255,0.3),3px_3px_10px_rgba(0,0,0,0.4),0_0_0_3px_#A01326,0_0_15px_rgba(160,19,38,0.6)] before:absolute before:inset-[-3px] before:border-[3px] before:border-[#A01326] before:rounded-[2.3vw] before:shadow-[inset_1px_1px_4px_rgba(255,255,255,0.5),inset_-1px_-1px_4px_rgba(0,0,0,0.4),0_0_12px_rgba(160,19,38,0.7)] after:absolute after:inset-[-6px] after:border-[2px] after:border-[#A01326] after:rounded-[2.6vw] after:shadow-[inset_2px_2px_6px_rgba(255,255,255,0.4),inset_-2px_-2px_6px_rgba(0,0,0,0.3),0_0_18px_rgba(160,19,38,0.6)]">
           <OptimizedImage
-            className="absolute h-full w-full rounded-[2vw]"
+            className="absolute h-full w-full rounded-[2vw] z-20"
             alt=""
             src={imgpath}
             width={200}
@@ -316,7 +356,7 @@ const Chapter2_Tablet = () => {
         data-aos="fade-up"
         className="z-[1] flex h-[50vw] w-[70vw] items-center justify-center gap-[0vw] rounded-[2vw] bg-[#ECC691]"
       >
-        <div
+        <motion.div
           className={`flex h-full min-w-[5vw] items-center justify-center cursor-pointer ${
             activeSwiper === 0 ? "opacity-30" : "opacity-100"
           }`}
@@ -325,9 +365,29 @@ const Chapter2_Tablet = () => {
             swiper?.slidePrev();
             setActiveSwiper(swiper?.activeIndex ?? 0);
           }}
+          whileHover={{
+            scale: activeSwiper !== 0 ? 1.15 : 1,
+            transition: { duration: 0.2 },
+          }}
+          whileTap={{
+            scale: activeSwiper !== 0 ? 0.9 : 1,
+            transition: { duration: 0.1 },
+          }}
         >
-          <div className="text-[5vw] text-[#A01326]">‹</div>
-        </div>
+          <motion.div
+            className="text-[5vw] text-[#A01326]"
+            animate={{
+              x: activeSwiper !== 0 ? [0, -4, 0] : 0,
+            }}
+            transition={{
+              repeat: activeSwiper !== 0 ? Infinity : 0,
+              duration: 1.3,
+              ease: "easeInOut",
+            }}
+          >
+            ‹
+          </motion.div>
+        </motion.div>
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
@@ -348,7 +408,7 @@ const Chapter2_Tablet = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div
+        <motion.div
           className={`flex h-full min-w-[5vw] items-center justify-center cursor-pointer ${
             activeSwiper === CARDCONTENT.length - 1
               ? "opacity-30"
@@ -359,9 +419,29 @@ const Chapter2_Tablet = () => {
             swiper?.slideNext();
             setActiveSwiper(swiper?.activeIndex ?? 0);
           }}
+          whileHover={{
+            scale: activeSwiper !== CARDCONTENT.length - 1 ? 1.15 : 1,
+            transition: { duration: 0.2 },
+          }}
+          whileTap={{
+            scale: activeSwiper !== CARDCONTENT.length - 1 ? 0.9 : 1,
+            transition: { duration: 0.1 },
+          }}
         >
-          <div className="text-[5vw] text-[#A01326]">›</div>
-        </div>
+          <motion.div
+            className="text-[5vw] text-[#A01326]"
+            animate={{
+              x: activeSwiper !== CARDCONTENT.length - 1 ? [0, 4, 0] : 0,
+            }}
+            transition={{
+              repeat: activeSwiper !== CARDCONTENT.length - 1 ? Infinity : 0,
+              duration: 1.3,
+              ease: "easeInOut",
+            }}
+          >
+            ›
+          </motion.div>
+        </motion.div>
       </div>
       <div className="flex px-[0.5vw] gap-[0.5vw] z-[100]">
         {CARDCONTENT.map((item, index) => (
@@ -437,9 +517,9 @@ const Chapter2_HP = () => {
   const SwiperCard = ({ title, desc, imgpath, link }) => {
     const Gambar = () => {
       return (
-        <div className="relative flex h-[25vw] w-[35vw] items-center justify-center rounded-[4vw] bg-[#A01326] overflow-hidden border-4 border-[#A01326]">
+        <div className="relative flex h-[25vw] w-[35vw] items-center justify-center rounded-[4vw] bg-[#A01326] overflow-hidden border-4 border-[#A01326] shadow-[inset_3px_3px_8px_rgba(0,0,0,0.4),inset_-3px_-3px_8px_rgba(255,255,255,0.3),5px_5px_15px_rgba(0,0,0,0.5),0_0_0_4px_#A01326,0_0_25px_rgba(160,19,38,0.7)] before:absolute before:inset-[-4px] before:border-[4px] before:border-[#A01326] before:rounded-[4.5vw] before:shadow-[inset_2px_2px_6px_rgba(255,255,255,0.5),inset_-2px_-2px_6px_rgba(0,0,0,0.4),0_0_20px_rgba(160,19,38,0.8)] after:absolute after:inset-[-8px] after:border-[3px] after:border-[#A01326] after:rounded-[5vw] after:shadow-[inset_3px_3px_8px_rgba(255,255,255,0.4),inset_-3px_-3px_8px_rgba(0,0,0,0.3),0_0_30px_rgba(160,19,38,0.7)]">
           <Image
-            className="absolute h-full w-full rounded-[4vw]"
+            className="absolute h-full w-full rounded-[4vw] z-20"
             alt=""
             src={imgpath}
             width={200}
@@ -508,7 +588,7 @@ const Chapter2_HP = () => {
         data-aos="fade-up"
         className="z-[1] flex h-[120vw] w-[72vw] items-center justify-center gap-[0vw] rounded-[4vw] bg-[#ECC691]"
       >
-        <div
+        <motion.div
           className={`flex h-full min-w-[8vw] items-center justify-center cursor-pointer ${
             activeSwiper === 0 ? "opacity-30" : "opacity-100"
           }`}
@@ -517,9 +597,29 @@ const Chapter2_HP = () => {
             swiper?.slidePrev();
             setActiveSwiper(swiper?.activeIndex ?? 0);
           }}
+          whileHover={{
+            scale: activeSwiper !== 0 ? 1.1 : 1,
+            transition: { duration: 0.2 },
+          }}
+          whileTap={{
+            scale: activeSwiper !== 0 ? 0.85 : 1,
+            transition: { duration: 0.1 },
+          }}
         >
-          <div className="text-[6vw] text-[#A01326]">‹</div>
-        </div>
+          <motion.div
+            className="text-[6vw] text-[#A01326]"
+            animate={{
+              x: activeSwiper !== 0 ? [0, -6, 0] : 0,
+            }}
+            transition={{
+              repeat: activeSwiper !== 0 ? Infinity : 0,
+              duration: 1.8,
+              ease: "easeInOut",
+            }}
+          >
+            ‹
+          </motion.div>
+        </motion.div>
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
@@ -540,7 +640,7 @@ const Chapter2_HP = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div
+        <motion.div
           className={`flex h-full min-w-[8vw] items-center justify-center cursor-pointer ${
             activeSwiper === CARDCONTENT.length - 1
               ? "opacity-30"
@@ -551,9 +651,29 @@ const Chapter2_HP = () => {
             swiper?.slideNext();
             setActiveSwiper(swiper?.activeIndex ?? 0);
           }}
+          whileHover={{
+            scale: activeSwiper !== CARDCONTENT.length - 1 ? 1.1 : 1,
+            transition: { duration: 0.2 },
+          }}
+          whileTap={{
+            scale: activeSwiper !== CARDCONTENT.length - 1 ? 0.85 : 1,
+            transition: { duration: 0.1 },
+          }}
         >
-          <div className="text-[6vw] text-[#A01326]">›</div>
-        </div>
+          <motion.div
+            className="text-[6vw] text-[#A01326]"
+            animate={{
+              x: activeSwiper !== CARDCONTENT.length - 1 ? [0, 6, 0] : 0,
+            }}
+            transition={{
+              repeat: activeSwiper !== CARDCONTENT.length - 1 ? Infinity : 0,
+              duration: 1.8,
+              ease: "easeInOut",
+            }}
+          >
+            ›
+          </motion.div>
+        </motion.div>
       </div>
       {/* Indicators for the active swiper */}
       <div className="flex justify-center px-[0.5vw] gap-[1vw] z-[100]">
