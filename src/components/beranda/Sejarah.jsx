@@ -59,7 +59,12 @@ const Sejarah = () => {
         <motion.div
           initial={{ rotate: 0 }}
           animate={{ rotate: 360 }}
-          transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+          transition={{
+            duration: 10,
+            repeat: Infinity,
+            ease: "linear",
+            repeatType: "loop",
+          }}
           className="w-[15vw] h-auto mt-[3vw] z-0 mb-[-10vw] ml-[30vw]"
         >
           <Image
