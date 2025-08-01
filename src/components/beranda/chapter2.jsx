@@ -104,6 +104,18 @@ const Chapter2_Desktop = () => {
           mengenai integritas akademik yang meliputi kecurangan akademik serta
           aturan mengenai sitasi.
         </p>
+        <div className="flex justify-center mt-[1vw] mb-[2vw]">
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://drive.google.com/file/d/1vrI7OuSQaumuze6lu3xvwYQI8xp6V07H/view"
+            className="w-fit rounded-[1.5vw] bg-[#A01326] hover:bg-[#7f0818] px-[3.5vw] py-[0.5vw] font-bold shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] cursor-pointer"
+          >
+            <p className="font-storybook text-[2.2vw] sm:text-[2vw] md:text-[1.8vw] lg:text-[1.7vw] text-[#F9C157]">
+              Baca Modul
+            </p>
+          </Link>
+        </div>
       </div>
       <div
         data-aos="fade-up"
@@ -287,6 +299,18 @@ const Chapter2_Tablet = () => {
       >
         <Title />
         <Descrtiption />
+        <div className="flex justify-center mt-[1.5vw]">
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://drive.google.com/file/d/1vrI7OuSQaumuze6lu3xvwYQI8xp6V07H/view"
+            className="w-fit rounded-[2.5vw] bg-[#A01326] hover:bg-[#7f0818] px-[5vw] py-[1.2vw] font-bold shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] cursor-pointer"
+          >
+            <p className="font-storybook text-[2.8vw] text-[#F9C157]">
+              Baca Modul
+            </p>
+          </Link>
+        </div>
       </div>
       <div
         data-aos="fade-up"
@@ -467,6 +491,18 @@ const Chapter2_HP = () => {
       >
         <Title />
         <Descrtiption />
+        <div className="flex justify-center mt-[2vw]">
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://drive.google.com/file/d/1vrI7OuSQaumuze6lu3xvwYQI8xp6V07H/view"
+            className="w-fit rounded-[4vw] bg-[#A01326] hover:bg-[#7f0818] px-[7vw] py-[2vw] font-bold shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] cursor-pointer"
+          >
+            <p className="font-storybook text-[4vw] text-[#F9C157]">
+              Baca Modul
+            </p>
+          </Link>
+        </div>
       </div>
       <div
         data-aos="fade-up"
