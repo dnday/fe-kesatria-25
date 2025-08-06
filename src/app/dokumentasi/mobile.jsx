@@ -28,24 +28,24 @@ const Mobile = () => {
           <div className="flex flex-row gap-3">
             {/* col 1 */}
             <div className="flex flex-col gap-3">
-              <Kolase2 src="/images/chapter1/sample.jpg" height="30vw" />
-              <Kolase2 src="/images/chapter1/sample.jpg" height="30vw" />
+              <Kolase2 src="/images/dokumentasi/day1/1.webp" height="30vw" />
+              <Kolase2 src="/images/dokumentasi/day1/2.webp" height="30vw" />
             </div>
             {/* col 2 */}
             <div className="flex flex-col gap-3">
               <Kolase2
-                src="/images/chapter1/sample.jpg"
+                src="/images/dokumentasi/day1/3.webp"
                 width="53vw"
                 height="30vw"
               />
               <div className="flex flex-row gap-3">
                 <Kolase2
-                  src="/images/chapter1/sample.jpg"
+                  src="/images/dokumentasi/day1/4.webp"
                   width="25vw"
                   height="30vw"
                 />
                 <Kolase2
-                  src="/images/chapter1/sample.jpg"
+                  src="/images/dokumentasi/day1/5.webp"
                   width="25vw"
                   height="30vw"
                 />
@@ -111,7 +111,7 @@ const Mobile = () => {
             </div>
           </div>
           <Link
-            href={"/dokumentasi/day1"}
+            href={"/dokumentasi/day2"}
             className="bg-[#013047] text-[#F9C157] font-primeform px-[2vw] py-[0.5vw] rounded-4xl text-[10px] font-bold shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] hover:scale-105 transition duration-400 cursor-pointer text-center"
           >
             Lihat
