@@ -54,7 +54,7 @@ const Mobile = () => {
           </div>
           <Link
             href={"/dokumentasi/day1"}
-            className="bg-[#013047] text-[#F9C157] font-primeform px-[2vw] py-[0.5vw] rounded-4xl text-[10px] font-bold shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] hover:scale-105 transition duration-400 cursor-pointer text-center"
+            className="bg-[#013047] text-[#F9C157] font-primeform px-[2vw] py-[1.5vw] rounded-4xl text-[15px] font-bold shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] hover:scale-105 transition duration-400 cursor-pointer text-center"
           >
             Lihat
           </Link>
@@ -83,13 +83,15 @@ const Mobile = () => {
 
         {/* Kolase2 atas */}
         <div data-aos="fade-right" className="flex flex-col gap-2">
-          <div className="flex flex-row gap-3">
-            {/* col 1 */}
+          {/* <div className="flex flex-row gap-3">
+          
+            // col 1
             <div className="flex flex-col gap-3">
               <Kolase2 src="/images/chapter1/sample.jpg" height="30vw" />
               <Kolase2 src="/images/chapter1/sample.jpg" height="30vw" />
             </div>
-            {/* col 2 */}
+
+            //col 2
             <div className="flex flex-col gap-3">
               <Kolase2
                 src="/images/chapter1/sample.jpg"
@@ -109,13 +111,16 @@ const Mobile = () => {
                 />
               </div>
             </div>
+          </div> */}
+          <div className="bg-[#013047] text-[#F9C157] font-primeform px-[25vw] py-[1.5vw] rounded-4xl text-[4vw] font-bold shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] text-center">
+            COMING SOON
           </div>
-          <Link
+          {/* <Link
             href={"/dokumentasi/day2"}
             className="bg-[#013047] text-[#F9C157] font-primeform px-[2vw] py-[0.5vw] rounded-4xl text-[10px] font-bold shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] hover:scale-105 transition duration-400 cursor-pointer text-center"
           >
             Lihat
-          </Link>
+          </Link> */}
         </div>
       </div>
 
