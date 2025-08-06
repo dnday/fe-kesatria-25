@@ -27,28 +27,28 @@ const Desktop = () => {
         className="flex flex-row gap-[3vw] justify-center mt-[10vw]"
       >
         {renderColumn([
-          { src: "/images/chapter1/sample.jpg", height: "25vw" },
-          { src: "/images/dokumentasi/contoh.webp", height: "15vw" },
-          { src: "/images/chapter1/sample.jpg", height: "25vw" },
-          { src: "/images/dokumentasi/contoh.webp", height: "15vw" },
+          { src: "/images/dokumentasi/day1/1.webp", height: "25vw" },
+          { src: "/images/dokumentasi/day1/2.webp", height: "15vw" },
+          { src: "/images/dokumentasi/day1/3.webp", height: "25vw" },
+          { src: "/images/dokumentasi/day1/4.webp", height: "15vw" },
         ])}
         {renderColumn([
-          { src: "/images/chapter1/sample.jpg", height: "15vw" },
-          { src: "/images/dokumentasi/contoh.webp", height: "25vw" },
-          { src: "/images/chapter1/sample.jpg", height: "15vw" },
-          { src: "/images/dokumentasi/contoh.webp", height: "25vw" },
+          { src: "/images/dokumentasi/day1/5.webp", height: "15vw" },
+          { src: "/images/dokumentasi/day1/6.webp", height: "25vw" },
+          { src: "/images/dokumentasi/day1/7.webp", height: "15vw" },
+          { src: "/images/dokumentasi/day1/8.webp", height: "25vw" },
         ])}
         {renderColumn([
-          { src: "/images/chapter1/sample.jpg", height: "25vw" },
-          { src: "/images/dokumentasi/contoh.webp", height: "15vw" },
-          { src: "/images/chapter1/sample.jpg", height: "25vw" },
-          { src: "/images/dokumentasi/contoh.webp", height: "15vw" },
+          { src: "/images/dokumentasi/day1/9.webp", height: "25vw" },
+          { src: "/images/dokumentasi/day1/10.webp", height: "15vw" },
+          { src: "/images/dokumentasi/day1/11.webp", height: "25vw" },
+          { src: "/images/dokumentasi/day1/12.webp", height: "15vw" },
         ])}
         {renderColumn([
-          { src: "/images/chapter1/sample.jpg", height: "15vw" },
-          { src: "/images/dokumentasi/contoh.webp", height: "25vw" },
-          { src: "/images/chapter1/sample.jpg", height: "15vw" },
-          { src: "/images/dokumentasi/contoh.webp", height: "25vw" },
+          { src: "/images/dokumentasi/day1/13.webp", height: "15vw" },
+          { src: "/images/dokumentasi/day1/14.webp", height: "25vw" },
+          { src: "/images/dokumentasi/day1/15.webp", height: "15vw" },
+          { src: "/images/dokumentasi/day1/16.webp", height: "25vw" },
         ])}
       </div>
 
@@ -59,7 +59,7 @@ const Desktop = () => {
           onClick={closePreview}
         >
           <div
-            className="relative max-w-[70vw] max-h-[70vh] p-2 items-center justify-center"
+            className="relative max-w-[50vw] max-h-[50vh] p-2 items-center justify-center"
             onClick={(e) => e.stopPropagation()}
           >
             <Image

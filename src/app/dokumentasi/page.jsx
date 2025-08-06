@@ -5,7 +5,7 @@ import Image from "next/image";
 const dokumentasi = () => {
   return (
     <div className="flex flex-col items-center justify-center w-full min-h-screen">
-      <div className="flex flex-row items-center justify-center">
+      {/* <div className="flex flex-row items-center justify-center">
         <Image
           className="w-[25vw] h-auto mt-[10vw]"
           alt="nala"
@@ -19,14 +19,14 @@ const dokumentasi = () => {
         >
           COMING SOON
         </p>
-      </div>
-      <div className="w-full h-[33vw] md:h-[25vw]"></div>
-      {/* <div className="hidden md:block">
+      </div> */}
+      <div className="hidden md:block">
         <Desktop />
       </div>
       <div className="md:hidden">
         <Mobile />
-      </div> */}
+      </div>
+      <div className="w-full h-[10vw] md:h-[0]"></div>
     </div>
   );
 };

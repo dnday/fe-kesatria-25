@@ -35,24 +35,24 @@ const Desktop = () => {
         <div data-aos="fade-left" className="flex flex-row gap-3">
           {/* col 1 */}
           <div className="flex flex-col gap-3">
-            <Kolase2 src="/images/chapter1/sample.jpg" height="15vw" />
-            <Kolase2 src="/images/chapter1/sample.jpg" height="15vw" />
+            <Kolase2 src="/images/dokumentasi/day1/1.webp" height="15vw" />
+            <Kolase2 src="/images/dokumentasi/day1/2.webp" height="15vw" />
           </div>
           {/* col 2 */}
           <div className="flex flex-col gap-3">
             <Kolase2
-              src="/images/chapter1/sample.jpg"
+              src="/images/dokumentasi/day1/3.webp"
               width="30vw"
               height="14.5vw"
             />
             <div className="flex flex-row gap-3">
               <Kolase2
-                src="/images/chapter1/sample.jpg"
+                src="/images/dokumentasi/day1/4.webp"
                 width="14.5vw"
                 height="15vw"
               />
               <Kolase2
-                src="/images/chapter1/sample.jpg"
+                src="/images/dokumentasi/day1/5.webp"
                 width="14.5vw"
                 height="15vw"
               />
@@ -66,7 +66,7 @@ const Desktop = () => {
         {/* nala */}
         <div
           data-aos="fade-right"
-          className="w-[30vw] flex flex-row items-center"
+          className="w-full flex flex-row items-center justify-center"
         >
           <Image
             className="w-[30vw] h-auto"
@@ -75,47 +75,53 @@ const Desktop = () => {
             width={800}
             height={800}
           />
-          <div className="flex flex-col">
+          <div className="flex flex-col ml-[5vw]">
             <p className="text-[2.5vw] font-bold font-storybook">
               {" "}
               Day 2 Pionir Kesatria 2025
             </p>
-            <Link
-              href={"/dokumentasi/day1"}
+            <div className="bg-[#013047] text-[#F9C157] font-primeform px-[2vw] py-[0.5vw] rounded-4xl text-[1.5vw] font-bold shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] text-center">
+              COMING SOON
+            </div>
+            {/* <Link
+              href={"/dokumentasi/day2"}
               className="bg-[#013047] text-[#F9C157] font-primeform px-[2vw] py-[0.5vw] rounded-4xl text-[1.5vw] font-bold shadow-[inset_5px_5px_10px_rgba(0,0,0,0.3)] hover:scale-105 transition duration-400 cursor-pointer text-center"
             >
               Lihat
-            </Link>
+            </Link> */}
           </div>
         </div>
 
         {/* Kolase2 atas */}
-        <div data-aos="fade-left" className="flex flex-row gap-3">
-          {/* col 1 */}
-          <div className="flex flex-col gap-3">
-            <Kolase2 src="/images/chapter1/sample.jpg" height="15vw" />
-            <Kolase2 src="/images/chapter1/sample.jpg" height="15vw" />
-          </div>
-          {/* col 2 */}
-          <div className="flex flex-col gap-3">
-            <Kolase2
-              src="/images/chapter1/sample.jpg"
-              width="30vw"
-              height="14.5vw"
-            />
-            <div className="flex flex-row gap-3">
-              <Kolase2
-                src="/images/chapter1/sample.jpg"
-                width="14.5vw"
-                height="15vw"
-              />
-              <Kolase2
-                src="/images/chapter1/sample.jpg"
-                width="14.5vw"
-                height="15vw"
-              />
+        <div>
+          {/* <div data-aos="fade-left" className="flex flex-row gap-3">
+            // col 1
+            <div className="flex flex-col gap-3">
+              <Kolase2 src="/images/dokumentasi/day2.webp" height="15vw" />
+              <Kolase2 src="/images/dokumentasi/day2.webp" height="15vw" />
             </div>
-          </div>
+
+            // col 2 
+            <div className="flex flex-col gap-3">
+              <Kolase2
+                src="/images/dokumentasi/day2.webp"
+                width="30vw"
+                height="14.5vw"
+              />
+              <div className="flex flex-row gap-3">
+                <Kolase2
+                  src="/images/dokumentasi/day2.webp"
+                  width="14.5vw"
+                  height="15vw"
+                />
+                <Kolase2
+                  src="/images/dokumentasi/day2.webp"
+                  width="14.5vw"
+                  height="15vw"
+                />
+              </div>
+            </div>
+          </div> */}
         </div>
       </div>
 
