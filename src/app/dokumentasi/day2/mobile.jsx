@@ -27,53 +27,85 @@ const Desktop = () => {
         className="flex flex-row gap-[3vw] justify-center mt-[20vw] min-w-full"
       >
         {renderColumn([
-          { src: "/images/chapter1/sample.jpg", width: "40vw", height: "50vw" },
           {
-            src: "/images/dokumentasi/contoh.webp",
+            src: "/images/dokumentasi/day2/1.webp",
+            width: "40vw",
+            height: "50vw",
+          },
+          {
+            src: "/images/dokumentasi/day2/2.webp",
             width: "40vw",
             height: "30vw",
           },
-          { src: "/images/chapter1/sample.jpg", width: "40vw", height: "50vw" },
           {
-            src: "/images/dokumentasi/contoh.webp",
+            src: "/images/dokumentasi/day2/3.webp",
+            width: "40vw",
+            height: "50vw",
+          },
+          {
+            src: "/images/dokumentasi/day2/4.webp",
             width: "40vw",
             height: "30vw",
           },
-          { src: "/images/chapter1/sample.jpg", width: "40vw", height: "50vw" },
           {
-            src: "/images/dokumentasi/contoh.webp",
+            src: "/images/dokumentasi/day2/5.webp",
+            width: "40vw",
+            height: "50vw",
+          },
+          {
+            src: "/images/dokumentasi/day2/6.webp",
             width: "40vw",
             height: "30vw",
           },
-          { src: "/images/chapter1/sample.jpg", width: "40vw", height: "50vw" },
           {
-            src: "/images/dokumentasi/contoh.webp",
+            src: "/images/dokumentasi/day2/7.webp",
+            width: "40vw",
+            height: "50vw",
+          },
+          {
+            src: "/images/dokumentasi/day2/8.webp",
             width: "40vw",
             height: "30vw",
           },
         ])}
         {renderColumn([
-          { src: "/images/chapter1/sample.jpg", width: "40vw", height: "30vw" },
           {
-            src: "/images/dokumentasi/contoh.webp",
+            src: "/images/dokumentasi/day2/9.webp",
+            width: "40vw",
+            height: "30vw",
+          },
+          {
+            src: "/images/dokumentasi/day2/10.webp",
             width: "40vw",
             height: "50vw",
           },
-          { src: "/images/chapter1/sample.jpg", width: "40vw", height: "30vw" },
           {
-            src: "/images/dokumentasi/contoh.webp",
+            src: "/images/dokumentasi/day2/11.webp",
+            width: "40vw",
+            height: "30vw",
+          },
+          {
+            src: "/images/dokumentasi/day2/12.webp",
             width: "40vw",
             height: "50vw",
           },
-          { src: "/images/chapter1/sample.jpg", width: "40vw", height: "30vw" },
           {
-            src: "/images/dokumentasi/contoh.webp",
+            src: "/images/dokumentasi/day2/13.webp",
+            width: "40vw",
+            height: "30vw",
+          },
+          {
+            src: "/images/dokumentasi/day2/14.webp",
             width: "40vw",
             height: "50vw",
           },
-          { src: "/images/chapter1/sample.jpg", width: "40vw", height: "30vw" },
           {
-            src: "/images/dokumentasi/contoh.webp",
+            src: "/images/dokumentasi/day2/15.webp",
+            width: "40vw",
+            height: "30vw",
+          },
+          {
+            src: "/images/dokumentasi/day2/16.webp",
             width: "40vw",
             height: "50vw",
           },
